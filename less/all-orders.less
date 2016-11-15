@@ -1,0 +1,63 @@
+@import "main.less";
+/*content*/
+/*btn-greey*/
+@import "components/btn-green.less";
+/*btn-delete*/
+@import "components/btn-blue.less";
+/*liked*/
+@import "components/liked.less";
+/*orders-item*/
+@import "less/components/orders-item.less";
+/*content-messages*/
+@import "less/components/content-messages.less";
+/*content-without-work*/
+@import "less/components/content-without-work.less";
+/*filter-list*/
+@import "less/components/filter-list.less";
+/*order-favorite*/
+@import "less/components/order-favorite.less";
+@media(max-width: 641px) {
+    .search {
+        margin-bottom: 10px;
+    }
+}
+@media (max-width: 992px) {
+    .content-sitebar .calendar {
+        width: 100%;
+        display: block;
+        vertical-align: top;
+    }
+    .content-sitebar-user-info {
+        width: 100%;
+        display: block;
+        vertical-align: top;
+        padding-left: 0px;
+    }
+}
+
+.content-notification-orders-top-panel {
+    position: relative;
+    &-search-inner {
+        margin-bottom: 25px;
+        .search {
+            width: 175px;
+            height: 38px;
+            display: inline-block;
+            margin-right: 20px;
+        }
+    }
+}
+.content-messages-inner {
+    display: block;
+    width: auto;
+    margin: -31px 0 30px 25px;
+    @media(max-width: 768px) {
+        margin-left: 0;
+    }
+}
+.content-without-work {
+    margin-left: 25px;
+    @media(max-width: 768px) {
+        margin-left: 0;
+    }
+}

@@ -1,0 +1,732 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    <meta name="format-detection" content="telephone=no">
+    <title>Author25</title>
+    <link rel="stylesheet" href="css/libs/bootstrap.min.css">
+    <link rel="stylesheet" href="css/libs/select2.css">
+    <link rel="stylesheet" href="css/home.css">
+</head>
+<body>
+    <div class="page">
+        <!--nav-->
+        <div class="container-nav container-nav__blue container-fluid">
+            <div class="container">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header">
+                    <button id="show_button" type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false"> 
+                        <span class="sr-only">Toggle navigation</span> 
+                        <span class="icon-bar"></span> 
+                        <span class="icon-bar"></span> 
+                        <span class="icon-bar"></span> 
+                    </button>
+                    <a class="navbar-brand" href="#"></a>
+                </div>
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="navbar-info  navbar-info__static">
+                    <span class="navbar-info-item navbar-info-item__notifications">
+                        <i class="fa fa-info-circle" aria-hidden="true"></i>
+                        <span class="navbar-info-item-value">4</span>
+                        <i class="pop-up_tr"></i>
+                    </span>
+                    <span class="navbar-info-item navbar-info-item__message">
+                        <i class="fa fa-envelope" aria-hidden="true"></i>
+                        <span class="navbar-info-item-value">11</span>
+                        <i class="pop-up_tr"></i>
+                    </span>
+                    <a href="#" class="btn-nav-bar">
+                        <i class="fa fa-search" aria-hidden="true"></i>НАЙТИ ЗАКАЗ
+                    </a>
+                    <a href="#" class="btn-nav-bar">
+                        <i class="fa fa-tag" aria-hidden="true"></i>ГОТОВЫЕ РАБОТЫ
+                    </a>
+                </div>
+                <div class="navbar-info">
+                    <a href="#" class="btn-money-value"><i class="i i_cash"></i>0 руб.</a>
+                    <a href="#" class="btn-nav-bar">
+                        <i class="fa fa-sign-out" aria-hidden="true"></i>ВЫВЕСТИ ДЕНЬГИ
+                    </a>
+                    <span class="navbar-info-item navbar-info-item__user">
+                        <i class="fa fa-user" aria-hidden="true"></i>
+                        <i class="fa fa-angle-down" aria-hidden="true"></i>
+                        <i class="pop-up_tr__user"></i>
+                    </span>
+                </div>
+                <!-- /.navbar-collapse -->
+            </div>
+        </div>
+        <div class="container-nav container-nav__white">
+            <div class="container">    
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <i class="collapse-tr"></i>
+                    <ul class="nav navbar-nav">
+                        <li class="active"> 
+                            <a href="#">Главная<span class="sr-only">(current)</span></a>
+                        </li>
+                        <li>
+                            <a href="#">Аукцион заказов</a>
+                        </li>
+                        <li>
+                            <a href="#">Мои заказы</a>
+                        </li>
+                        <li>
+                            <a href="#">Баланс</a>
+                        </li>
+                        <li>
+                            <a href="#">Профиль</a>
+                        </li>
+                        <li>
+                            <a href="#">Настройки</a>
+                        </li>
+                        <li>
+                            <a href="#">Сообщества</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!--widgets-->
+        <div class="widget-help">
+            <a class="widget-help-item" href="#">О проекте</a>
+            <a class="widget-help-item" href="#">Соглашение</a>
+            <a class="widget-help-item" href="#">Правила работы</a>
+            <a class="widget-help-item" href="#">Новости</a>
+            <a class="widget-help-item" href="#">Помощь</a>
+            <a class="widget-help-item" href="#">Как оплатить</a>
+            <a class="widget-help-item" href="#">Узнать среднюю стоимость работы</a>
+        </div>
+        <div class="pop-up-notification pop-up-notification__info">
+            <p class="pop-up-notification-caption">Новые уведомления:</p>
+            <div class="pop-up-notification-inner">
+                <div class="pop-up-notification-inner-item">
+                    <i class="fa fa-angle-double-right" aria-hidden="true"></i>
+                    <p class="pop-up-notification-inner-item-text-top">Гарантийный срок по заказу "Физика 2" истек</p>
+                    <p class="pop-up-notification-inner-item-date">26 июня 2016 в 20:43</p>
+                    <a class="pop-up-notification-inner-item-link" href="#">физика 2</a>
+                </div>
+                <div class="pop-up-notification-inner-item">
+                    <i class="fa fa-angle-double-right" aria-hidden="true"></i>
+                    <p class="pop-up-notification-inner-item-text-top">Автор сделал ставку к Вашему заказу контрольная "РАСЧЕТ УСТОЙЧИВОСТИ ЭЛЕКТРОЭНЕРГЕТИЧЕСКОЙ СИСТЕМЫ"</p>
+                    <p class="pop-up-notification-inner-item-date">26 июня 2016 в 20:43</p>
+                    <a class="pop-up-notification-inner-item-link" href="#">контрольная РАСЧЕТ УСТОЙЧИВОСТИ ЭЛЕКТРОЭНЕРГЕТИЧЕСКОЙ СИСТЕМЫ</a>
+                </div>
+            </div>
+            <div class="pop-up-notification-btn-remove-inner">
+                <a href="#" class="pop-up-notification-btn-remove-inner-btn">Очистить уведомления</a>
+            </div>
+        </div>
+        <div class="pop-up-notification pop-up-notification__message">
+            <p class="pop-up-notification-caption">Новые собщения:</p>
+            <div class="pop-up-notification-inner">
+                <div class="pop-up-notification-inner-item">
+                    <i class="fa fa-angle-double-right" aria-hidden="true"></i>
+                    <p class="pop-up-notification-inner-item-text-top">Привет, я готова приступить к проекту, только мне нуджно предоплата</p>
+                    <p class="pop-up-notification-inner-item-date">26 июня 2016 в 20:43</p>
+                    <a class="pop-up-notification-inner-item-link" href="#">физика 2</a>
+                </div>
+                <div class="pop-up-notification-inner-item">
+                    <i class="fa fa-angle-double-right" aria-hidden="true"></i>
+                    <p class="pop-up-notification-inner-item-text-top">Очень интересно получается! Я могу сделать прямо на этой странице, но для этого мне надо время</p>
+                    <p class="pop-up-notification-inner-item-date">26 июня 2016 в 20:43</p>
+                    <a class="pop-up-notification-inner-item-link" href="#">контрольная РАСЧЕТ УСТОЙЧИВОСТИ ЭЛЕКТРОЭНЕРГЕТИЧЕСКОЙ СИСТЕМЫ</a>
+                </div>
+            </div>
+            <div class="pop-up-notification-btn-remove-inner">
+                <a href="#" class="pop-up-notification-btn-remove-inner-btn">Очистить уведомления</a>
+            </div>
+        </div>
+        <div class="pop-up__user">
+            <div class="pop-up__user-item">
+                <a href="#" class="pop-up__user-item-text">Баланс<span class="pop-up__user-item-text__balance">0 р.</span></a>   
+            </div>
+            <div class="pop-up__user-item">
+                <a href="#" class="pop-up__user-item-text">Настройки</a>   
+            </div>
+            <div class="pop-up__user-item">
+                <a href="#" class="pop-up__user-item-text">Текущая комиссия</a>   
+            </div>
+            <div class="pop-up__user-item">
+                <a href="#" class="pop-up__user-item-text">Избранные авторы<span class="pop-up__user-item-text__new">NEW</span></a>   
+            </div>
+            <div class="pop-up__user-item">
+                <a href="#" class="pop-up__user-item-text">Черный список</a>   
+            </div>
+            <div class="pop-up__user-item">
+                <a href="#" class="pop-up__user-item-text btn-pop-up__user-exit">Выход</a>   
+            </div>
+        </div>
+        <div class="pop-up-info pop-up-info__training-video">
+            <span class="btn-delete">
+                <i class="fa fa-times" aria-hidden="true"></i>
+            </span>
+            <p class="pop-up-info-description">
+                Обучающее видео для авторов
+            </p>
+            <div class="pop-up-info-text">
+                <p>Начать работать и зарабатывать на автор25 совсем не сложно! Всего за несколько минут наш менеджер по работе с авторами посвятит вас во все тонкости и особенности нашего сервиса. </p>
+                <iframe height="315" src="https://www.youtube.com/embed/OZpviYuGJN8" allowfullscreen=""></iframe>
+            </div>
+            <div class="pop-up-info-btn-inner">
+                <a href="#" class="btn-blue btn-confirmation">ЗАПОЛНИТЬ ПРОФИЛЬ</a>
+                <a href="#" class="btn-green btn-confirmation">ПЕРЕЙТИ К ПОИСКУ ЗАКАЗОВ</a>
+            </div>
+        </div>
+        <div class="pop-up-info pop-up-info__slider" style="display:block">
+            <span class="btn-delete">
+                <i class="fa fa-times" aria-hidden="true"></i>
+            </span>
+            <div class="slider slider1">
+                <div class="sliderContent">
+                    <div class="item item__center item__gray">
+                        <p class="pop-up-info-description">
+                            Добро пожаловать в Автор 24!
+                        </p>
+                        <div class="pop-up-info-text">
+                            <p>
+                                Автор24 - это интернет-биржа авторов и заказчиков по написанию курсовых, рефератов, дипломных и других работ. Вы общаетесь с авторами напрямую и сами выбираете с кем работать. Предлагаем познакомится с интерфейсом проекта и основными возможностями.На главной странице доступна общая информация по вашим заказам и самые важные уведомления.
+                            </p>
+                        </div>
+                        <img class="absolute" src="img/interface/example_hello-two.jpg" alt="">
+                    </div>
+                    <div class="item item__center item__gray">
+                        <p class="pop-up-info-description">
+                           Расскажем как работать на Автор 24!
+                        </p>
+                        <div class="pop-up-info-text">
+                            <p>
+                                Начать работать и зарабатывать на Автор24 совсем не сложно! Всего за несколько минут наш менеджер по работе с авторами посвятит вас во все тонскости и особенности нашего сервиса. Или вы можете пропустить видео и продолжить изучение сервиса по слайдам
+                            </p>
+                        </div>
+                        <img  class="width-auto" src="img/interface/example-black.jpg" alt="">
+                    </div>
+                    <div class="item item__three-side">
+                        <div class="item-side item-side__left">
+                            <p class="pop-up-info-description">НОВЫЕ СОБЫТИЯ</p>
+                            <div class="pop-up-info-text">
+                                <p>
+                                    быстрый доступ и оповещания о всех важных событиях
+                                </p>
+                            </div>
+                            
+                            <p class="pop-up-info-description">КАЛЕНДАРЬ</p>
+                            <div class="pop-up-info-text">
+                                <p>
+                                    поможет не забыть о сроках сдачи очередного заказа
+                                </p>
+                            </div>
+                        </div>
+                        <img src="img/interface/example-description-page.jpg" alt="">
+                        <div class="item-side item-side__right">
+                            <p class="pop-up-info-description">УВЕДОМЛЕНИЯ</p>
+                            <div class="pop-up-info-text">
+                                <p>
+                                    всегда в курсе всех событий по заказам, сообщениям и балансу
+                                </p>
+                            </div>
+                            
+                            <p class="pop-up-info-description">СООБЩЕНИЯ</p>
+                            <div class="pop-up-info-text">
+                                <p>
+                                    общайтесь с заказчиком напрямую в удобном чате
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item item__absolute">
+                        <div class="pop-up-info-text">
+                            <p class="pop-up-info-description">
+                                Найти заказ
+                            </p>
+                            <p>
+                                Ищите заказы среди тысячи подходящих по вашей специальности. Просмотренные заказы маркируются соответствующим образом. Мы так же добавили ленту рекомендуемых заказов, в которую будут транслироваться заявки, которые могли бы вас заинтересовать. Искать новые заказы стало еще удобней и быстрей!
+                            </p>
+                        </div>
+                        <img class="absolute" src="img/interface/example-page.jpg" alt="">
+                    </div>
+                    <div class="item item__center">
+                        <p class="pop-up-info-description">
+                            Общение с заказчиком
+                        </p>
+                        <div class="pop-up-info-text">
+                            <p>
+                                Общайтесь с заказчиками напрямую, обсуждайте нюансы работы и сроки сдачи, загружайте промежуточные варианты. Вы можете вести одновременно переписку по нескольким заказам.
+                            </p>
+                        </div>
+                        <img class="absolute" src="img/interface/example-messages.jpg" alt="">
+                    </div>
+                    <div class="item item__center">
+                        <p class="pop-up-info-description">
+                            Система уведомлений
+                        </p>
+                        <div class="pop-up-info-text">
+                            <p>
+                                В левом верхнем углу отображается число новых уведомлений и сообщений от заказчиков, а так же любых событий, связанных с вашими заказами. В более подробном виде все важные события будут отображаться в блоке "Уведомления" на главной странице.
+                            </p>
+                        </div>
+                        <img class="absolute" src="img/interface/example-notification.jpg" alt="">
+                    </div>
+                    <div class="item item__center item__my-order">
+                        <p class="pop-up-info-description">
+                            Мои заказы
+                        </p>
+                        <div class="pop-up-info-text">
+                            <p>
+                                Все заказы доступны во вкладке "мои заказы" и отсортированы по  статусам.
+                            </p>
+                        </div>
+                        <div class="item-side item-side__left">
+                            <div class="pop-up-info-text">
+                                <p>
+                                    Быстрый доступ ко всем заказам с которыми вы работаете
+                                </p>
+                            </div>
+                        </div>
+                        <div class="item-side item-side__right">
+                            <div class="pop-up-info-text">
+                                <p>
+                                    Вся самая важная информация по каждому заказу
+                                </p>
+                            </div>
+                        </div>
+                        <img class="absolute" src="img/interface/example-all-orders.jpg" alt="">
+                    </div>
+                    <div class="item item__center">
+                        <p class="pop-up-info-description">
+                            Баланс
+                        </p>
+                        <div class="pop-up-info-text">
+                            <p>
+                                На странице баланса можно видеть движение денежных средств и график поступления средств за выполненные работы по завершению гарантийного периода.
+                            </p>
+                        </div>
+                        <img class="absolute" src="img/interface/example-balance.jpg"
+                         alt="">
+                    </div>
+                </div>
+            </div> 
+        </div>
+        <div class="pop-up__shadow"></div>
+        <!--content-->
+        <div class="content container">
+            <div class="content-sitebar">
+                <div class="content-sitebar-user content-sitebar-user__without-paddings">
+                    <div class="content-sitebar-user__without-paddings-img-inner ">
+                        <img class="img-desctop" src="img/interface/user.png" alt="user">
+                    </div>
+                    <div class="content-sitebar-user-info">
+                        <ul class="content-sitebar-user-info-list">
+                            <li class="content-sitebar-user-info-list-item content-sitebar-user-info-list-item__black content-sitebar-user-info-list-item__height">
+                                <p class="content-sitebar-user-info-list-item-text">Выполненно заказов
+                                    <span class="content-sitebar-user-info-list-item-text-value">0</span>
+                                </p>
+                                <p class="content-sitebar-user-info-list-item-text">Всего заказов
+                                    <span class="content-sitebar-user-info-list-item-text-value">0</span>
+                                </p>
+                            </li>
+                            <li class="content-sitebar-user-info-list-item content-sitebar-user-info-list-item__black content-sitebar-user-info-list-item__height">
+                                <p class="content-sitebar-user-info-list-item-text">Тип работ</p>
+                                <ul>
+                                    <li>Контрольная работа</li>
+                                    <li>Решение задач</li>
+                                    <li>Ответы на вопросы</li>
+                                    <li>Помощь on-line</li>
+                                    <li>Лабораторная работа</li>
+                                </ul>
+                            </li>
+                            <li class="content-sitebar-user-info-list-item content-sitebar-user-info-list-item__black content-sitebar-user-info-list-item__height">
+                                <p class="content-sitebar-user-info-list-item-text">Предмет</p>
+                                <ul>
+                                    <li>Высшая математика</li>
+                                    <li>Теория вероятностей</li>
+                                    <li>Геометрия</li>
+                                </ul>
+                            </li>
+                            <li class="content-sitebar-user-info-list-item content-sitebar-user-info-list-item__black content-sitebar-user-info-list-item__height">
+                                <p class="content-sitebar-user-info-list-item-text">Клиенты
+                                    <span class="content-sitebar-user-info-list-item-text-value">0</span>
+                                </p>
+                                 <p class="content-sitebar-user-info-list-item-text">Постоянных
+                                    <span class="content-sitebar-user-info-list-item-text-value">0</span>
+                                </p>
+                            </li>
+                            <li class="content-sitebar-user-info-list-item content-sitebar-user-info-list-item__black content-sitebar-user-info-list-item__height">
+                                <p class="content-sitebar-user-info-list-item-text">
+                                    <i class="fa fa-eye" aria-hidden="true"></i>Просмотры
+                                    <span class="content-sitebar-user-info-list-item-text-value">7</span>
+                                </p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="content-sitebar-calendar">
+                    <p class="content-sitebar-calendar-text-top">Календарь<span class="btn-toggle-calendar"><i class="fa fa-angle-down" aria-hidden="true"></i></span></p>
+                    <table id="calendar">
+                        <thead>
+                            <tr>
+                                <td><i class="fa fa-angle-left"></i></td>
+                                <td colspan="5" data-month="7" data-year="2016">Август 2016</td>
+                                <td><i class="fa fa-angle-right"></i></td>
+                            </tr>
+                            <tr>
+                                <td>ПН</td>
+                                <td>ВТ</td>
+                                <td>СР</td>
+                                <td>ЧТ</td>
+                                <td>ПТ</td>
+                                <td>СБ</td>
+                                <td>ВС</td>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>1</td>
+                                <td>2</td>
+                                <td>3</td>
+                                <td class="today today_info">4</td>
+                                <td>5</td>
+                                <td>6</td>
+                                <td>7</td>
+                            </tr>
+                            <tr>
+                                <td>8</td>
+                                <td>9</td>
+                                <td>10</td>
+                                <td>11</td>
+                                <td>12</td>
+                                <td>13</td>
+                                <td>14</td>
+                            </tr>
+                            <tr>
+                                <td>15</td>
+                                <td>16</td>
+                                <td>17</td>
+                                <td>18</td>
+                                <td>19</td>
+                                <td>20</td>
+                                <td>21</td>
+                            </tr>
+                            <tr>
+                                <td>22</td>
+                                <td>23</td>
+                                <td>24</td>
+                                <td>25</td>
+                                <td>26</td>
+                                <td>27</td>
+                                <td>28</td>
+                            </tr>
+                            <tr>
+                                <td>29</td>
+                                <td>30</td>
+                                <td>31</td>
+                                <td>&nbsp;</td>
+                                <td>&nbsp;</td>
+                                <td>&nbsp;</td>
+                                <td>&nbsp;</td>
+                            </tr>
+                        </tbody>
+                    </table>   
+                </div>
+            </div>
+            <div class="content-center">   
+                <div class="alert-registration">
+                    <span class="alert-registration-text">
+                        Для того чтобы начать выполнять заказы вам нужно ознакомиться с <a href="#">правилами работы сервиса</a> и пройти небольшое тестирование, которое займет у вас своего пару минут.
+                    </span>
+                   <a href="#" class="btn-green">ПРОЙТИ ТЕСТ</a> 
+                </div> 
+                <div class="content-notification">
+                    <div class="content-notification-history">
+                        <div class="content-notification-history-top-panel">
+                            <span class="content-notification-history-top-panel-text">Уведомления
+                                <span class="content-notification-history-top-panel-text-value">(5 новых)</span>
+                            </span>
+                            <a href="#" class="content-notification-history-top-panel-btn-all">История уведомлений</a>
+                            <a href="#" class="content-notification-history-top-panel-btn-delete-all">удалить все</a>
+                        </div>
+                        <div class="content-notification-history-list">
+                            <div class="content-notification-history-list-item">
+                                <div class="content-notification-history-list-item-btn-inner">
+                                    <span class="btn-green">OK</span>
+                                    <span class="btn-delete">
+                                        <i class="fa fa-times" aria-hidden="true"></i>
+                                    </span>
+                                </div>
+                                <i class="fa fa-check-circle" aria-hidden="true"></i>
+                                <div class="content-notification-history-list-item-content">
+                                    <p class="content-notification-history-list-item-content-date">
+                                        <span class="content-notification-history-list-item-content-date-value">
+                                            <i class="fa fa-calendar" aria-hidden="true"></i>
+                                            26 июня 20016 в 16:23
+                                        </span>
+                                    </p>
+                                    <p class="content-notification-history-list-item-content-text">Укажите типы работ и предметы, по которым вы выполняете работы.Заказчики  чаще будут выбирать вас исполнителем!</p>
+                                </div>
+                            </div>
+                            <div class="content-notification-history-list-item">
+                                <div class="content-notification-history-list-item-btn-inner">
+                                    <span class="btn-green">ОК</span>
+                                    <span class="btn-delete">
+                                        <i class="fa fa-times" aria-hidden="true"></i>
+                                    </span>
+                                </div>
+                                <i class="fa fa-check-circle" aria-hidden="true"></i>
+                                <div class="content-notification-history-list-item-content">
+                                    <p class="content-notification-history-list-item-content-date">
+                                        <span class="content-notification-history-list-item-content-date-value">
+                                            <i class="fa fa-calendar" aria-hidden="true"></i>
+                                            26 июня 20016 в 16:23
+                                        </span>
+                                    </p>
+                                    <p class="content-notification-history-list-item-content-text">
+                                        Укажите типы <a href="#">работ и предметы</a>, по которым вы выполняете работы.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="content-notification-history-list-item">
+                                <div class="content-notification-history-list-item-btn-inner">
+                                    <span class="btn-green">OK</span>
+                                    <span class="btn-delete">
+                                        <i class="fa fa-times" aria-hidden="true"></i>
+                                    </span>
+                                </div>
+                                <i class="fa fa-check-circle" aria-hidden="true"></i>
+                                <div class="content-notification-history-list-item-content">
+                                    <p class="content-notification-history-list-item-content-date">
+                                        <span class="content-notification-history-list-item-content-date-value">
+                                            <i class="fa fa-calendar" aria-hidden="true"></i>
+                                            26 июня 20016 в 16:23
+                                        </span>
+                                    </p>
+                                    <p class="content-notification-history-list-item-content-text">
+                                        Для ознакомления с работой сервиса Автор24 вы можете просмотрет наше <a href="#">подробное обучающее видео</a>
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="btn-more-inner">
+                                <p class="btn-more-inner-btn">Показать еще</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="content-messages-inner">
+                        <p class="content-messages-inner-description">Сообщения по заказам</p>
+                        <div class="content-messages-inner-list">
+                            <div class="content-messages-inner-list-item content-messages-inner-list-item__left">
+                                <div class="content-messages-inner-list-item-theme">
+                                    <a class="content-messages-inner-list-item-theme-link" href="#">123456</a>
+                                    <span class="content-messages-inner-list-item-theme-description">История древнего Египта</span>
+                                    <div>
+                                       <span class="content-messages-inner-list-item-theme-status">Завершен</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="content-messages-inner-list-item content-messages-inner-list-item__right">
+                                <div class="content-messages-inner-list-item-theme">
+                                <a class="content-messages-inner-list-item-theme-link" href="#">История древнего Египта</a>
+                                <p class="content-messages-inner-list-item-theme-text">Курсовая работа, История</p>
+                                <div>
+                                   <span class="i author-offline"></span>
+                                   <span class="content-messages-inner-list-item-theme-login">Заказчик</span>
+                                   <span class="time-active">был в сети вчера 23:36</span>
+                                </div>
+                            </div>
+                                <div class="messages show">
+                                <div class="messages-content">
+                                            <p class="messages-content-date">12 июня 2016 05:47</p>
+                                            <div class="messages-content-question">
+                                                <div class="messages-content-question-user">
+                                                    <div>
+                                                        <span class="messages-content-question-user-name">Dzmitry</span>
+                                                    </div>
+                                                    <span>
+                                                        Добрый день как  продвигаеться решение??)))
+                                                    </span>
+                                                </div>
+                                                <img src="img/interface/avatar.jpg" alt="avatar">
+                                            </div>
+                                            <div class="messages-content-answer">
+                                                <img src="img/interface/avatar.jpg" alt="avatar">
+                                                <div class="messages-content-answer-author">
+                                                    <div>
+                                                        <span class="messages-content-answer-author-name">Неверова</span>
+                                                        <span class="offline">не в сети</span>
+                                                        <span class="time-active">был в сети вчера 23:36</span>
+                                                    </div>
+                                                    <span>
+                                                        Здравствуйте! Работа в процессе  завершения.
+                                                    </span>
+                                                </div>
+                                            </div>
+                                            <p class="messages-content-date">12 июня 2016 05:47</p>
+                                            <div class="messages-content-question">
+                                                <div class="messages-content-question-user">
+                                                    <div>
+                                                        <span class="messages-content-question-user-name">Dzmitry</span>
+                                                    </div>
+                                                    <i class="i i_download"></i>
+                                                    <div class="file-info">
+                                                        <span class="file-info-name">1261632_2.pdf</span>
+                                                    </div>
+                                                    <a href="#" class="file-download-link" download="">Скачать</a>
+                                                </div>
+                                                <img src="img/interface/avatar.jpg" alt="avatar">
+                                            </div>
+                                        </div>
+                                <div class="messages-answer">
+                                <form>
+                                    <div class="messages-answer-left">
+                                        <input type="text" class="form-control">
+                                    </div>
+                                    <div class="messages-answer-right">
+                                        <label class="btn-add-caption">
+                                            <i class="fa fa-paperclip btn-add-caption-icon"></i>
+                                            <input class="btn-add-caption-element" type="file" name="photo" accept="image/*,image/jpeg"> 
+                                            <span class="btn-add-caption-text"></span> 
+                                        </label>
+                                        <button type="submit" class="btn-answer">ОТВЕТИТЬ</button> 
+                                    </div>
+                                </form>
+                            </div>
+                            </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="content-without-work">
+                        <p class="content-without-work-text">В данный момент у вас нет заказов, требующих вашего внимания.
+                            <span class="content-without-work-text-bottom">Находите заказы и зарабатывайте вместе с Автор24!.</span>
+                        </p>
+                        <i class="i i_work-list"></i>
+                        <div class="content-without-work-bottom-panel">
+                            <a href="#" class="btn-blue">ПОДОБРАТЬ ЗАКАЗ</a>
+                            <p class="content-without-work-bottom-panel-text"
+                               >Если у вас возникли трудности - обратитесь в <a class="content-without-work-bottom-panel-text-link" href="#">службу поддержки</a>
+                                Наши сотрудники обязательно вам помогут.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="right-panel">
+                <div class="right-panel-description">
+                    <span>Рекомендуемые заказы</span>
+                </div>
+                <div class="orders-item orders-item__yellow">
+                    <span class="btn-delete">
+                        <i class="fa fa-times" aria-hidden="true"></i>
+                    </span>
+                    <p class="orders-item-text"># 1295206</p>
+                    <a href="#" class="orders-item-link">
+                        перспективные направления государственного регулирования обеспечения продовольсвенной безопасности...
+                    </a>
+                    <p class="orders-item-text">Статья, Экономика</p>
+                    <p class="orders-item-text orders-item-text__gray">Цена: 
+                        <span class="orders-item-text-value">480 руб.</span>
+                    </p>
+                    <p class="orders-item-text orders-item-text__gray">Срок сдачи: 
+                        <span class="orders-item-text-value">12.07.2016</span>
+                    </p>
+                </div>
+                <div class="orders-item">
+                    <span class="btn-delete">
+                        <i class="fa fa-times" aria-hidden="true"></i>
+                    </span>
+                    <p class="orders-item-text"># 1295206</p>
+                    <a href="#" class="orders-item-link">
+                        использование икт создание дидактических игр старшем дошкольном возрасте
+                    </a>
+                    <p class="orders-item-text">Курсовая работа, Педагогика</p>
+                    <p class="orders-item-text orders-item-text__gray">Цена: 
+                        <span class="orders-item-text-value">480 руб.</span>
+                    </p>
+                    <p class="orders-item-text orders-item-text__gray">Срок сдачи: 
+                        <span class="orders-item-text-value">12.07.2016</span>
+                    </p>
+                </div>
+                <div class="orders-item">
+                    <span class="btn-delete">
+                        <i class="fa fa-times" aria-hidden="true"></i>
+                    </span>
+                    <p class="orders-item-text"># 1295206</p>
+                    <a href="#" class="orders-item-link">
+                        использование икт создание дидактических игр старшем дошкольном возрасте
+                    </a>
+                    <p class="orders-item-text">Курсовая работа, Педагогика</p>
+                    <p class="orders-item-text orders-item-text__gray">Цена: 
+                        <span class="orders-item-text-value">480 руб.</span>
+                    </p>
+                    <p class="orders-item-text orders-item-text__gray">Срок сдачи: 
+                        <span class="orders-item-text-value">12.07.2016</span>
+                    </p>
+                </div>
+            </div>
+        </div>
+        <!--footer-->
+        <div class="footer">
+            <div class="container footer-list">
+                <div class="footer-list-item footer-list-item__left">
+                    <ul class="footer-list-item__left-nav-list">
+                        <li class="footer-list-item__left-nav-list-item"><a href="#">Новости</a></li>
+                        <li class="footer-list-item__left-nav-list-item"><a href="#">Топ авторов</a></li>
+                        <li class="footer-list-item__left-nav-list-item"><a href="#">Агенствам</a></li>
+                        <li class="footer-list-item__left-nav-list-item"><a href="#">Помощь</a></li>
+                    </ul>
+                    <div class="footer-list-item__left-banner">
+                        <a href="#">
+                            <p class="footer-list-item__left-banner-text-inner">
+                               <span class="footer-list-item__left-banner-text-inner-text-top">Будь всегда на связи!</span>
+                               <span class="footer-list-item__left-banner-text-inner-text-bottom">Приложение от Автор25</span> 
+                            </p>
+                            <p class="footer-list-item__left-banner-img-inner">
+                                <i class="i i_google-play"></i>  
+                            </p>
+                        </a>
+                    </div>
+                    <div class="footer-list-item__left-copyright">
+                        <p>© 2016 Author25.</p>
+                        <p>Все права защищены</p>
+                    </div>
+                </div>
+                <div class="footer-list-item footer-list-item__center">
+                    <p class="footer-list-item__center-text-top">Мы принимаем</p>
+                    <div class=" footer-list-item__center-list">
+                        <div class="footer-list-item__center-list-item">
+                            <i class="i i_footer i_visa"></i>
+                        </div>
+                        <div class="footer-list-item__center-list-item">
+                            <i class="i i_footer i_mc"></i>
+                        </div>
+                        <div class="footer-list-item__center-list-item">
+                            <i class="i i_footer i_yandex"></i>
+                        </div>
+                         <div class="footer-list-item__center-list-item">
+                            <i class="i i_footer i_web"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-list-item footer-list-item__right">
+                    <p class="footer-list-item__right-phone">
+                        <i class="fa fa-phone" aria-hidden="true"></i>
+                        <span>8-800-100-03-20</span>
+                    </p>
+                    <p class="footer-list-item__right-mail">
+                        <i class="fa fa-envelope" aria-hidden="true"></i>
+                        <span>support@author25.ru</span>
+                    </p>
+                    <p class="footer-list-item__right-work">Служба поддержки работает
+                        <span>по будням <i class="fa fa-clock-o" aria-hidden="true"></i> с 10:00 до 20:00</span>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+<script src="js/libs/jquery-1.12.4.js"></script>
+<script src="js/libs/bootstrap.js"></script>
+<script src="js/libs/select2.min.js"></script>
+<script src="js/libs/mobilyslider.js"></script>
+<script src="js/main.js"></script>
+<script src="js/calendar.js"></script>
+<script src="js/select.js"></script>
+<script src="js/slider.js"></script>
+</body>
+</html>

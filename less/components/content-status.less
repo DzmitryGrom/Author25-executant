@@ -1,0 +1,115 @@
+.content-status{
+    display: inline-block;
+    width: 22%;
+    @media(max-width: 992px){
+        position: absolute;
+        top: 20px;
+        left: 0;
+        right: 0;
+        display: block;
+        width: 100%;
+        text-align: center;
+    }
+    &-description{
+        font-size: 18px;
+        font-family: "OpenSansRegular";
+        line-height: 24px;
+        margin: 0 0 23px 30px;
+        color: #444444;
+        
+        @media(max-width: 992px){
+            display: inline-block;
+        }
+    }
+    &-list{
+        padding-left: 30px;
+        
+        @media(max-width: 992px){
+            display: inline-block;
+        }
+        &-divider{
+            text-align: center;
+            padding: 0;
+            
+            @media(max-width: 992px){
+                display: none;
+            }
+            .fa-angle-down{
+                font-size: 15px;
+            }
+        }
+        &-item{
+            text-align: left;
+            position: relative;
+            padding: 13px 0 13px 50px;
+            color: #444444;
+            
+            
+            @media(max-width: 992px){
+                display: none;
+            }
+            &-numb,
+            &-text{
+                font-size: 14px;
+                font-family: "OpenSansSemibold";
+
+            }
+            &-text{
+                display: inline-block;
+                margin-left: 10px;
+            }
+            &-numb{
+                width: 30px;
+                height: 30px;
+                background-color: #fff;
+                display: inline-block;
+                text-align: center;
+                line-height: 25px;
+                border-radius: 100px;
+                border: 1px solid #e2e2e2;
+            }  
+        }
+        &-item_active{
+            background-color: #fff;
+            position: relative;
+            border-radius: 3px;
+            &:last-child{
+                &:after{
+                    content: "";
+                    display: none;
+                }
+            }
+            @media(max-width: 992px){
+                display: block;
+                padding: 13px 77px 13px 77px;
+                min-width: 260px;
+                &:after{
+                    content: '';
+                    display: none;
+                }
+                &:before{
+                    content: '';
+                    border: 13px solid transparent;
+                    border-right: 13px solid #fff;
+                    position: absolute;
+                    left: -26px;
+                    z-index: 2;
+                }
+            }
+            .content-status-list-item-numb{
+                background-color: #a2c679;
+                color: #fff;
+            }
+            &:after{
+                content: "";
+                position: absolute;
+                bottom: -26px;
+                z-index: 2;
+                left: 50%;
+                margin-left: -12px;
+                border: 13px solid transparent;
+                border-top: 13px solid #fff;   
+            }
+        }
+    }
+}

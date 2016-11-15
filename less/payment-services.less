@@ -1,0 +1,314 @@
+@import "main.less";
+/*content*/
+/*btn-greey*/
+@import "components/btn-green.less";
+/*btn-blue*/
+@import "components/btn-gray.less";
+
+/*checkbox*/
+@import "components/checkbox.less";
+/*select*/
+@import "less/components/select.less";
+/*btns-next-prev*/
+@import "less/components/btns-next-prev.less";
+/*notification-without-orders*/
+.i_visa-master {
+    background-image: url(../img/interface/visa-master.png);
+    width: 81px;
+    height: 26px;
+}
+.i_sms {
+    background-image: url(../img/interface/sms.png);
+    width: 52px;
+    height: 37px;
+}
+.i_qiwi {
+    background-image: url(../img/interface/qiwi.png);
+    width: 90px;
+    height: 45px;
+}
+.i_evroset {
+    background-image: url(../img/interface/evroset.png);
+    width: 72px;
+    height: 36px;
+}
+.i_yandex-money {
+    background-image: url(../img/interface/yandex.png);
+    width: 76px;
+    height: 39px;
+}
+.i_svaznoy {
+    background-image: url(../img/interface/svaznoy.png);
+    width: 90px;
+    height: 23px;
+}
+.i_webmoney {
+    background-image: url(../img/interface/webmonet.png);
+    width: 100px;
+    height: 26px;
+}
+.i_sberbank {
+    background-image: url(../img/interface/sberbank.png);
+    width: 99px;
+    height: 28px;
+}
+.content-center {
+    width: 100%;
+    display: block;
+    .content-full-width {
+        padding: 0;
+    }
+    &-name {
+        font-size: 14px;
+        font-family: "OpenSansRegular";
+    }
+}
+.content-payment-services {
+    padding-bottom: 15px;
+    &-info {
+        background-color: #f5f5f5;
+        margin: 30px;
+        padding: 10px 20px;
+        @media(max-width: 768px) {
+            padding: 10px 0;
+            margin: 20px;
+        }
+        &-item {
+            display: inline-block;
+            width: 50%;
+            vertical-align: middle;
+            text-align: left;
+            @media(max-width: 768px) {
+                width: 100%;
+            }
+            &-text {
+                font-size: 14px;
+                font-family: "OpenSansRegular";
+                color: #b0b0b0;
+                position: relative;
+                &:last-child {
+                    margin: 0;
+                }
+                &-value {
+                    position: absolute;
+                    left: 300px;
+                    top: 0;
+                    z-index: 2;
+                    @media(max-width: 768px) {
+                        left: inherit;
+                        right: 20px;
+                    }
+                }
+            }
+            &-text__black {
+                color: #444444;
+            }
+            &-text-big {
+                font-size: 14px;
+                font-family: "OpenSansSemibold";
+                color: #b0b0b0;
+            }
+            &-value {
+                font-size: 20px;
+                color: #444444;
+            }
+        }
+        &-item__left {
+            text-align: center;
+        }
+        &-item__right {
+            position: relative;
+            padding-left: 30px;
+            &:before {
+                content: "";
+                position: absolute;
+                left: 0;
+                top: 0;
+                bottom: 0;
+                border-left: 1px solid #e6e6e6;
+            }
+            @media(max-width: 768px) {
+                &:before {
+                    content: "";
+                    display: none;
+                }
+            }
+        }
+    }
+    &-select,
+    &-payments,
+    &-conditions {
+        width: 90%;
+        margin: 0 auto;
+        border-bottom: 1px solid #e6e6e6;
+        padding-bottom: 30px;
+        margin-bottom: 30px;
+    }
+    &-select {
+        &-item {
+            display: inline-block;
+            width: 50%;
+            text-align: center;
+            vertical-align: top;
+            padding-top: 30px;
+            &:first-child {
+                padding-right: 15px;
+            }
+            &:last-child {
+                padding-left: 15px;
+            }
+            @media(max-width: 1000px) {
+                width: 100%;
+                text-align: left;
+                &:first-child {
+                    padding-right: 0px;
+                }
+                &:last-child {
+                    padding-left: 0px;
+                }
+            }
+            &-inner__left {
+                background-color: #f4faed;
+                border: 1px solid #a1c67a;
+                padding: 49px 0;
+                @media(max-width: 1000px) {
+                    padding-left: 15px;
+                }
+                input {
+                    width: 180px;
+                    display: inline-block;
+                    vertical-align: middle;
+                    margin-right: 10px;
+
+                    &:focus {
+                        border-color: #59a7f9;
+                    }
+                }
+            }
+            &-inner__right {
+                background-color: #f5f5f5;
+                padding: 50px 0;
+                @media(max-width: 1000px) {
+                    padding-left: 15px;
+                }
+            }
+        }
+    }
+    &-payments {
+        &-list {
+            &-item {
+                display: inline-block;
+                width: 50%;
+                margin-bottom: 20px;
+                padding: 10px 0 10px 20px;
+                @media(max-width: 850px) {
+                    width: 100%;
+                }
+                &:hover {
+                    background-color: #d0e7fe;
+                    cursor: pointer;
+                }
+                &-left,
+                &-right {
+                    display: inline-block;
+                    vertical-align: middle;
+                }
+                &-left {
+                    width: 30%;
+                    text-align: center;
+                }
+                &-right {
+                    width: 70%;
+                    text-align: left;
+                    &-link {
+                        display: block;
+                        font-size: 16px;
+                        font-family: "OpenSansRegular";
+                        color: #6a99d0;
+                        &:hover {
+                            text-decoration: none;
+                        }
+                    }
+                    &-text {
+                        font-size: 12px;
+                        font-family: "OpenSansRegular";
+                        color: #bcbcbc;
+                    }
+                }
+            }
+        }
+        
+    }
+    &-description {
+        font-size: 16px;
+        font-family: "OpenSansRegular";
+        color: #444444;
+        display: inline-block;
+        vertical-align: middle;
+        margin-right: 10px;
+    }
+    &-conditions {
+        border-bottom: none;
+        margin-bottom: 0;
+        padding-bottom: 10px;
+    }
+    &-text {
+        font-size: 14px;
+        font-family: "OpenSansRegular";
+        color: #b0b0b0;
+        display: inline-block;
+        vertical-align: middle;
+    }
+    .btns-next-prev-inner {
+        width: 90%;
+        margin: 0 auto;
+        &-text-bottom {
+            font-size: 14px;
+            font-family: "OpenSansRegular";
+            color: #b0b0b0;
+            display: inline-block;
+            vertical-align: middle;
+            p {
+                margin: 0;
+            }
+        }
+    }
+    
+}
+.checkbox-dynamic__green {
+    vertical-align: middle;
+    margin: 0 10px 0 0;
+}
+.select2-container {
+    display: inline-block;
+    width: 185px!important;
+    vertical-align: middle;
+}
+.select2-container--default .select2-results__option--highlighted[aria-selected]{
+    background-color: #ececec;
+}
+.select2-container--default .select2-selection--single .select2-selection__arrow {
+    border-left: 1px solid #ececec;
+    width: 35px;
+    height: 32px;
+}
+.select2-container--default .select2-selection--single .select2-selection__rendered {
+    line-height: 32px;
+    color: #999999;
+}
+.select2-selection select2-selection--single {
+    border-radius: 2px;
+    font-size: 14px;
+    font-family: "OpenSansRegular";
+    height: 34px;
+}
+.select2-container--default .select2-selection--single {
+    border-radius: 2px;
+    font-size: 14px;
+    font-family: "OpenSansRegular";
+    height: 34px;
+    border-color: #ececec;
+}
+.img-flag {
+    margin-bottom: 3px;
+}

@@ -1,0 +1,48 @@
+@import "main.less";
+/*content*/
+@import "less/components/content-description.less";
+
+@media (max-width: 992px) {
+    .content-sitebar-user-info {
+        width: 100%;
+        display: block;
+        vertical-align: top;
+        padding-left: 0px;
+    }
+}
+.content-center-description {
+    margin-left: 0;
+    margin-bottom: 15px;
+    display: block;
+    @media(max-width: 768px) {
+        margin-left: 0;
+    }
+}
+.content-center-inner {
+    padding-left: 25px;
+    @media(max-width: 768px) {
+        padding-left: 0;
+    }
+}
+.content-description-item-text-gray {
+    position: relative;
+    .btn-more {
+        position: absolute;
+        right: 0;
+        top: 2px;
+        z-index: 2;
+        padding: 2px 12px;
+        @media(max-width: 768px) {
+            top: -1px;
+            right: -12px;
+        }
+        &:hover {
+            cursor: pointer;
+        }
+        .fa {
+            color: #4786c8;
+            
+        }
+    }
+    
+}

@@ -1,0 +1,604 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    <meta name="format-detection" content="telephone=no">
+    <title>Author25-profile-orders</title>
+    <link rel="stylesheet" href="css/libs/bootstrap.min.css">
+    <link rel="stylesheet" href="css/profile.css">
+</head>
+<body>
+    <div class="page">
+        <!--nav-->
+        <div class="container-nav container-nav__blue container-fluid">
+            <div class="container">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header">
+                    <button id="show_button" type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false"> 
+                        <span class="sr-only">Toggle navigation</span> 
+                        <span class="icon-bar"></span> 
+                        <span class="icon-bar"></span> 
+                        <span class="icon-bar"></span> 
+                    </button>
+                    <a class="navbar-brand" href="#"></a>
+                </div>
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="navbar-info  navbar-info__static">
+                    <span class="navbar-info-item navbar-info-item__notifications">
+                        <i class="fa fa-info-circle" aria-hidden="true"></i>
+                        <span class="navbar-info-item-value">4</span>
+                        <i class="pop-up_tr"></i>
+                    </span>
+                    <span class="navbar-info-item navbar-info-item__message">
+                        <i class="fa fa-envelope" aria-hidden="true"></i>
+                        <span class="navbar-info-item-value">11</span>
+                        <i class="pop-up_tr"></i>
+                    </span>
+                    <a href="#" class="btn-nav-bar">
+                        <i class="fa fa-search" aria-hidden="true"></i>НАЙТИ ЗАКАЗ
+                    </a>
+                    <a href="#" class="btn-nav-bar">
+                        <i class="fa fa-tag" aria-hidden="true"></i>ГОТОВЫЕ РАБОТЫ
+                    </a>
+                </div>
+                <div class="navbar-info">
+                    <a href="#" class="btn-money-value"><i class="i i_cash"></i>0 руб.</a>
+                    <a href="#" class="btn-nav-bar">
+                        <i class="fa fa-sign-out" aria-hidden="true"></i>ВЫВЕСТИ ДЕНЬГИ
+                    </a>
+                    <span class="navbar-info-item navbar-info-item__user">
+                        <i class="fa fa-user" aria-hidden="true"></i>
+                        <i class="fa fa-angle-down" aria-hidden="true"></i>
+                        <i class="pop-up_tr__user"></i>
+                    </span>
+                </div>
+                <!-- /.navbar-collapse -->
+            </div>
+        </div>
+        <div class="container-nav container-nav__white">
+            <div class="container">    
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <i class="collapse-tr"></i>
+                    <ul class="nav navbar-nav">
+                        <li class="active"> 
+                            <a href="#">Главная<span class="sr-only">(current)</span></a>
+                        </li>
+                        <li>
+                            <a href="#">Аукцион заказов</a>
+                        </li>
+                        <li>
+                            <a href="#">Мои заказы</a>
+                        </li>
+                        <li>
+                            <a href="#">Баланс</a>
+                        </li>
+                        <li>
+                            <a href="#">Профиль</a>
+                        </li>
+                        <li>
+                            <a href="#">Настройки</a>
+                        </li>
+                        <li>
+                            <a href="#">Сообщества</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!--widgets-->
+        <div class="widget-help">
+            <a class="widget-help-item" href="#">О проекте</a>
+            <a class="widget-help-item" href="#">Соглашение</a>
+            <a class="widget-help-item" href="#">Правила работы</a>
+            <a class="widget-help-item" href="#">Новости</a>
+            <a class="widget-help-item" href="#">Помощь</a>
+            <a class="widget-help-item" href="#">Как оплатить</a>
+            <a class="widget-help-item" href="#">Узнать среднюю стоимость работы</a>
+        </div>
+        <div class="pop-up-notification pop-up-notification__info">
+            <p class="pop-up-notification-caption">Новые уведомления:</p>
+            <div class="pop-up-notification-inner">
+                <div class="pop-up-notification-inner-item">
+                    <i class="fa fa-angle-double-right" aria-hidden="true"></i>
+                    <p class="pop-up-notification-inner-item-text-top">Гарантийный срок по заказу "Физика 2" истек</p>
+                    <p class="pop-up-notification-inner-item-date">26 июня 2016 в 20:43</p>
+                    <a class="pop-up-notification-inner-item-link" href="#">физика 2</a>
+                </div>
+                <div class="pop-up-notification-inner-item">
+                    <i class="fa fa-angle-double-right" aria-hidden="true"></i>
+                    <p class="pop-up-notification-inner-item-text-top">Автор сделал ставку к Вашему заказу контрольная "РАСЧЕТ УСТОЙЧИВОСТИ ЭЛЕКТРОЭНЕРГЕТИЧЕСКОЙ СИСТЕМЫ"</p>
+                    <p class="pop-up-notification-inner-item-date">26 июня 2016 в 20:43</p>
+                    <a class="pop-up-notification-inner-item-link" href="#">контрольная РАСЧЕТ УСТОЙЧИВОСТИ ЭЛЕКТРОЭНЕРГЕТИЧЕСКОЙ СИСТЕМЫ</a>
+                </div>
+            </div>
+            <div class="pop-up-notification-btn-remove-inner">
+                <a href="#" class="pop-up-notification-btn-remove-inner-btn">Очистить уведомления</a>
+            </div>
+        </div>
+        <div class="pop-up-notification pop-up-notification__message">
+            <p class="pop-up-notification-caption">Новые собщения:</p>
+            <div class="pop-up-notification-inner">
+                <div class="pop-up-notification-inner-item">
+                    <i class="fa fa-angle-double-right" aria-hidden="true"></i>
+                    <p class="pop-up-notification-inner-item-text-top">Привет, я готова приступить к проекту, только мне нуджно предоплата</p>
+                    <p class="pop-up-notification-inner-item-date">26 июня 2016 в 20:43</p>
+                    <a class="pop-up-notification-inner-item-link" href="#">физика 2</a>
+                </div>
+                <div class="pop-up-notification-inner-item">
+                    <i class="fa fa-angle-double-right" aria-hidden="true"></i>
+                    <p class="pop-up-notification-inner-item-text-top">Очень интересно получается! Я могу сделать прямо на этой странице, но для этого мне надо время</p>
+                    <p class="pop-up-notification-inner-item-date">26 июня 2016 в 20:43</p>
+                    <a class="pop-up-notification-inner-item-link" href="#">контрольная РАСЧЕТ УСТОЙЧИВОСТИ ЭЛЕКТРОЭНЕРГЕТИЧЕСКОЙ СИСТЕМЫ</a>
+                </div>
+            </div>
+            <div class="pop-up-notification-btn-remove-inner">
+                <a href="#" class="pop-up-notification-btn-remove-inner-btn">Очистить уведомления</a>
+            </div>
+        </div>
+        <div class="pop-up__user">
+            <div class="pop-up__user-item">
+                <a href="#" class="pop-up__user-item-text">Баланс<span class="pop-up__user-item-text__balance">0 р.</span></a>   
+            </div>
+            <div class="pop-up__user-item">
+                <a href="#" class="pop-up__user-item-text">Настройки</a>   
+            </div>
+            <div class="pop-up__user-item">
+                <a href="#" class="pop-up__user-item-text">Текущая комиссия</a>   
+            </div>
+            <div class="pop-up__user-item">
+                <a href="#" class="pop-up__user-item-text">Избранные авторы<span class="pop-up__user-item-text__new">NEW</span></a>   
+            </div>
+            <div class="pop-up__user-item">
+                <a href="#" class="pop-up__user-item-text">Черный список</a>   
+            </div>
+            <div class="pop-up__user-item">
+                <a href="#" class="pop-up__user-item-text btn-pop-up__user-exit">Выход</a>   
+            </div>
+        </div>
+        <!--content-->
+        <div class="content container">
+            <div class="content-sitebar">
+                <div class="content-sitebar-user content-sitebar-user__without-paddings">
+                    <div class="content-sitebar-user__without-paddings-img-inner ">
+                        <img class="img-desctop" src="img/interface/user.png" alt="user">
+                    </div>
+                    <div class="content-sitebar-user-info">
+                        <ul class="content-sitebar-user-info-list">
+                            <li class="content-sitebar-user-info-list-item content-sitebar-user-info-list-item__black content-sitebar-user-info-list-item__height">
+                                <p class="content-sitebar-user-info-list-item-text">Выполненно заказов
+                                    <span class="content-sitebar-user-info-list-item-text-value">0</span>
+                                </p>
+                                <p class="content-sitebar-user-info-list-item-text">Всего заказов
+                                    <span class="content-sitebar-user-info-list-item-text-value">0</span>
+                                </p>
+                            </li>
+                            <li class="content-sitebar-user-info-list-item content-sitebar-user-info-list-item__black content-sitebar-user-info-list-item__height">
+                                <p class="content-sitebar-user-info-list-item-text">Тип работ</p>
+                                <ul>
+                                    <li>Контрольная работа</li>
+                                    <li>Решение задач</li>
+                                    <li>Ответы на вопросы</li>
+                                    <li>Помощь on-line</li>
+                                    <li>Лабораторная работа</li>
+                                </ul>
+                            </li>
+                            <li class="content-sitebar-user-info-list-item content-sitebar-user-info-list-item__black content-sitebar-user-info-list-item__height">
+                                <p class="content-sitebar-user-info-list-item-text">Предмет</p>
+                                <ul>
+                                    <li>Высшая математика</li>
+                                    <li>Теория вероятностей</li>
+                                    <li>Геометрия</li>
+                                </ul>
+                            </li>
+                            <li class="content-sitebar-user-info-list-item content-sitebar-user-info-list-item__black content-sitebar-user-info-list-item__height">
+                                <p class="content-sitebar-user-info-list-item-text">Клиенты
+                                    <span class="content-sitebar-user-info-list-item-text-value">0</span>
+                                </p>
+                                 <p class="content-sitebar-user-info-list-item-text">Постоянных
+                                    <span class="content-sitebar-user-info-list-item-text-value">0</span>
+                                </p>
+                            </li>
+                            <li class="content-sitebar-user-info-list-item content-sitebar-user-info-list-item__black content-sitebar-user-info-list-item__height">
+                                <p class="content-sitebar-user-info-list-item-text">
+                                    <i class="fa fa-eye" aria-hidden="true"></i>Просмотры
+                                    <span class="content-sitebar-user-info-list-item-text-value">7</span>
+                                </p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="content-center">    
+                <div class="content-notification">
+                    <div class="content-center-item">
+                        <div class="content-center-description">
+                            Имя пользователя
+                            <span class="time"><i class="i author-online"></i>онлайн</span>
+                            <div class="content-center-description-right-side">
+                                <div class="new-author">
+                                    <span>новый автор</span>
+                                    <i class="fa btn-open-more-info fa-question-circle" aria-hidden="true"></i>
+                                    <div class="more-info-inner more-info-inner__new-author">
+                                        <p>Это новый автор, и у него пока нет  выполненных работ</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="content-center-item-bottom-panel">
+                            <p class="content-center-item-text-top">Образование</p>
+                            <p class="content-center-item-text-bottom">ДВФУ</p>
+                        </div>
+                    </div>
+                    <div class="content-center-item">
+                        <div class="content-center-description">
+                            Имя пользователя
+                            <span class="time"><i class="i author-online"></i>онлайн</span>
+                            <div class="content-center-description-right-side">
+                                <span class="stars-active">
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                </span>
+                                <div class="offers-list-item-author-info-item-left-link">
+                                    <span class="btn-open-more-info">5.0</span>
+                                    <div class="more-info-inner">
+                                    <div class="more-info-inner-item more-info-inner-item__left">
+                                        <p class="more-info-inner-item-text-top">Выполнено</p>
+                                        <p class="more-info-inner-item-text-bottom"><i class="fa fa-file-text-o" aria-hidden="true"></i>
+                                            151 работа
+                                        </p>
+                                    </div>
+                                    <div class="more-info-inner-item more-info-inner-item__center">
+                                        <p class="more-info-inner-item-text-top">Отзывы</p>
+                                        <p class="more-info-inner-item-text-bottom"><i class="fa fa-thumbs-up" aria-hidden="true"></i> 96% положительных</p>
+                                        <p class="progress-bar">
+                                            <i style="width: 96%"></i>
+                                        </p>
+                                    </div>
+                                    <div class="more-info-inner-item more-info-inner-item__right">
+                                        <p class="more-info-inner-item-text-top">Срок сдачи</p>
+                                        <p class="more-info-inner-item-text-bottom"><i class="fa fa-clock-o" aria-hidden="true"></i> 96% вовремя</p>
+                                        <p class="progress-bar">
+                                            <i style="width: 96%"></i>
+                                        </p>
+                                    </div>
+                                </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="content-center-item-bottom-panel">
+                            <p class="content-center-item-text-top">Образование</p>
+                            <p class="content-center-item-text-bottom">ДВФУ</p>
+                        </div>
+                    </div>
+                    <div  class="content-center-item-inner__left">
+                        <div class="content-center-item">
+                            <div>
+                                <span class="i i__flag i__flag-gray">
+                                    <i class="fa fa-smile-o" aria-hidden="true"></i>
+                                </span>
+                                <div class="content-center-item-name">
+                                    <p class="content-center-item-name-description">Отзывы</p>
+                                    <p class="content-center-item-name-user">Новичек</p>   
+                                </div>
+                            </div>
+                            <p class="progress-bar">
+                                <i style="width: 96%"></i>
+                            </p>
+                            <div>
+                                <div class="opinion-item">
+                                    <div class="like">
+                                        <i class="fa fa-thumbs-up" aria-hidden="true"></i>
+                                        <span class="text">
+                                           <span class="text-value">96%</span> (10)
+                                        </span>
+                                        <p class="text">Положительные</p>
+                                    </div>
+                                </div>
+                                <div class="opinion-item">
+                                    <div class="dislike">
+                                        <i class="fa fa-thumbs-down" aria-hidden="true"></i>
+                                        <span class="text">
+                                           <span class="text-value">4%</span> (1)
+                                        </span>
+                                        <p class="text">Отрицательные</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div  class="content-center-item-inner__right">
+                        <div class="content-center-item">
+                            <div>
+                                <span class="i i__flag i__flag-gray">
+                                    <i class="fa fa-clock-o" aria-hidden="true"></i>
+                                </span>
+                                <div class="content-center-item-name">
+                                    <p class="content-center-item-name-description">Сроки сдачи</p>
+                                    <p class="content-center-item-name-user">Новичек</p>   
+                                </div>
+                            </div>
+                            <p class="progress-bar">
+                                <i style="width: 100%"></i>
+                            </p>
+                            <div>
+                                <div class="opinion-item">
+                                    <div class="like">
+                                        <i class="fa fa-thumbs-up" aria-hidden="true"></i>
+                                        <span class="text">
+                                           <span class="text-value">100%</span> (11)
+                                        </span>
+                                        <p class="text">В срок</p>
+                                    </div>
+                                </div>
+                                <div class="opinion-item">
+                                    <div class="dislike">
+                                        <i class="fa fa-thumbs-down" aria-hidden="true"></i>
+                                        <span class="text">
+                                           <span class="text-value">0%</span> (0)
+                                        </span>
+                                        <p class="text">С задержкой</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div> 
+                    <div  class="content-center-item-inner__left">
+                        <div class="content-center-item">
+                            <div>
+                                <span class="i i__flag i__flag-gold">
+                                    <i class="fa fa-smile-o" aria-hidden="true"></i>
+                                </span>
+                                <div class="content-center-item-name">
+                                    <p class="content-center-item-name-description">Отзывы</p>
+                                    <p class="content-center-item-name-user">Новичек</p>   
+                                </div>
+                            </div>
+                            <p class="progress-bar">
+                                <i style="width: 96%"></i>
+                            </p>
+                            <div>
+                                <div class="opinion-item">
+                                    <div class="like">
+                                        <i class="fa fa-thumbs-up" aria-hidden="true"></i>
+                                        <span class="text">
+                                           <span class="text-value">96%</span> (10)
+                                        </span>
+                                        <p class="text">Положительные</p>
+                                    </div>
+                                </div>
+                                <div class="opinion-item">
+                                    <div class="dislike">
+                                        <i class="fa fa-thumbs-down" aria-hidden="true"></i>
+                                        <span class="text">
+                                           <span class="text-value">4%</span> (1)
+                                        </span>
+                                        <p class="text">Отрицательные</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div  class="content-center-item-inner__right">
+                        <div class="content-center-item">
+                            <div>
+                                <span class="i i__flag i__flag-gold">
+                                    <i class="fa fa-clock-o" aria-hidden="true"></i>
+                                </span>
+                                <div class="content-center-item-name">
+                                    <p class="content-center-item-name-description">Сроки сдачи</p>
+                                    <p class="content-center-item-name-user">Новичек</p>   
+                                </div>
+                            </div>
+                            <p class="progress-bar">
+                                <i style="width: 100%"></i>
+                            </p>
+                            <div>
+                                <div class="opinion-item">
+                                    <div class="like">
+                                        <i class="fa fa-thumbs-up" aria-hidden="true"></i>
+                                        <span class="text">
+                                           <span class="text-value">100%</span> (11)
+                                        </span>
+                                        <p class="text">В срок</p>
+                                    </div>
+                                </div>
+                                <div class="opinion-item">
+                                    <div class="dislike">
+                                        <i class="fa fa-thumbs-down" aria-hidden="true"></i>
+                                        <span class="text">
+                                           <span class="text-value">0%</span> (0)
+                                        </span>
+                                        <p class="text">С задержкой</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div> 
+                    <div class="content-center-item-tabs">
+                        <ul class="content-center-item-tabs-list">
+                            <li class="content-center-item-tabs-list-item">
+                                <a href="profile-reviews.html">Отзывы (3)</a>
+                            </li>
+                            <li class="active content-center-item-tabs-list-item">
+                                <a href="profile-orders.html">Выполненные заказы (3)</a>
+                            </li>
+                            <li class="content-center-item-tabs-list-item">
+                                <a href="profile-statistics.html">Статистика</a>
+                            </li>
+                            <li class="content-center-item-tabs-list-item">
+                                <a href="profile-portfolio.html">Портфолио</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="content-center-item">
+                        <div class="content-center-item-table content-center-item-table__orders content-center-item-table__margin-bottom">
+                            <div class="content-center-item-table-row content-center-item-table-row__head">
+                                <div class="content-center-item-table-row-col">
+                                    <span>ЗАКАЗ</span>
+                                </div>
+                                <div class="content-center-item-table-row-col content-center-item-table-row-col__text-center">
+                                    <span>ОТЗЫВ</span>
+                                </div>
+                                <div class="content-center-item-table-row-col content-center-item-table-row-col__text-center">
+                                    <span>СРОК СДАЧИ</span>
+                                </div>
+                            </div>
+                            <div class="content-center-item-border"></div>
+                            <div class="content-center-item-table-row">
+                                <div class="content-center-item-table-row-col">
+                                    <p class="content-center-item-table-row-col-text-gray">История, Курсовая работа</p>
+                                    <p class="content-center-item-table-row-col-text-black">История Древнего Египта</p>
+                                </div>
+                                <div class="content-center-item-table-row-col content-center-item-table-row-col__text-center">
+                                    <div class="like">
+                                        <i class="fa fa-thumbs-up" aria-hidden="true"></i>
+                                    </div>
+                                </div>
+                                <div class="content-center-item-table-row-col content-center-item-table-row-col__text-center">
+                                    <div class="like">
+                                        <i class="fa fa-clock-o" aria-hidden="true"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="content-center-item-table-row">
+                                <div class="content-center-item-table-row-col">
+                                    <p class="content-center-item-table-row-col-text-gray">История, Курсовая работа</p>
+                                    <p class="content-center-item-table-row-col-text-black">Особенности нормативно-правового регулирования операций коммерческих банков на рынке ценных бумаг</p>
+                                </div>
+                                <div class="content-center-item-table-row-col content-center-item-table-row-col__text-center">
+                                    <div class="dislike">
+                                        <i class="fa fa-thumbs-down" aria-hidden="true"></i>
+                                    </div>
+                                </div>
+                                <div class="content-center-item-table-row-col content-center-item-table-row-col__text-center">
+                                    <div class="dislike">
+                                        <i class="fa fa-clock-o" aria-hidden="true"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="right-panel">
+                <div class="right-panel-description">
+                    <span>Рекомендуемые заказы</span>
+                </div>
+                <div class="orders-item orders-item__yellow">
+                    <span class="btn-delete">
+                        <i class="fa fa-times" aria-hidden="true"></i>
+                    </span>
+                    <p class="orders-item-text"># 1295206</p>
+                    <a href="#" class="orders-item-link">
+                        перспективные направления государственного регулирования обеспечения продовольсвенной безопасности...
+                    </a>
+                    <p class="orders-item-text">Статья, Экономика</p>
+                    <p class="orders-item-text orders-item-text__gray">Цена: 
+                        <span class="orders-item-text-value">480 руб.</span>
+                    </p>
+                    <p class="orders-item-text orders-item-text__gray">Срок сдачи: 
+                        <span class="orders-item-text-value">12.07.2016</span>
+                    </p>
+                </div>
+                <div class="orders-item">
+                    <span class="btn-delete">
+                        <i class="fa fa-times" aria-hidden="true"></i>
+                    </span>
+                    <p class="orders-item-text"># 1295206</p>
+                    <a href="#" class="orders-item-link">
+                        использование икт создание дидактических игр старшем дошкольном возрасте
+                    </a>
+                    <p class="orders-item-text">Курсовая работа, Педагогика</p>
+                    <p class="orders-item-text orders-item-text__gray">Цена: 
+                        <span class="orders-item-text-value">480 руб.</span>
+                    </p>
+                    <p class="orders-item-text orders-item-text__gray">Срок сдачи: 
+                        <span class="orders-item-text-value">12.07.2016</span>
+                    </p>
+                </div>
+                <div class="orders-item">
+                    <span class="btn-delete">
+                        <i class="fa fa-times" aria-hidden="true"></i>
+                    </span>
+                    <p class="orders-item-text"># 1295206</p>
+                    <a href="#" class="orders-item-link">
+                        использование икт создание дидактических игр старшем дошкольном возрасте
+                    </a>
+                    <p class="orders-item-text">Курсовая работа, Педагогика</p>
+                    <p class="orders-item-text orders-item-text__gray">Цена: 
+                        <span class="orders-item-text-value">480 руб.</span>
+                    </p>
+                    <p class="orders-item-text orders-item-text__gray">Срок сдачи: 
+                        <span class="orders-item-text-value">12.07.2016</span>
+                    </p>
+                </div>
+            </div>
+        </div>
+        <!--footer-->
+        <div class="footer">
+            <div class="container footer-list">
+                <div class="footer-list-item footer-list-item__left">
+                    <ul class="footer-list-item__left-nav-list">
+                        <li class="footer-list-item__left-nav-list-item"><a href="#">Новости</a></li>
+                        <li class="footer-list-item__left-nav-list-item"><a href="#">Топ авторов</a></li>
+                        <li class="footer-list-item__left-nav-list-item"><a href="#">Агенствам</a></li>
+                        <li class="footer-list-item__left-nav-list-item"><a href="#">Помощь</a></li>
+                    </ul>
+                    <div class="footer-list-item__left-banner">
+                        <a href="#">
+                            <p class="footer-list-item__left-banner-text-inner">
+                               <span class="footer-list-item__left-banner-text-inner-text-top">Будь всегда на связи!</span>
+                               <span class="footer-list-item__left-banner-text-inner-text-bottom">Приложение от Автор25</span> 
+                            </p>
+                            <p class="footer-list-item__left-banner-img-inner">
+                                <i class="i i_google-play"></i>  
+                            </p>
+                        </a>
+                    </div>
+                    <div class="footer-list-item__left-copyright">
+                        <p>© 2016 Author25.</p>
+                        <p>Все права защищены</p>
+                    </div>
+                </div>
+                <div class="footer-list-item footer-list-item__center">
+                    <p class="footer-list-item__center-text-top">Мы принимаем</p>
+                    <div class=" footer-list-item__center-list">
+                        <div class="footer-list-item__center-list-item">
+                            <i class="i i_footer i_visa"></i>
+                        </div>
+                        <div class="footer-list-item__center-list-item">
+                            <i class="i i_footer i_mc"></i>
+                        </div>
+                        <div class="footer-list-item__center-list-item">
+                            <i class="i i_footer i_yandex"></i>
+                        </div>
+                         <div class="footer-list-item__center-list-item">
+                            <i class="i i_footer i_web"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-list-item footer-list-item__right">
+                    <p class="footer-list-item__right-phone">
+                        <i class="fa fa-phone" aria-hidden="true"></i>
+                        <span>8-800-100-03-20</span>
+                    </p>
+                    <p class="footer-list-item__right-mail">
+                        <i class="fa fa-envelope" aria-hidden="true"></i>
+                        <span>support@author25.ru</span>
+                    </p>
+                    <p class="footer-list-item__right-work">Служба поддержки работает
+                        <span>по будням <i class="fa fa-clock-o" aria-hidden="true"></i> с 10:00 до 20:00</span>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+<script src="js/libs/jquery-1.12.4.js"></script>
+<script src="js/libs/bootstrap.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>

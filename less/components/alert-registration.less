@@ -1,0 +1,36 @@
+.alert-registration {
+    border: 1px solid #f4d350;
+    background-color: #fefff4;
+    margin: 0 0 25px 25px;
+    padding: 20px;
+    position: relative;
+    @media(max-width: 992px) {
+        margin-left: 0;
+    }
+    &-text {
+        font-size: 13px;
+        font-family: "OpenSansSemibold";
+        color: #444444;
+        display: block;
+        padding-right: 152px;
+        @media(max-width: 768px) {
+            padding-right: 0;
+            text-align: center;
+        }
+        a {
+            color: #79a2d1;
+        }
+    }
+    .btn-green {
+        position: absolute;
+        right: 20px;
+        top: 20px;
+        z-index: 2;
+        @media(max-width: 768px) {
+            position: static;
+            margin-top: 15px;
+            width: 100%;
+            text-align: center;
+        }
+    }
+}

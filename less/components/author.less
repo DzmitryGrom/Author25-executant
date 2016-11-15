@@ -1,0 +1,104 @@
+/*icon*/
+.i-offline {
+    background-image: url(../img/interface/offline.png);
+    width: 12px;
+    height: 12px;
+}
+.author{
+    display: block;
+    line-height: 1;
+    &-online {
+        background-image: url(../img/interface/ellipse.png);
+        width: 12px;
+        height: 12px;
+        margin-left: 15px;
+        vertical-align: top;
+        &-text {
+        font-size: 14px;
+           color: #a2c679;
+           margin: -1px 0 0 15px;
+           display: inline-block;
+           line-height: 1;
+           
+        }
+    }
+    &-offline {
+        background-image: url(../img/interface/ellipse-off.png);
+        width: 12px;
+        height: 12px;
+        margin-left: 15px;
+        vertical-align: top;
+        &-text {
+        font-size: 14px;
+           color: #a2c679;
+           margin: -1px 0 0 15px;
+           display: inline-block;
+           line-height: 1;
+        }
+    }
+    &-visiting {
+        font-size: 14px;
+        font-family: "OpenSansRegular";
+        color: #b0b0b0;
+        display: inline-block;
+        margin-left: 5px;
+    }
+    .vertical-middle {
+        vertical-align: middle
+    }
+    img {
+        position: absolute;
+        top: 50%;
+        left: 15px;
+        margin-top: -20px;
+    }
+    &-login {
+        display: inline-block;
+        padding-left: 25px;
+        max-width: 110px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        font-size: 14px;
+        font-family: "OpenSansSemibold";
+        color: #4786c8;
+    }
+    &-login__black {
+        color: #444444;
+    }
+    &-login__without-padding {
+        padding-left: 0;
+        vertical-align: middle;
+        margin-right: 10px;
+    }
+    &-text-bottom {
+        font-size: 13px;
+        font-family: "OpenSansRegular";
+        color: #444444;
+        padding-left: 25px;
+        margin: 10px 0 0 0;
+    }
+    &-right-side {
+        display: inline-block;
+    }
+    
+}
+.author__table {
+    .author-online {
+        position: absolute;
+        left: 90px;
+        bottom: 5px;
+    }
+    img {
+        position: static;
+        margin-top: 1px;
+    }
+}
+.author__static {
+    .author-online {
+        
+    }
+    img {
+        position: static;
+        margin-top: 1px;
+    }
+}

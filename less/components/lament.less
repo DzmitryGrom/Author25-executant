@@ -1,0 +1,49 @@
+.lament {
+    font-size: 14px;
+    font-family: "OpenSansRegular";
+    color: #b0b0b0;
+    padding: 20px 0px;
+    display: inline-block;
+    position: relative;
+    .fa {
+        margin-right: 5px;
+    }
+    &-menu {
+        display: none;
+        position: absolute;
+        z-index: 5;
+        top: 58px;
+        left: 50%;
+        margin-left: -100px;
+        text-align: center;
+        border-top: 2px solid #4786c9;
+        width: 200px;
+        padding: 10px 0;
+        background-color: #fff;
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+        &-item {
+            display: block;
+            color: #444444;
+            padding: 5px 0;
+            width: 90%;
+            margin: 0 auto;
+            text-align: left;
+            &:hover {
+                text-decoration: none;
+                color: #4786c8;
+            }
+        }
+        .btn-blue {
+            padding: 10p 0;
+            width: 90%;
+            margin: 20px auto 0;
+        }
+    }
+    &:hover {
+        color: #4786c8;
+        cursor: pointer;
+    }
+    &:hover &-menu {
+        display: block;
+    }
+}

@@ -1,0 +1,23 @@
+/*select-item*/
+@import "less/components/select-item.less";
+/*help-item*/
+@import "less/components/help-item.less";
+.right-panel {
+    display: inline-block;
+    width: 20%;
+    padding: 0 0 0 25px;
+    @media(max-width: 992px) {
+        display: block;
+        width: 100%;
+        padding: 0;
+    }
+    &-description {
+        font-size: 18px;
+        font-family: "OpenSansRegular";
+        color: #444444;
+        background-color: #fff;
+        padding: 17px 20px;
+        border: 1px solid #e6e6e6;
+        border-bottom: none;
+    }
+}

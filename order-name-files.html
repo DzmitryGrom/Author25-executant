@@ -1,0 +1,1066 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    <meta name="format-detection" content="telephone=no">
+    <title>Author25-order-name(clarification)</title>
+    <link rel="stylesheet" href="css/libs/bootstrap.min.css">
+    <link rel="stylesheet" href="css/libs/select2.css">
+    <link rel="stylesheet" href="css/order-name.css">
+</head>
+<body>
+    <div class="page">
+        <!--nav-->
+        <div class="container-nav container-nav__blue container-fluid">
+            <div class="container">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header">
+                    <button id="show_button" type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false"> 
+                        <span class="sr-only">Toggle navigation</span> 
+                        <span class="icon-bar"></span> 
+                        <span class="icon-bar"></span> 
+                        <span class="icon-bar"></span> 
+                    </button>
+                    <a class="navbar-brand" href="#"></a>
+                </div>
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="navbar-info  navbar-info__static">
+                    <span class="navbar-info-item navbar-info-item__notifications">
+                        <i class="fa fa-info-circle" aria-hidden="true"></i>
+                        <span class="navbar-info-item-value">4</span>
+                        <i class="pop-up_tr"></i>
+                    </span>
+                    <span class="navbar-info-item navbar-info-item__message">
+                        <i class="fa fa-envelope" aria-hidden="true"></i>
+                        <span class="navbar-info-item-value">11</span>
+                        <i class="pop-up_tr"></i>
+                    </span>
+                    <a href="#" class="btn-nav-bar">
+                        <i class="fa fa-search" aria-hidden="true"></i>НАЙТИ ЗАКАЗ
+                    </a>
+                    <a href="#" class="btn-nav-bar">
+                        <i class="fa fa-tag" aria-hidden="true"></i>ГОТОВЫЕ РАБОТЫ
+                    </a>
+                </div>
+                <div class="navbar-info">
+                    <a href="#" class="btn-money-value"><i class="i i_cash"></i>0 руб.</a>
+                    <a href="#" class="btn-nav-bar">
+                        <i class="fa fa-sign-out" aria-hidden="true"></i>ВЫВЕСТИ ДЕНЬГИ
+                    </a>
+                    <span class="navbar-info-item navbar-info-item__user">
+                        <i class="fa fa-user" aria-hidden="true"></i>
+                        <i class="fa fa-angle-down" aria-hidden="true"></i>
+                        <i class="pop-up_tr__user"></i>
+                    </span>
+                </div>
+                <!-- /.navbar-collapse -->
+            </div>
+        </div>
+        <div class="container-nav container-nav__white">
+            <div class="container">    
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <i class="collapse-tr"></i>
+                    <ul class="nav navbar-nav">
+                        <li class="active"> 
+                            <a href="#">Главная<span class="sr-only">(current)</span></a>
+                        </li>
+                        <li>
+                            <a href="#">Аукцион заказов</a>
+                        </li>
+                        <li>
+                            <a href="#">Мои заказы</a>
+                        </li>
+                        <li>
+                            <a href="#">Баланс</a>
+                        </li>
+                        <li>
+                            <a href="#">Профиль</a>
+                        </li>
+                        <li>
+                            <a href="#">Настройки</a>
+                        </li>
+                        <li>
+                            <a href="#">Сообщества</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!--widgets-->
+        <div class="pop-up-notification pop-up-notification__info">
+            <p class="pop-up-notification-caption">Новые уведомления:</p>
+            <div class="pop-up-notification-inner">
+                <div class="pop-up-notification-inner-item">
+                    <i class="fa fa-angle-double-right" aria-hidden="true"></i>
+                    <p class="pop-up-notification-inner-item-text-top">Гарантийный срок по заказу "Физика 2" истек</p>
+                    <p class="pop-up-notification-inner-item-date">26 июня 2016 в 20:43</p>
+                    <a class="pop-up-notification-inner-item-link" href="#">физика 2</a>
+                </div>
+                <div class="pop-up-notification-inner-item">
+                    <i class="fa fa-angle-double-right" aria-hidden="true"></i>
+                    <p class="pop-up-notification-inner-item-text-top">Автор сделал ставку к Вашему заказу контрольная "РАСЧЕТ УСТОЙЧИВОСТИ ЭЛЕКТРОЭНЕРГЕТИЧЕСКОЙ СИСТЕМЫ"</p>
+                    <p class="pop-up-notification-inner-item-date">26 июня 2016 в 20:43</p>
+                    <a class="pop-up-notification-inner-item-link" href="#">контрольная РАСЧЕТ УСТОЙЧИВОСТИ ЭЛЕКТРОЭНЕРГЕТИЧЕСКОЙ СИСТЕМЫ</a>
+                </div>
+            </div>
+            <div class="pop-up-notification-btn-remove-inner">
+                <a href="#" class="pop-up-notification-btn-remove-inner-btn">Очистить уведомления</a>
+            </div>
+        </div>
+        <div class="pop-up-notification pop-up-notification__message">
+            <p class="pop-up-notification-caption">Новые собщения:</p>
+            <div class="pop-up-notification-inner">
+                <div class="pop-up-notification-inner-item">
+                    <i class="fa fa-angle-double-right" aria-hidden="true"></i>
+                    <p class="pop-up-notification-inner-item-text-top">Привет, я готова приступить к проекту, только мне нуджно предоплата</p>
+                    <p class="pop-up-notification-inner-item-date">26 июня 2016 в 20:43</p>
+                    <a class="pop-up-notification-inner-item-link" href="#">физика 2</a>
+                </div>
+                <div class="pop-up-notification-inner-item">
+                    <i class="fa fa-angle-double-right" aria-hidden="true"></i>
+                    <p class="pop-up-notification-inner-item-text-top">Очень интересно получается! Я могу сделать прямо на этой странице, но для этого мне надо время</p>
+                    <p class="pop-up-notification-inner-item-date">26 июня 2016 в 20:43</p>
+                    <a class="pop-up-notification-inner-item-link" href="#">контрольная РАСЧЕТ УСТОЙЧИВОСТИ ЭЛЕКТРОЭНЕРГЕТИЧЕСКОЙ СИСТЕМЫ</a>
+                </div>
+            </div>
+            <div class="pop-up-notification-btn-remove-inner">
+                <a href="#" class="pop-up-notification-btn-remove-inner-btn">Очистить уведомления</a>
+            </div>
+        </div>
+        <div class="pop-up__user">
+            <div class="pop-up__user-item">
+                <a href="#" class="pop-up__user-item-text">Баланс<span class="pop-up__user-item-text__balance">0 р.</span></a>   
+            </div>
+            <div class="pop-up__user-item">
+                <a href="#" class="pop-up__user-item-text">Настройки</a>   
+            </div>
+            <div class="pop-up__user-item">
+                <a href="#" class="pop-up__user-item-text">Текущая комиссия</a>   
+            </div>
+            <div class="pop-up__user-item">
+                <a href="#" class="pop-up__user-item-text">Избранные авторы<span class="pop-up__user-item-text__new">NEW</span></a>   
+            </div>
+            <div class="pop-up__user-item">
+                <a href="#" class="pop-up__user-item-text">Черный список</a>   
+            </div>
+            <div class="pop-up__user-item">
+                <a href="#" class="pop-up__user-item-text btn-pop-up__user-exit">Выход</a>   
+            </div>
+        </div>
+        <div class="pop-up-info pop-up-info__order-confirmation-paying" style="display:">
+            <span class="btn-delete">
+                <i class="fa fa-times" aria-hidden="true"></i>
+            </span>
+            <p class="pop-up-info-description">
+                Выберите тип работы какой вы хотите загрузить
+            </p>
+            <div class="pop-up-info__order-confirmation-paying-list">
+                <div class="pop-up-info__order-confirmation-paying-list-item pop-up-info__order-confirmation-paying-list-item__full">
+                    <i class="i i__int-list"></i>
+                    <p class="pop-up-info-text-number">Промежуточный<i class="fa fa-check-circle" aria-hidden="true"></i></p>
+                    <p class="pop-up-info-text-clarification">Вариант работы не является финальным и служит для получения корректировок от заказчика.</p>
+                </div>
+                <div class="pop-up-info__order-confirmation-paying-list-item pop-up-info__order-confirmation-paying-list-item__prepayment">
+                   <i class="i i__final-list"></i>
+                    <p class="pop-up-info-text-number">Окончательный<i class="fa fa-check-circle" aria-hidden="true"></i></p>
+                    <p class="pop-up-info-text-clarification">Вариант работы не является финальным и служит для получения корректировок от заказчика.</p>
+                </div>
+                <div class="pop-up-info__order-confirmation-paying-list-warning">
+                    <i class="fa fa-exclamation-triangle" aria-hidden="true"></i>
+                    <p>Обращаем ваше внимание, что загруженная работа будет автоматически проверена на антиплагиат в системе eTxt результат проверки будет виден заказчику.</p>
+                    <p>Пожайлуста, убедитесь в том, что уникальность вашей работы достаточна для заказа.</p>
+                </div>
+            </div>
+            <div class="pop-up-info-btn-inner">
+                <a href="#" class="btn-gray btn-confirmation">ОТМЕНА</a>
+                <a href="#" class="btn-blue btn-confirmation">ВЫБРАТЬ ФАЙЛ</a>
+            </div>
+        </div>
+        <div class="pop-up-info pop-up-info__order-recalculation">
+            <span class="btn-delete">
+                <i class="fa fa-times" aria-hidden="true"></i>
+            </span>
+            <p class="pop-up-info-description">
+                Перерасчет
+            </p>
+            <div class="pop-up-info-text">
+                <strong class="pop-up-info-text-bottom">
+                    Запросить перерасчет по заказу 123456 "История древнего Египта"
+                </strong>
+                <div class="pop-up-info__order-recalculation-list">
+                    <div class="pop-up-info__order-recalculation-list-item">
+                        <p class="pop-up-info-text-bottom">Объем выполненной работы</p>
+                        <input type="number" class="value-number" placeholder="100">
+                        <span class="pop-up-info__order-recalculation-list-item-value">%</span>
+                    </div>
+                    <div class="pop-up-info__order-recalculation-list-item">
+                        <p class="pop-up-info-text-bottom">Желаемая к возврату сумма</p>
+                        <input type="number" class="value-number" placeholder="100">
+                        <span class="pop-up-info__order-recalculation-list-item-value">руб.</span>
+                    </div>
+                    <div class="pop-up-info__order-recalculation-list-item">
+                        <p class="pop-up-info-text-bottom">Ваш номер телефона</p>
+                        <input type="number" class="phone-number" placeholder="+7 908-xxx-xx-88">
+                        <a href="#" class="link-more">Изменить номер</a>
+                    </div>
+                    <strong class="pop-up-info-text-bottom">
+                        Детальное обоснование
+                    </strong>
+                    <textarea cols="20" maxlength="1200" name="Text" rows="5"></textarea>
+                </div>
+            </div>
+            <div class="pop-up-info-btn-inner">
+                <a href="#" class="btn-gray btn-order-accept">ОТМЕНИТЬ</a>
+                <a href="#" class="btn-blue btn-order-accept">ОТПРАВИТЬ</a>
+            </div>
+        </div>
+        <div class="pop-up__shadow"></div>
+        <div class="message-inner" style="display:none">
+            <div class="message">
+                <span class="btn-delete">
+                    <i class="fa fa-times" aria-hidden="true"></i>
+                </span>
+                <i class="fa fa-envelope" aria-hidden="true"></i>
+                <p class="message-text">Исполнитель</p>
+                <p class="message-text">Какая уникальность требуеться?</p>
+            </div>
+            <div class="message">
+                <span class="btn-delete">
+                    <i class="fa fa-times" aria-hidden="true"></i>
+                </span>
+                <i class="fa fa-envelope" aria-hidden="true"></i>
+                <p class="message-text">Исполнитель</p>
+                <p class="message-text">Какая уникальность требуеться?</p>
+            </div>
+        </div>
+        <!--content-->
+        <div class="content container">
+            <div class="content-center content-center__middle-width"> 
+                <h1 class="content-center-description">Безопасность полёта касаемо работы бортпроводников </h1> 
+                <!--order-name-->
+                <div class="content-order-name">
+                    <!--description-->
+                    <div class="content-description">
+                        <div class="content-description-top-panel">
+                            <div class="alert alert__yellow" style="display:">
+                                <div class="description">
+                                    <span class="type">
+                                        <i class="fa fa-thumbs-up" aria-hidden="true"></i>Вам необходимо подтвердить начало работы
+                                    </span>
+                                    <span class="price">1 200 руб.</span>
+                                </div>
+                                <div class="inner">
+                                    <p class="inner-text">
+                                        31 июля 2016г. в 16:45 Заказчик 123456 выбрал вас исполнителем заказа.
+                                    </p>
+                                    <p class="inner-text">
+                                        Вам необходимо подтвердить начало работы.
+                                    </p>
+                                    <p class="inner-text">
+                                        Если в течении 12 часов с момента отправки заказчиком запроса вы не подтвердите начало работы, заказ автоматически вернется в аукцион, и заказчик выберет другого автора.
+                                    </p>
+                                    <div class="inner-btns-right">
+                                        <a class="btn-red btns" href="#">ОТКАЗАТЬСЯ</a>
+                                        <a class="btn-green btns" href="#">ПОДТВЕРДИТЬ НАЧАЛО РАБОТЫ</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="alert alert__yellow" style="display:">
+                                <div class="description">
+                                    <span class="type">
+                                        Заказ находится в работе
+                                    </span>
+                                </div>
+                                <div class="inner">
+                                    <p class="inner-text">
+                                        Вы подтвердили начало работы над заказом сегодня 17:05. До сдачи работы осталось 7 дней 6 часов. По окончанию выполнения необходимо прикрепить финальный файл работы на стрнице заказа. Пожайлуста начинайте выполнение заказа.
+                                </div> 
+                            </div>
+                             <div class="alert alert__red alert__no-price" style="display:">
+                                <div class="description">
+                                    <span class="type">
+                                       <i class="fa fa-thumbs-down" aria-hidden="true"></i>
+                                        Жалоба
+                                    </span>
+                                    <span class="price">1 200 руб.</span>
+                                </div>
+                                <div class="inner">
+                                    <p class="inner-text">
+                                        Сегодня в 12:57 автор запросил перерасчет. Администрация внесет решение в течении ближайшего времени.
+                                    </p>
+                                    <p class="inner-text">
+                                        Причина:
+                                    </p>
+                                    <p class="inner-text">
+                                        Уникальность не соответсвует.
+                                    </p>
+                                    <div class="inner-btns-right">
+                                        <a class="btn-red btns" href="#">ОТМЕНИТЬ ЖАЛОБУ</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--alert-->
+                            <div class="alert alert__green alert__no-price" style="display:">
+                                <div class="description">
+                                    <span class="type">
+                                        <i class="fa fa-thumbs-up" aria-hidden="true"></i>Заказ завершен
+                                    </span>
+                                    <span class="price">1 200 руб.</span>
+                                </div>
+                                <div class="inner">
+                                    <p class="inner-text">вчера в 13:04 заказчик принял работу досрочно (до истечения гарантийного срока).</p>
+                                    <p class="inner-text">Деньги были автоматически переведены на ваш счет.</p>
+                                    <p class="inner-text">Заказчик оставил положительный отзыв: супер</p>
+                                </div>
+                            </div>
+                            <div class="alert alert__green alert__no-price" style="display:">
+                                <div class="description">
+                                    <span class="type">
+                                        Гарантирован выбор автора
+                                    </span>
+                                    <span class="price">1 200 руб.</span>
+                                </div>
+                                <div class="inner">
+                                    <p class="inner-text">
+                                        Заказчик уже оплатил данную работу на сумму 1200 руб., выбрав одного из исполнителей, но заказ по каким-то причинам был возвращён в аукцион (например, выбранный автор отказался от выполнения работы). Если вы предложите свои услуги на эту же сумму, то вероятность что заказчик выберет имено вас - увеличится. Заказ уже оплачен, а значит исполнитель будет гарантированно выбран. Так же вы можете предложить свою ставку.
+                                    </p>
+                                    
+                                </div>
+                            </div>
+                            <div class="content-description-top-panel-right-side content-description-top-panel-right-side__bottom-position">
+                                <div class="lament">
+                                    <span><i class="fa fa-flag" aria-hidden="true"></i>Пожаловаться</span>
+                                    <div class="lament-menu">
+                                        <form>
+                                            <a class="lament-menu-item" href="#">Спам</a>
+                                            <a class="lament-menu-item" href="#">Контактные данные</a>
+                                            <a href="#" class="btn-blue">Отправить</a>
+                                        </form>
+                                    </div>
+                                </div>
+                                <span class="content-description-top-panel-liked">
+                                    <i class="fa fa-star" aria-hidden="true"></i> В избранное
+                                </span>
+                            </div>
+                            <div class="top-menu">
+                                <a href="order-name-description.html">Описание</a>
+                                <a href="order-name-clarification.html">Пояснение к заказу</a>
+                                <a class="active" href="order-name-files.html">Файлы заказчика
+                                    <span class="value">(1)</span>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="content-order-name__file">
+                           <p class="content-order-name__file-name">Файлы загруженные заказчиком</p>
+                            <div class="content-order-name__file-inner-left">
+                                <div class="checkbox-dynamic__blue checkbox-dynamic">
+                                    <input type="checkbox">
+                                </div>
+                                <i class="i i_doc"></i>
+                                <span class="content-order-name__file-inner-left-date">11 июня 2016 06:26</span>
+                                <a class="content-order-name__file-inner-left-link" href="#" download>контрольная 2 Онищенко.docx</a>
+                            </div>
+                            <div class="content-order-name__file-inner-right">
+                                <span class="content-order-name__file-inner-right-size">
+                                    0.33 Мб
+                                </span>
+                                <span class="btn-delete">
+                                    <a href="#"  download><i class="fa fa-download" aria-hidden="true"></i></a>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="content-order-name__file">
+                            <div class="content-order-name__file-inner-left">
+                                <div class="checkbox-dynamic__blue checkbox-dynamic">
+                                    <input type="checkbox">
+                                </div>
+                                <i class="i i_doc"></i>
+                                <span class="content-order-name__file-inner-left-date">11 июня 2016 06:26</span>
+                                <a class="content-order-name__file-inner-left-link" href="#" download>контрольная 2 Онищенко.docx</a>
+                            </div>
+                            <div class="content-order-name__file-inner-right">
+                                <span class="content-order-name__file-inner-right-size">
+                                    0.33 Мб
+                                </span>
+                                <span class="btn-delete">
+                                    <a href="#"  download><i class="fa fa-download" aria-hidden="true"></i></a>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="content-order-name__file">
+                            <a href="#"  class="content-order-name-files-inner-link" download>
+                                <i class="fa fa-download" aria-hidden="true"></i>Скачать выбранные файлы
+                            </a>
+                        </div>  
+                        <div class="content-description-bottom-panel content-description-bottom-panel__bg-gray text-left">
+                            <a href="#" class="btn-green">СДЕЛАТЬ СТАВКУ</a>
+                        </div>
+                    </div>
+                    <div class="content-order-name-offers">
+                        <div class="offers-top-panel">
+                            <h2 class="offers-top-panel-description">Переписка с заказчиком</h2>
+                        </div>
+                        <div class="offers-list">
+                            <div class="offers-list-item">
+                                <div class="offers-list-item-author-info">
+                                    <img src="img/interface/author.jpg" alt="автор">
+                                    <div class="offers-list-item-author-info-item-left">
+                                        <p >
+                                            <a href="#" class="offers-list-item-author-info-item-left-name">Неверова</a>
+                                            <span class="time"><i class="i i-offline"></i>сегодня 00:53</span>
+                                        </p>
+                                        <div class="new-author">
+                                            <span>новый автор</span>
+                                            <i class="fa fa-question-circle" aria-hidden="true"></i>
+                                        </div>
+                                    </div>
+                                    <div class="offers-list-item-author-info-item-right">
+                                        
+                                        <span class="offers-list-item-author-info-item-right-text offers-list-item-author-info-item-right-text__bg-blue">
+                                            Ставка 
+                                            <span class="offers-list-item-author-info-item-right-text-value ">1200<i class="fa fa-rub" aria-hidden="true"></i></span>
+                                        </span>
+                                    </div>
+                                    <div class="offers-list-item-author-info-content">
+                                        <p class="offers-list-item-author-info-content-text">
+                                            Здравствуйте! Пишу авторские работы с использованием актуальных источников, не утративших научной ценности, оформление по ГОСТу и по требованиям. Корректировки в рамках заявленного задания бесплатно. Большой опыт выолнения подобных работ. Качество, доработки и написание работы ранее срока - гарантирую!!! С удовольствием выполню вашу работу! Обращайтесь! Есть возможность общения по почте! Взято со страницы: https://author24.ru/getoneorder/1295539
+                                        </p>
+                                    </div>
+                                    <div class="offers-list-item-author-info-bottom-panel">
+                                        <div class="offers-list-item-author-info-bottom-panel-info">
+                                            <div class="offers-list-item-author-info-bottom-panel-info-show">
+                                                <span class="offers-list-item-author-info-bottom-panel-info-show-opinion">
+                                                    <span class="like">
+                                                        <i class="fa fa-thumbs-up" aria-hidden="true"></i>
+                                                        <span class="text">Положительных:
+                                                            <span class="text-value">262</span>
+                                                        </span>
+                                                    </span>
+                                                    <span class="dislike">
+                                                        <i class="fa fa-thumbs-down" aria-hidden="true"></i>
+                                                        <span class="text">Отрицательных:
+                                                            <span class="text-value">2</span>
+                                                        </span>
+                                                    </span>
+                                                    <span class="all-works">
+                                                        <i class="fa fa-briefcase" aria-hidden="true"></i>
+                                                        <span class="text">Всего работ:
+                                                            <span class="text-value">2</span>
+                                                        </span>
+                                                    </span>
+                                                </span>
+                                            </div>
+                                        </div>
+                                        <span class="quantity-message btn-message">
+                                            <i class="fa fa-comments" aria-hidden="true"></i>8 Сообщений
+                                        </span>  
+                                    </div>
+                                    <div class="messages">
+                                        <div class="messages-content">
+                                            <p class="messages-content-date">12 июня 2016 05:47</p>
+                                            <div class="messages-content-question">
+                                                <div class="messages-content-question-user">
+                                                    <div>
+                                                        <span class="messages-content-question-user-name">Dzmitry</span>
+                                                    </div>
+                                                    <span>
+                                                        Добрый день как  продвигаеться решение??)))
+                                                    </span>
+                                                </div>
+                                                <img  src="img/interface/avatar.jpg" alt="avatar">
+                                            </div>
+                                            <div class="messages-content-answer">
+                                                <img  src="img/interface/avatar.jpg" alt="avatar">
+                                                <div class="messages-content-answer-author">
+                                                    <div>
+                                                        <span class="messages-content-answer-author-name">Неверова</span>
+                                                        <span class="offline">не в сети</span>
+                                                        <span class="messages-content-answer-author-time-active">был в сети вчера 23:36</span>
+                                                    </div>
+                                                    <span>
+                                                        Здравствуйте! Работа в процессе  завершения.
+                                                    </span>
+                                                </div>
+                                            </div>
+                                            <p class="messages-content-date">12 июня 2016 05:47</p>
+                                            <div class="messages-content-answer">
+                                                <img  src="img/interface/avatar.jpg" alt="avatar">
+                                                <div class="messages-content-answer-author">
+                                                    <div>
+                                                        <span class="messages-content-answer-author-name">Неверова</span>
+                                                        <span class="online"> в сети</span>
+                                                    </div>
+                                                    <i class="i i_download"></i>
+                                                    <div class="file-info">
+                                                        <span class="file-info-name">1261632_2.pdf</span>
+                                                        <span class="file-info-status">Окончательный</span>
+                                                    </div>
+                                                    <a href="#" class="file-download-link" download>Скачать</a>
+                                                </div>
+                                            </div>
+                                            <div class="messages-content-question">
+                                                <div class="messages-content-question-user">
+                                                    <div>
+                                                        <span class="messages-content-question-user-name">Dzmitry</span>
+                                                    
+                                                    </div>
+                                                    <i class="i i_download"></i>
+                                                    <div class="file-info">
+                                                        <span class="file-info-name">1261632_2.pdf</span>
+                                                    </div>
+                                                    <a href="#" class="file-download-link" download>Скачать</a>
+                                                </div>
+                                                <img  src="img/interface/avatar.jpg" alt="avatar">
+                                            </div>
+                                        </div>
+                                        <div class="messages-answer">
+                                            <form>
+                                                <div class="messages-answer-left">
+                                                    <input type="text" class="form-control">
+                                                </div>
+                                                <div class="messages-answer-right">
+                                                    <label class="btn-add-caption">
+                                                        <i class="fa fa-paperclip btn-add-caption-icon"></i>
+                                                        <input class="btn-add-caption-element" type="file" name="photo" accept="image/*,image/jpeg"> 
+                                                        <span class="btn-add-caption-text"></span> 
+                                                    </label>
+                                                    <button type="submit" class="btn-answer">ОТВЕТИТЬ</button> 
+                                                </div>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="content-order-name-offers">
+                        <div class="offers-top-panel">
+                            <h2 class="offers-top-panel-description">Предложение авторов (6)</h2>
+                        </div>
+                        <div class="offers-list">
+                            <div class="offers-list-item">
+                                <div class="offers-list-item-author-info">
+                                    <img src="img/interface/author.jpg" alt="автор">
+                                    <div class="offers-list-item-author-info-item-left">
+                                        <p >
+                                            <a href="#" class="offers-list-item-author-info-item-left-name">Неверова</a>
+                                            <span class="time"><i class="i i-offline"></i>сегодня 00:53</span>
+                                        </p>
+                                        <div>
+                                            <span class="stars-active">
+                                                <i class="fa fa-star" aria-hidden="true"></i>
+                                                <i class="fa fa-star" aria-hidden="true"></i>
+                                                <i class="fa fa-star" aria-hidden="true"></i>
+                                                <i class="fa fa-star" aria-hidden="true"></i>
+                                                <i class="fa fa-star" aria-hidden="true"></i>
+                                            </span>
+                                            <div class="offers-list-item-author-info-item-left-link">
+                                                <span class="btn-open-more-info">5.0</span>
+                                                <div class="more-info-inner">
+                                                <div class="more-info-inner-item more-info-inner-item__left">
+                                                    <p class="more-info-inner-item-text-top">Выполнено</p>
+                                                    <p class="more-info-inner-item-text-bottom"><i class="fa fa-file-text-o" aria-hidden="true"></i>
+                                                        151 работа
+                                                    </p>
+                                                </div>
+                                                <div class="more-info-inner-item more-info-inner-item__center">
+                                                    <p class="more-info-inner-item-text-top">Отзывы</p>
+                                                    <p class="more-info-inner-item-text-bottom"><i class="fa fa-thumbs-up" aria-hidden="true"></i> 96% положительных</p>
+                                                    <p class="progress-bar">
+                                                        <i style="width: 96%"></i>
+                                                    </p>
+                                                </div>
+                                                <div class="more-info-inner-item more-info-inner-item__right">
+                                                    <p class="more-info-inner-item-text-top">Срок сдачи</p>
+                                                    <p class="more-info-inner-item-text-bottom"><i class="fa fa-clock-o" aria-hidden="true"></i> 96% вовремя</p>
+                                                    <p class="progress-bar">
+                                                        <i style="width: 96%"></i>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="offers-list-item-author-info-item-right">
+                                        <div class="lament">
+                                            <span><i class="fa fa-flag" aria-hidden="true"></i>Пожаловаться</span>
+                                            <div class="lament-menu">
+                                                <form>
+                                                    <a class="lament-menu-item" href="#">Спам</a>
+                                                    <a class="lament-menu-item" href="#">Контактные данные</a>
+                                                    <a href="#" class="btn-blue">Отправить</a>
+                                                </form>
+                                            </div>
+                                        </div>
+                                        <span class="offers-list-item-author-info-item-right-text offers-list-item-author-info-item-right-text__bg-yellow">
+                                            Нет ставки 
+                                        </span>
+                                    </div>
+                                    <div class="offers-list-item-author-info-content">
+                                        <p class="offers-list-item-author-info-content-text">
+                                            Готов выполнить работу
+                                        </p>
+                                    </div>
+                                    <div class="offers-list-item-author-info-bottom-panel">
+                                        <div class="offers-list-item-author-info-bottom-panel-info">
+                                            <div class="offers-list-item-author-info-bottom-panel-info-show">
+                                                <span class="offers-list-item-author-info-bottom-panel-info-show-opinion">
+                                                    <span class="like">
+                                                        <i class="fa fa-thumbs-up" aria-hidden="true"></i>
+                                                        <span class="text">Положительных:
+                                                            <span class="text-value">262</span>
+                                                        </span>
+                                                    </span>
+                                                    <span class="dislike">
+                                                        <i class="fa fa-thumbs-down" aria-hidden="true"></i>
+                                                        <span class="text">Отрицательных:
+                                                            <span class="text-value">2</span>
+                                                        </span>
+                                                    </span>
+                                                    <span class="all-works">
+                                                        <i class="fa fa-briefcase" aria-hidden="true"></i>
+                                                        <span class="text">Всего работ:
+                                                            <span class="text-value">2</span>
+                                                        </span>
+                                                    </span>
+                                                </span>
+                                            </div>
+                                        </div>
+                                        <span class="quantity-message quantity-message__without-message">
+                                            <i class="fa fa-comments" aria-hidden="true"></i>Сообщений нет
+                                        </span>  
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="offers-list-item">
+                                <div class="offers-list-item-author-info">
+                                    <img src="img/interface/author.jpg" alt="автор">
+                                    <div class="offers-list-item-author-info-item-left">
+                                        <p >
+                                            <a href="#" class="offers-list-item-author-info-item-left-name">Неверова</a>
+                                            <span class="time"><i class="i i-offline"></i>сегодня 00:53</span>
+                                        </p>
+                                        <div class="new-author">
+                                            <span>новый автор</span>
+                                            <i class="fa btn-open-more-info fa-question-circle" aria-hidden="true"></i>
+                                            <div class="more-info-inner">
+                                                <div class="more-info-inner-item more-info-inner-item__left">
+                                                    <p class="more-info-inner-item-text-top">Выполнено</p>
+                                                    <p class="more-info-inner-item-text-bottom"><i class="fa fa-file-text-o" aria-hidden="true"></i>
+                                                        151 работа
+                                                    </p>
+                                                </div>
+                                                <div class="more-info-inner-item more-info-inner-item__center">
+                                                    <p class="more-info-inner-item-text-top">Отзывы</p>
+                                                    <p class="more-info-inner-item-text-bottom"><i class="fa fa-thumbs-up" aria-hidden="true"></i> 96% положительных</p>
+                                                    <p class="progress-bar">
+                                                        <i style="width: 96%"></i>
+                                                    </p>
+                                                </div>
+                                                <div class="more-info-inner-item more-info-inner-item__right">
+                                                    <p class="more-info-inner-item-text-top">Срок сдачи</p>
+                                                    <p class="more-info-inner-item-text-bottom"><i class="fa fa-clock-o" aria-hidden="true"></i> 96% вовремя</p>
+                                                    <p class="progress-bar">
+                                                        <i style="width: 96%"></i>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="offers-list-item-author-info-item-right">
+                                        <div class="lament">
+                                            <span><i class="fa fa-flag" aria-hidden="true"></i>Пожаловаться</span>
+                                            <div class="lament-menu">
+                                                <form>
+                                                    <a class="lament-menu-item" href="#">Спам</a>
+                                                    <a class="lament-menu-item" href="#">Контактные данные</a>
+                                                    <a href="#" class="btn-blue">Отправить</a>
+                                                </form>
+                                            </div>
+                                        </div>
+                                        <span class="offers-list-item-author-info-item-right-text offers-list-item-author-info-item-right-text__bg-blue">
+                                            Ставка 
+                                            <span class="offers-list-item-author-info-item-right-text-value ">1200<i class="fa fa-rub" aria-hidden="true"></i></span>
+                                        </span>
+                                    </div>
+                                    <div class="offers-list-item-author-info-content">
+                                        <p class="offers-list-item-author-info-content-text">
+                                            Здравствуйте! Пишу авторские работы с использованием актуальных источников, не утративших научной ценности, оформление по ГОСТу и по требованиям. Корректировки в рамках заявленного задания бесплатно. Большой опыт выолнения подобных работ. Качество, доработки и написание работы ранее срока - гарантирую!!! С удовольствием выполню вашу работу! Обращайтесь! Есть возможность общения по почте! Взято со страницы: https://author24.ru/getoneorder/1295539
+                                        </p>
+                                    </div>
+                                    <div class="offers-list-item-author-info-bottom-panel">
+                                        <div class="offers-list-item-author-info-bottom-panel-info">
+                                            <div class="offers-list-item-author-info-bottom-panel-info-show">
+                                                <span class="offers-list-item-author-info-bottom-panel-info-show-opinion">
+                                                    <span class="like">
+                                                        <i class="fa fa-thumbs-up" aria-hidden="true"></i>
+                                                        <span class="text">Положительных:
+                                                            <span class="text-value">262</span>
+                                                        </span>
+                                                    </span>
+                                                    <span class="dislike">
+                                                        <i class="fa fa-thumbs-down" aria-hidden="true"></i>
+                                                        <span class="text">Отрицательных:
+                                                            <span class="text-value">2</span>
+                                                        </span>
+                                                    </span>
+                                                    <span class="all-works">
+                                                        <i class="fa fa-briefcase" aria-hidden="true"></i>
+                                                        <span class="text">Всего работ:
+                                                            <span class="text-value">2</span>
+                                                        </span>
+                                                    </span>
+                                                </span>
+                                            </div>
+                                        </div>
+                                        <span class="quantity-message btn-message">
+                                            <i class="fa fa-comments" aria-hidden="true"></i>81 Сообщений
+                                        </span>  
+                                    </div>
+                                    <div class="messages">
+                                        <div class="messages-content">
+                                            <p class="messages-content-date">12 июня 2016 05:47</p>
+                                            <div class="messages-content-question">
+                                                <div class="messages-content-question-user">
+                                                    <div>
+                                                        <span class="messages-content-question-user-name">Dzmitry</span>
+                                                    </div>
+                                                    <span>
+                                                        Добрый день как  продвигаеться решение??)))
+                                                    </span>
+                                                </div>
+                                                <img  src="img/interface/avatar.jpg" alt="avatar">
+                                            </div>
+                                            <div class="messages-content-answer">
+                                                <img  src="img/interface/avatar.jpg" alt="avatar">
+                                                <div class="messages-content-answer-author">
+                                                    <div>
+                                                        <span class="messages-content-answer-author-name">Неверова</span>
+                                                        <span class="offline">не в сети</span>
+                                                        <span class="messages-content-answer-author-time-active">был в сети вчера 23:36</span>
+                                                    </div>
+                                                    <span>
+                                                        Здравствуйте! Работа в процессе  завершения.
+                                                    </span>
+                                                </div>
+                                            </div>
+                                            <p class="messages-content-date">12 июня 2016 05:47</p>
+                                            <div class="messages-content-answer">
+                                                <img  src="img/interface/avatar.jpg" alt="avatar">
+                                                <div class="messages-content-answer-author">
+                                                    <div>
+                                                        <span class="messages-content-answer-author-name">Неверова</span>
+                                                        <span class="online"> в сети</span>
+                                                    </div>
+                                                    <i class="i i_download"></i>
+                                                    <div class="file-info">
+                                                        <span class="file-info-name">1261632_2.pdf</span>
+                                                        <span class="file-info-status">Окончательный</span>
+                                                    </div>
+                                                    <a href="#" class="file-download-link" download>Скачать</a>
+                                                </div>
+                                            </div>
+                                            <div class="messages-content-question">
+                                                <div class="messages-content-question-user">
+                                                    <div>
+                                                        <span class="messages-content-question-user-name">Dzmitry</span>
+                                                    
+                                                    </div>
+                                                    <i class="i i_download"></i>
+                                                    <div class="file-info">
+                                                        <span class="file-info-name">1261632_2.pdf</span>
+                                                    </div>
+                                                    <a href="#" class="file-download-link" download>Скачать</a>
+                                                </div>
+                                                <img  src="img/interface/avatar.jpg" alt="avatar">
+                                            </div>
+                                        </div>
+                                        <div class="messages-answer">
+                                            <form>
+                                                <div class="messages-answer-left">
+                                                    <input type="text" class="form-control">
+                                                </div>
+                                                <div class="messages-answer-right">
+                                                    <label class="btn-add-caption">
+                                                        <i class="fa fa-paperclip btn-add-caption-icon"></i>
+                                                        <input class="btn-add-caption-element" type="file" name="photo" accept="image/*,image/jpeg"> 
+                                                        <span class="btn-add-caption-text"></span> 
+                                                    </label>
+                                                    <button type="submit" class="btn-answer">ОТВЕТИТЬ</button> 
+                                                </div>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="offers-list-item">
+                                <div class="offers-list-item-author-info">
+                                    <img src="img/interface/author.jpg" alt="автор">
+                                    <div class="offers-list-item-author-info-item-left">
+                                        <p >
+                                            <a href="#" class="offers-list-item-author-info-item-left-name">Неверова</a>
+                                            <span class="time"><i class="i i-offline"></i>сегодня 00:53</span>
+                                        </p>
+                                        <div class="new-author">
+                                            <span>новый автор</span>
+                                            <i class="fa btn-open-more-info fa-question-circle" aria-hidden="true"></i>
+                                            <div class="more-info-inner more-info-inner__new-author">
+                                                <p>Это новый автор, и у него пока нет  выполненных работ</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="offers-list-item-author-info-item-right">
+                                        <div class="lament">
+                                            <span><i class="fa fa-flag" aria-hidden="true"></i>Пожаловаться</span>
+                                            <div class="lament-menu">
+                                                <form>
+                                                    <a class="lament-menu-item" href="#">Спам</a>
+                                                    <a class="lament-menu-item" href="#">Контактные данные</a>
+                                                    <a href="#" class="btn-blue">Отправить</a>
+                                                </form>
+                                            </div>
+                                        </div>
+                                        <span class="offers-list-item-author-info-item-right-text offers-list-item-author-info-item-right-text__bg-blue">
+                                            Ставка 
+                                            <span class="offers-list-item-author-info-item-right-text-value ">1200<i class="fa fa-rub" aria-hidden="true"></i></span>
+                                        </span>
+                                    </div>
+                                    <div class="offers-list-item-author-info-content">
+                                        <p class="offers-list-item-author-info-content-text">
+                                            Здравствуйте! Пишу авторские работы с использованием актуальных источников, не утративших научной ценности, оформление по ГОСТу и по требованиям. Корректировки в рамках заявленного задания бесплатно. Большой опыт выолнения подобных работ. Качество, доработки и написание работы ранее срока - гарантирую!!! С удовольствием выполню вашу работу! Обращайтесь! Есть возможность общения по почте! Взято со страницы: https://author24.ru/getoneorder/1295539
+                                        </p>
+                                    </div>
+                                    <div class="offers-list-item-author-info-bottom-panel">
+                                        <div class="offers-list-item-author-info-bottom-panel-info">
+                                            <div class="offers-list-item-author-info-bottom-panel-info-show">
+                                                <span class="offers-list-item-author-info-bottom-panel-info-show-opinion">
+                                                    <span class="like">
+                                                        <i class="fa fa-thumbs-up" aria-hidden="true"></i>
+                                                        <span class="text">Положительных:
+                                                            <span class="text-value">262</span>
+                                                        </span>
+                                                    </span>
+                                                    <span class="dislike">
+                                                        <i class="fa fa-thumbs-down" aria-hidden="true"></i>
+                                                        <span class="text">Отрицательных:
+                                                            <span class="text-value">2</span>
+                                                        </span>
+                                                    </span>
+                                                    <span class="all-works">
+                                                        <i class="fa fa-briefcase" aria-hidden="true"></i>
+                                                        <span class="text">Всего работ:
+                                                            <span class="text-value">2</span>
+                                                        </span>
+                                                    </span>
+                                                </span>
+                                            </div>
+                                        </div>
+                                        <span class="quantity-message btn-message">
+                                            <i class="fa fa-comments" aria-hidden="true"></i>8 Сообщений
+                                        </span>  
+                                    </div>
+                                    <div class="messages">
+                                        <div class="messages-content">
+                                            <p class="messages-content-date">12 июня 2016 05:47</p>
+                                            <div class="messages-content-question">
+                                                <div class="messages-content-question-user">
+                                                    <div>
+                                                        <span class="messages-content-question-user-name">Dzmitry</span>
+                                                    </div>
+                                                    <span>
+                                                        Добрый день как  продвигаеться решение??)))
+                                                    </span>
+                                                </div>
+                                                <img  src="img/interface/avatar.jpg" alt="avatar">
+                                            </div>
+                                            <div class="messages-content-answer">
+                                                <img  src="img/interface/avatar.jpg" alt="avatar">
+                                                <div class="messages-content-answer-author">
+                                                    <div>
+                                                        <span class="messages-content-answer-author-name">Неверова</span>
+                                                        <span class="offline">не в сети</span>
+                                                        <span class="messages-content-answer-author-time-active">был в сети вчера 23:36</span>
+                                                    </div>
+                                                    <span>
+                                                        Здравствуйте! Работа в процессе  завершения.
+                                                    </span>
+                                                </div>
+                                            </div>
+                                            <p class="messages-content-date">12 июня 2016 05:47</p>
+                                            <div class="messages-content-answer">
+                                                <img  src="img/interface/avatar.jpg" alt="avatar">
+                                                <div class="messages-content-answer-author">
+                                                    <div>
+                                                        <span class="messages-content-answer-author-name">Неверова</span>
+                                                        <span class="online"> в сети</span>
+                                                    </div>
+                                                    <i class="i i_download"></i>
+                                                    <div class="file-info">
+                                                        <span class="file-info-name">1261632_2.pdf</span>
+                                                        <span class="file-info-status">Окончательный</span>
+                                                    </div>
+                                                    <a href="#" class="file-download-link" download>Скачать</a>
+                                                </div>
+                                            </div>
+                                            <div class="messages-content-question">
+                                                <div class="messages-content-question-user">
+                                                    <div>
+                                                        <span class="messages-content-question-user-name">Dzmitry</span>
+                                                    
+                                                    </div>
+                                                    <i class="i i_download"></i>
+                                                    <div class="file-info">
+                                                        <span class="file-info-name">1261632_2.pdf</span>
+                                                    </div>
+                                                    <a href="#" class="file-download-link" download>Скачать</a>
+                                                </div>
+                                                <img  src="img/interface/avatar.jpg" alt="avatar">
+                                            </div>
+                                        </div>
+                                        <div class="messages-answer">
+                                            <form>
+                                                <div class="messages-answer-left">
+                                                    <input type="text" class="form-control">
+                                                </div>
+                                                <div class="messages-answer-right">
+                                                    <label class="btn-add-caption">
+                                                        <i class="fa fa-paperclip btn-add-caption-icon"></i>
+                                                        <input class="btn-add-caption-element" type="file" name="photo" accept="image/*,image/jpeg"> 
+                                                        <span class="btn-add-caption-text"></span> 
+                                                    </label>
+                                                    <button type="submit" class="btn-answer">ОТВЕТИТЬ</button> 
+                                                </div>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>   
+            </div>
+            <!--right-panel-->
+             <div class="right-panel">
+                <div class="right-panel-description">
+                    <span>Рекомендуемые заказы</span>
+                </div>
+                <div class="orders-item orders-item__yellow">
+                    <span class="btn-delete">
+                        <i class="fa fa-times" aria-hidden="true"></i>
+                    </span>
+                    <p class="orders-item-text"># 1295206</p>
+                    <a href="#" class="orders-item-link">
+                        перспективные направления государственного регулирования обеспечения продовольсвенной безопасности...
+                    </a>
+                    <p class="orders-item-text">Статья, Экономика</p>
+                    <p class="orders-item-text orders-item-text__gray">Цена: 
+                        <span class="orders-item-text-value">480 руб.</span>
+                    </p>
+                    <p class="orders-item-text orders-item-text__gray">Срок сдачи: 
+                        <span class="orders-item-text-value">12.07.2016</span>
+                    </p>
+                </div>
+                <div class="orders-item">
+                    <span class="btn-delete">
+                        <i class="fa fa-times" aria-hidden="true"></i>
+                    </span>
+                    <p class="orders-item-text"># 1295206</p>
+                    <a href="#" class="orders-item-link">
+                        использование икт создание дидактических игр старшем дошкольном возрасте
+                    </a>
+                    <p class="orders-item-text">Курсовая работа, Педагогика</p>
+                    <p class="orders-item-text orders-item-text__gray">Цена: 
+                        <span class="orders-item-text-value">480 руб.</span>
+                    </p>
+                    <p class="orders-item-text orders-item-text__gray">Срок сдачи: 
+                        <span class="orders-item-text-value">12.07.2016</span>
+                    </p>
+                </div>
+                <div class="orders-item">
+                    <span class="btn-delete">
+                        <i class="fa fa-times" aria-hidden="true"></i>
+                    </span>
+                    <p class="orders-item-text"># 1295206</p>
+                    <a href="#" class="orders-item-link">
+                        использование икт создание дидактических игр старшем дошкольном возрасте
+                    </a>
+                    <p class="orders-item-text">Курсовая работа, Педагогика</p>
+                    <p class="orders-item-text orders-item-text__gray">Цена: 
+                        <span class="orders-item-text-value">480 руб.</span>
+                    </p>
+                    <p class="orders-item-text orders-item-text__gray">Срок сдачи: 
+                        <span class="orders-item-text-value">12.07.2016</span>
+                    </p>
+                </div>
+            </div>
+        </div>
+        
+        <!--footer-->
+        <div class="footer">
+            <div class="container footer-list">
+                <div class="footer-list-item footer-list-item__left">
+                    <ul class="footer-list-item__left-nav-list">
+                        <li class="footer-list-item__left-nav-list-item"><a href="#">Новости</a></li>
+                        <li class="footer-list-item__left-nav-list-item"><a href="#">Топ авторов</a></li>
+                        <li class="footer-list-item__left-nav-list-item"><a href="#">Агенствам</a></li>
+                        <li class="footer-list-item__left-nav-list-item"><a href="#">Помощь</a></li>
+                    </ul>
+                    <div class="footer-list-item__left-banner">
+                        <a href="#">
+                            <p class="footer-list-item__left-banner-text-inner">
+                                <span class="footer-list-item__left-banner-text-inner-text-top">Будь всегда на связи!</span>
+                                <span class="footer-list-item__left-banner-text-inner-text-bottom">Приложение от Автор25</span> 
+                            </p>
+                            <p class="footer-list-item__left-banner-img-inner">
+                                <i class="i i_google-play"></i>  
+                            </p>
+                        </a>
+                    </div>
+                    <div class="footer-list-item__left-copyright">
+                        <p>© 2016 Author25.</p>
+                        <p>Все права защищены</p>
+                    </div>
+                </div>
+                <div class="footer-list-item footer-list-item__center">
+                    <p class="footer-list-item__center-text-top">Мы принимаем</p>
+                    <div class=" footer-list-item__center-list">
+                        <div class="footer-list-item__center-list-item">
+                            <i class="i i_footer i_visa"></i>
+                        </div>
+                        <div class="footer-list-item__center-list-item">
+                            <i class="i i_footer i_mc"></i>
+                        </div>
+                        <div class="footer-list-item__center-list-item">
+                            <i class="i i_footer i_yandex"></i>
+                        </div>
+                        <div class="footer-list-item__center-list-item">
+                            <i class="i i_footer i_web"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-list-item footer-list-item__right">
+                    <p class="footer-list-item__right-phone">
+                        <i class="fa fa-phone" aria-hidden="true"></i>
+                        <span>8-800-100-03-20</span>
+                    </p>
+                    <p class="footer-list-item__right-mail">
+                        <i class="fa fa-envelope" aria-hidden="true"></i>
+                        <span>support@author25.ru</span>
+                    </p>
+                    <p class="footer-list-item__right-work">Служба поддержки работает
+                        <span>по будням <i class="fa fa-clock-o" aria-hidden="true"></i> с 10:00 до 20:00</span>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+<script src="js/libs/jquery-1.12.4.js"></script>
+<script src="js/libs/bootstrap.js"></script>
+<script src="js/libs/select2.min.js"></script>
+<script src="js/select.js"></script>
+<script src="js/main.js"></script>
+<script src="js/order-name.js"></script>
+</body>
+</html>

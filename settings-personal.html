@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    <meta name="format-detection" content="telephone=no">
+    <title>Author25-settings-subscription</title>
+    <link rel="stylesheet" href="css/libs/bootstrap.min.css">
+    <link rel="stylesheet" href="css/libs/select2.css">
+    <link rel="stylesheet" href="css/settings.css">
+</head>
+<body>
+    <div class="page">
+        <!--nav-->
+        <div class="container-nav container-fluid">
+            <div class="container">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header">
+                    <button id="show_button" type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false"> 
+                        <span class="sr-only">Toggle navigation</span> 
+                        <span class="icon-bar"></span> 
+                        <span class="icon-bar"></span> 
+                        <span class="icon-bar"></span> 
+                    </button>
+                    <a class="navbar-brand" href="#"></a>
+                </div>
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <i class="collapse-tr"></i>
+                    <ul class="nav navbar-nav">
+                        <li>
+                            <i class="fa fa-angle-right" aria-hidden="true"></i>
+                            <a href="#">Главная<span class="sr-only">(current)</span></a>
+                        </li>
+                        <li>
+                            <i class="fa fa-angle-right" aria-hidden="true"></i>
+                            <a href="#">Мои заказы</a>
+                        </li>
+                        <li>
+                            <i class="fa fa-angle-right" aria-hidden="true"></i>
+                            <a href="#">Магазин готовых работ</a>
+                        </li>
+                        <li>
+                            <i class="fa fa-angle-right" aria-hidden="true"></i>
+                            <a href="#">Топ авторов</a>
+                        </li>
+                        <li class="active">
+                            <i class="fa fa-angle-right" aria-hidden="true"></i>
+                            <a href="#">Сделать заказ</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="navbar-info">
+                    <span class="navbar-info-item navbar-info-item__notifications">
+                        <i class="fa fa-info-circle" aria-hidden="true"></i>
+                        <i class="pop-up_tr"></i>
+                    </span>
+                    <span class="navbar-info-item navbar-info-item__message">
+                        <i class="fa fa-envelope" aria-hidden="true"></i>
+                        <i class="pop-up_tr"></i>
+                    </span>
+                    <span class="navbar-info-item navbar-info-item__user">
+                        <i class="fa fa-user" aria-hidden="true"></i>
+                        <i class="fa fa-angle-down" aria-hidden="true"></i>
+                        <i class="pop-up_tr__user"></i>
+                    </span>
+                </div>
+                <!-- /.navbar-collapse -->
+            </div>
+        </div>
+        <!--widgets-->
+        <div class="widget-help">
+            <a class="widget-help-item" href="#">О проекте</a>
+            <a class="widget-help-item" href="#">Соглашение</a>
+            <a class="widget-help-item" href="#">Правила работы</a>
+            <a class="widget-help-item" href="#">Новости</a>
+            <a class="widget-help-item" href="#">Помощь</a>
+            <a class="widget-help-item" href="#">Как оплатить</a>
+            <a class="widget-help-item" href="#">Узнать среднюю стоимость работы</a>
+        </div>
+        <div class="pop-up-notification pop-up-notification__info">
+            <p class="pop-up-notification-caption">Новые уведомления:</p>
+            <div class="pop-up-notification-inner">
+                <div class="pop-up-notification-inner-item">
+                    <i class="fa fa-angle-double-right" aria-hidden="true"></i>
+                    <p class="pop-up-notification-inner-item-text-top">Гарантийный срок по заказу "Физика 2" истек</p>
+                    <p class="pop-up-notification-inner-item-date">26 июня 2016 в 20:43</p>
+                    <a class="pop-up-notification-inner-item-link" href="#">физика 2</a>
+                </div>
+                <div class="pop-up-notification-inner-item">
+                    <i class="fa fa-angle-double-right" aria-hidden="true"></i>
+                    <p class="pop-up-notification-inner-item-text-top">Автор сделал ставку к Вашему заказу контрольная "РАСЧЕТ УСТОЙЧИВОСТИ ЭЛЕКТРОЭНЕРГЕТИЧЕСКОЙ СИСТЕМЫ"</p>
+                    <p class="pop-up-notification-inner-item-date">26 июня 2016 в 20:43</p>
+                    <a class="pop-up-notification-inner-item-link" href="#">контрольная РАСЧЕТ УСТОЙЧИВОСТИ ЭЛЕКТРОЭНЕРГЕТИЧЕСКОЙ СИСТЕМЫ</a>
+                </div>
+            </div>
+            <div class="pop-up-notification-btn-remove-inner">
+                <a href="#" class="pop-up-notification-btn-remove-inner-btn">Очистить уведомления</a>
+            </div>
+        </div>
+        <div class="pop-up-notification pop-up-notification__message">
+            <p class="pop-up-notification-caption">Новые собщения:</p>
+            <div class="pop-up-notification-inner">
+                <div class="pop-up-notification-inner-item">
+                    <i class="fa fa-angle-double-right" aria-hidden="true"></i>
+                    <p class="pop-up-notification-inner-item-text-top">Привет, я готова приступить к проекту, только мне нуджно предоплата</p>
+                    <p class="pop-up-notification-inner-item-date">26 июня 2016 в 20:43</p>
+                    <a class="pop-up-notification-inner-item-link" href="#">физика 2</a>
+                </div>
+                <div class="pop-up-notification-inner-item">
+                    <i class="fa fa-angle-double-right" aria-hidden="true"></i>
+                    <p class="pop-up-notification-inner-item-text-top">Очень интересно получается! Я могу сделать прямо на этой странице, но для этого мне надо время</p>
+                    <p class="pop-up-notification-inner-item-date">26 июня 2016 в 20:43</p>
+                    <a class="pop-up-notification-inner-item-link" href="#">контрольная РАСЧЕТ УСТОЙЧИВОСТИ ЭЛЕКТРОЭНЕРГЕТИЧЕСКОЙ СИСТЕМЫ</a>
+                </div>
+            </div>
+            <div class="pop-up-notification-btn-remove-inner">
+                <a href="#" class="pop-up-notification-btn-remove-inner-btn">Очистить уведомления</a>
+            </div>
+        </div>
+        <div class="pop-up__user">
+            <div class="pop-up__user-item">
+                <a href="#" class="pop-up__user-item-text">Баланс<span class="pop-up__user-item-text__balance">0 р.</span></a>   
+            </div>
+            <div class="pop-up__user-item">
+                <a href="#" class="pop-up__user-item-text">Настройки</a>   
+            </div>
+            <div class="pop-up__user-item">
+                <a href="#" class="pop-up__user-item-text">Текущая комиссия</a>   
+            </div>
+            <div class="pop-up__user-item">
+                <a href="#" class="pop-up__user-item-text">Избранные авторы<span class="pop-up__user-item-text__new">NEW</span></a>   
+            </div>
+            <div class="pop-up__user-item">
+                <a href="#" class="pop-up__user-item-text">Черный список</a>   
+            </div>
+            <div class="pop-up__user-item">
+                <a href="#" class="pop-up__user-item-text btn-pop-up__user-exit">Выход</a>   
+            </div>
+        </div>
+        <!--content-->
+        <div class="content container">
+            <div class="content-center">
+                <h2 class="content-center-description">Настройки</h2>
+                <div class="content-full-width">
+                    <div class="content-settings">
+                        <div class="top-menu">
+                            <a class="active" href="#">Личные данные</a>
+                            <a  href="#">Настройки подписки</a>
+                        </div>
+                        <div class="content-settings-list">
+                            <div class="content-settings-list-item content-settings-list-item__avatar">
+                                <form>
+                                    <div class="content-settings-list-item-side content-settings-list-item-side__left content-settings-list-item-side__left-no-wrap">
+                                        <p class="content-settings-list-item-side__left-description">АВАТАР</p>
+                                        <label class="btn-add-foto active">
+                                            <i class="i i_load"></i>
+                                            <input type="file" name="photo" accept="image/*,image/jpeg"> 
+                                            <span class="btn-add-foto-text">Загрузить фото</span> 
+                                        </label>
+                                    </div>
+                                    <div class="content-settings-list-item-side content-settings-list-item-side__center content-settings-list-item-side__center-no-wrap">
+                                        <img src="img/interface/avatar-settings.jpg" class="avatar" alt="аватар">
+                                        <div class="content-settings-list-item-side__center-size-avatar">
+                                            <p>
+                                                <img src="img/interface/square-big.png" class="i i_icon-size" alt="квадрат">
+                                                <img  src="img/interface/circle-big.png" class="i i_icon-size" alt="круг">
+                                            </p>
+                                            <p>
+                                                <img src="img/interface/square-little.png" class="i i_icon-size" alt="квадрат-маленький">
+                                                <img  src="img/interface/circle-little.png" class="i i_icon-size" alt="круг-маленький">
+                                            </p>
+                                        </div>
+                                        <div class="content-settings-list-item-side__center-btn-inner">
+                                            <button class="btn-blue">СОХРАНИТЬ</button>
+                                        </div>
+                                    </div>
+                                    <div class="content-settings-list-item-side content-settings-list-item-side__right">
+                                        <img src="img/interface/resize.png" alt="максимальный размер" class="i">
+                                        <div class="content-settings-list-item-side__right-btn-inner">
+                                            <button class="btn-green">ОБРЕЗАТЬ</button>
+                                            <button class="btn-gray">ОТМЕНИТЬ</button>
+                                        </div>
+                                        
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="content-settings-list-item">
+                                <form>
+                                    <div class="content-settings-list-item-side content-settings-list-item-side__left">
+                                        <p class="content-settings-list-item-side__left-description">ИНФОРМАЦИЯ</p>
+                                        
+                                    </div>
+                                    <div class="content-settings-list-item-side content-settings-list-item-side__center">
+                                        <p class="content-settings-list-item-side-text">Имя на сайте</p>
+                                        <input type="text" class="form-control half-width" disabled placeholder="4968494">
+                                        <div class="content-settings-list-item-side-list">
+                                            <div class="content-settings-list-item-side-list-item content-settings-list-item-side-list-item__left">
+                                                <p class="content-settings-list-item-side-text">Имя</p>
+                                                <input type="text" class="form-control"  placeholder="Имя">
+                                            </div>
+                                            <div class="content-settings-list-item-side-list-item content-settings-list-item-side-list-item__right">
+                                                <p class="content-settings-list-item-side-text">Фамилия</p>
+                                                <input type="text" class="form-control"  placeholder="Фамилия">
+                                            </div>
+                                        </div>
+                                        <button class="btn-blue">СОХРАНИТЬ</button>
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="content-settings-list-item">
+                                <form>
+                                    <div class="content-settings-list-item-side content-settings-list-item-side__left">
+                                        <p class="content-settings-list-item-side__left-description">ОБРАЗОВАНИЕ</p>
+                                    </div>
+                                    <div class="content-settings-list-item-side content-settings-list-item-side__center">
+                                        <div class="content-settings-list-item-side-list">
+                                            <div class="content-settings-list-item-side-list-item content-settings-list-item-side-list-item__left">        
+                                                <p class="content-settings-list-item-side-text">Учебное заведение</p>
+                                                <input type="text" class="form-control">
+                                            </div>
+                                        </div>
+                                        <div class="content-settings-list-item-side-list">
+                                            <div class="content-settings-list-item-side-list-item content-settings-list-item-side-list-item__left">
+                                                <p class="content-settings-list-item-side-text">Факультет</p>
+                                                <input type="text" class="form-control">
+                                            </div>
+                                            <div class="content-settings-list-item-side-list-item content-settings-list-item-side-list-item__right">
+                                                <p class="content-settings-list-item-side-text">Специальность</p>
+                                                <input type="text" class="form-control">
+                                            </div>
+                                        </div>
+                                        <div class="content-settings-list-item-side-list">
+                                            <div class="content-settings-list-item-side-list-item content-settings-list-item-side-list-item__left">
+                                                <p class="content-settings-list-item-side-text">Статус</p>
+                                                <select class="form-control js-example-basic-single">
+                                                    <option value="AL">Студент</option>
+                                                    <option value="WY">Экзамен</option>
+                                                    <option value="WY">Контрольная</option>
+                                                </select>
+                                            </div>
+                                            <div class="content-settings-list-item-side-list-item content-settings-list-item-side-list-item__right">
+                                                <p class="content-settings-list-item-side-text">Курс</p>
+                                                <input type="text" class="form-control" placeholder="Курс">
+                                            </div>
+                                        </div>
+                                        <button class="btn-blue">СОХРАНИТЬ</button>
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="content-settings-list-item">
+                                <form>
+                                    <div class="content-settings-list-item-side content-settings-list-item-side__left">
+                                        <p class="content-settings-list-item-side__left-description">КОНТАКТЫ</p>
+                                    </div>
+                                    <div class="content-settings-list-item-side content-settings-list-item-side__center">
+                                        <p class="content-settings-list-item-side-text">Email<sup>*</sup></p>
+                                        <input type="text" class="form-control half-width" placeholder="referat-fort@mail.ru" disabled>
+                                        <div class="content-settings-list-item-side-list">
+                                            <div class="content-settings-list-item-side-list-item content-settings-list-item-side-list-item__left">
+                                                <p class="content-settings-list-item-side-text">Странна</p>
+                                                <select class="form-control js-example-basic-single">
+                                                    <option value="AL">Выберите страну</option>
+                                                    <option value="WY">Экзамен</option>
+                                                    <option value="WY">Контрольная</option>
+                                                </select>
+                                            </div>
+                                            <div class="content-settings-list-item-side-list-item content-settings-list-item-side-list-item__right">
+                                                <p class="content-settings-list-item-side-text">Город</p>
+                                                <input type="text" class="form-control">
+                                            </div>
+                                        </div>
+                                        <div class="content-settings-list-item-side-list">
+                                            <div class="content-settings-list-item-side-list-item content-settings-list-item-side-list-item__left">
+                                                <p class="content-settings-list-item-side-text">Телефон</p>
+                                                <input type="text" class="form-control" placeholder="+7-908-xxx-xx-48" disabled>
+                                                <i class="fa fa-check-circle" aria-hidden="true"></i>
+                                            </div>
+                                            <div class="content-settings-list-item-side-list-item content-settings-list-item-side-list-item__right">
+                                                <p class="content-settings-list-item-side-text__bottom">Номер подтвержден</p>
+                                                <a href="#" class="content-settings-list-item-side-text__link">Изменить номер</a>
+                                            </div>
+                                        </div>
+                                        <button class="btn-gray">СОХРАНИТЬ</button>
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="content-settings-list-item">
+                                <form>
+                                    <div class="content-settings-list-item-side content-settings-list-item-side__left">
+                                        <p class="content-settings-list-item-side__left-description">Пароль</p>
+                                    </div>
+                                    <div class="content-settings-list-item-side content-settings-list-item-side__center">
+                                        <div class="content-settings-list-item-side-list">
+                                            <div class="content-settings-list-item-side-list-item content-settings-list-item-side-list-item__left">
+                                                <p class="content-settings-list-item-side-text">Старый пароль<sup>*</sup></p>
+                                                <input type="text" class="form-control">
+                                            </div>
+                                        </div>
+                                        <div class="content-settings-list-item-side-list">
+                                            <div class="content-settings-list-item-side-list-item content-settings-list-item-side-list-item__left">
+                                                <p class="content-settings-list-item-side-text">Новый пароль<sup>*</sup></p>
+                                                <input type="text" class="form-control">
+                                            </div>
+                                        </div>
+                                        <div class="content-settings-list-item-side-list">
+                                            <div class="content-settings-list-item-side-list-item content-settings-list-item-side-list-item__left">
+                                                <p class="content-settings-list-item-side-text">Повторите<sup>*</sup></p>
+                                                <input type="text" class="form-control">
+                                            </div>
+                                        </div>
+                                        <button class="btn-blue">СОХРАНИТЬ</button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+        <!--footer-->
+        <div class="footer">
+            <div class="container footer-list">
+                <div class="footer-list-item footer-list-item__left">
+                    <ul class="footer-list-item__left-nav-list">
+                        <li class="footer-list-item__left-nav-list-item"><a href="#">Новости</a></li>
+                        <li class="footer-list-item__left-nav-list-item"><a href="#">Топ авторов</a></li>
+                        <li class="footer-list-item__left-nav-list-item"><a href="#">Агенствам</a></li>
+                        <li class="footer-list-item__left-nav-list-item"><a href="#">Помощь</a></li>
+                    </ul>
+                    <div class="footer-list-item__left-banner">
+                        <a href="#">
+                            <p class="footer-list-item__left-banner-text-inner">
+                               <span class="footer-list-item__left-banner-text-inner-text-top">Будь всегда на связи!</span>
+                               <span class="footer-list-item__left-banner-text-inner-text-bottom">Приложение от Автор25</span> 
+                            </p>
+                            <p class="footer-list-item__left-banner-img-inner">
+                                <i class="i i_google-play"></i>  
+                            </p>
+                        </a>
+                    </div>
+                    <div class="footer-list-item__left-copyright">
+                        <p>© 2016 Author25.</p>
+                        <p>Все права защищены</p>
+                    </div>
+                </div>
+                <div class="footer-list-item footer-list-item__center">
+                    <p class="footer-list-item__center-text-top">Мы принимаем</p>
+                    <div class=" footer-list-item__center-list">
+                        <div class="footer-list-item__center-list-item">
+                            <i class="i i_footer i_visa"></i>
+                        </div>
+                        <div class="footer-list-item__center-list-item">
+                            <i class="i i_footer i_mc"></i>
+                        </div>
+                        <div class="footer-list-item__center-list-item">
+                            <i class="i i_footer i_yandex"></i>
+                        </div>
+                         <div class="footer-list-item__center-list-item">
+                            <i class="i i_footer i_web"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-list-item footer-list-item__right">
+                    <p class="footer-list-item__right-phone">
+                        <i class="fa fa-phone" aria-hidden="true"></i>
+                        <span>8-800-100-03-20</span>
+                    </p>
+                    <p class="footer-list-item__right-mail">
+                        <i class="fa fa-envelope" aria-hidden="true"></i>
+                        <span>support@author25.ru</span>
+                    </p>
+                    <p class="footer-list-item__right-work">Служба поддержки работает
+                        <span>по будням <i class="fa fa-clock-o" aria-hidden="true"></i> с 10:00 до 20:00</span>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+<script src="js/libs/jquery-1.12.4.js"></script>
+<script src="js/libs/bootstrap.js"></script>
+<script src="js/libs/select2.min.js"></script>
+<script src="js/main.js"></script>
+<script src="js/settings.js"></script>
+<script src="js/select.js"></script>
+</body>
+</html>

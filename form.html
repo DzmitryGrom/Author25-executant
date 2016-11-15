@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    <meta name="format-detection" content="telephone=no">
+    <title>Author25-form</title>
+    <link rel="stylesheet" href="css/libs/bootstrap.min.css">
+    <link rel="stylesheet" href="css/libs/select2.css">
+    <link rel="stylesheet" href="css/form.css">
+</head>
+<body>
+    <div class="page">
+        <!--nav-->
+        <div class="container-nav container-fluid">
+            <div class="container">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header">
+                    <button id="show_button" type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false"> 
+                        <span class="sr-only">Toggle navigation</span> 
+                        <span class="icon-bar"></span> 
+                        <span class="icon-bar"></span> 
+                        <span class="icon-bar"></span> 
+                    </button>
+                    <a class="navbar-brand" href="#"></a>
+                </div>
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <i class="collapse-tr"></i>
+                    <ul class="nav navbar-nav">
+                        <li>
+                            <i class="fa fa-angle-right" aria-hidden="true"></i>
+                            <a href="#">Главная<span class="sr-only">(current)</span></a>
+                        </li>
+                        <li>
+                            <i class="fa fa-angle-right" aria-hidden="true"></i>
+                            <a href="#">Мои заказы</a>
+                        </li>
+                        <li>
+                            <i class="fa fa-angle-right" aria-hidden="true"></i>
+                            <a href="#">Магазин готовых работ</a>
+                        </li>
+                        <li>
+                            <i class="fa fa-angle-right" aria-hidden="true"></i>
+                            <a href="#">Топ авторов</a>
+                        </li>
+                        <li class="active">
+                            <i class="fa fa-angle-right" aria-hidden="true"></i>
+                            <a href="#">Сделать заказ</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="navbar-info">
+                    <span class="navbar-info-item navbar-info-item__notifications">
+                        <i class="fa fa-info-circle" aria-hidden="true"></i>
+                        <span class="navbar-info-item-value">4</span>
+                        <i class="pop-up_tr"></i>
+                    </span>
+                    <span class="navbar-info-item navbar-info-item__message">
+                        <i class="fa fa-envelope" aria-hidden="true"></i>
+                        <span class="navbar-info-item-value">11</span>
+                        <i class="pop-up_tr"></i>
+                    </span>
+                    <span class="navbar-info-item navbar-info-item__user">
+                        <i class="fa fa-user" aria-hidden="true"></i>
+                        <i class="fa fa-angle-down" aria-hidden="true"></i>
+                        <i class="pop-up_tr__user"></i>
+                    </span>
+                </div>
+                <!-- /.navbar-collapse -->
+            </div>
+        </div>
+        <!--widgets-->
+        <div class="widget-help">
+            <a class="widget-help-item" href="#">О проекте</a>
+            <a class="widget-help-item" href="#">Соглашение</a>
+            <a class="widget-help-item" href="#">Правила работы</a>
+            <a class="widget-help-item" href="#">Новости</a>
+            <a class="widget-help-item" href="#">Помощь</a>
+            <a class="widget-help-item" href="#">Как оплатить</a>
+            <a class="widget-help-item" href="#">Узнать среднюю стоимость работы</a>
+        </div>
+        <div class="pop-up-notification pop-up-notification__info">
+            <p class="pop-up-notification-caption">Новые уведомления:</p>
+            <div class="pop-up-notification-inner">
+                <div class="pop-up-notification-inner-item">
+                    <i class="fa fa-angle-double-right" aria-hidden="true"></i>
+                    <p class="pop-up-notification-inner-item-text-top">Гарантийный срок по заказу "Физика 2" истек</p>
+                    <p class="pop-up-notification-inner-item-date">26 июня 2016 в 20:43</p>
+                    <a class="pop-up-notification-inner-item-link" href="#">физика 2</a>
+                </div>
+                <div class="pop-up-notification-inner-item">
+                    <i class="fa fa-angle-double-right" aria-hidden="true"></i>
+                    <p class="pop-up-notification-inner-item-text-top">Автор сделал ставку к Вашему заказу контрольная "РАСЧЕТ УСТОЙЧИВОСТИ ЭЛЕКТРОЭНЕРГЕТИЧЕСКОЙ СИСТЕМЫ"</p>
+                    <p class="pop-up-notification-inner-item-date">26 июня 2016 в 20:43</p>
+                    <a class="pop-up-notification-inner-item-link" href="#">контрольная РАСЧЕТ УСТОЙЧИВОСТИ ЭЛЕКТРОЭНЕРГЕТИЧЕСКОЙ СИСТЕМЫ</a>
+                </div>
+            </div>
+            <div class="pop-up-notification-btn-remove-inner">
+                <a href="#" class="pop-up-notification-btn-remove-inner-btn">Очистить уведомления</a>
+            </div>
+        </div>
+        <div class="pop-up-notification pop-up-notification__message">
+            <p class="pop-up-notification-caption">Новые собщения:</p>
+            <div class="pop-up-notification-inner">
+                <div class="pop-up-notification-inner-item">
+                    <i class="fa fa-angle-double-right" aria-hidden="true"></i>
+                    <p class="pop-up-notification-inner-item-text-top">Привет, я готова приступить к проекту, только мне нуджно предоплата</p>
+                    <p class="pop-up-notification-inner-item-date">26 июня 2016 в 20:43</p>
+                    <a class="pop-up-notification-inner-item-link" href="#">физика 2</a>
+                </div>
+                <div class="pop-up-notification-inner-item">
+                    <i class="fa fa-angle-double-right" aria-hidden="true"></i>
+                    <p class="pop-up-notification-inner-item-text-top">Очень интересно получается! Я могу сделать прямо на этой странице, но для этого мне надо время</p>
+                    <p class="pop-up-notification-inner-item-date">26 июня 2016 в 20:43</p>
+                    <a class="pop-up-notification-inner-item-link" href="#">контрольная РАСЧЕТ УСТОЙЧИВОСТИ ЭЛЕКТРОЭНЕРГЕТИЧЕСКОЙ СИСТЕМЫ</a>
+                </div>
+            </div>
+            <div class="pop-up-notification-btn-remove-inner">
+                <a href="#" class="pop-up-notification-btn-remove-inner-btn">Очистить уведомления</a>
+            </div>
+        </div>
+        <div class="pop-up__user">
+            <div class="pop-up__user-item">
+                <a href="#" class="pop-up__user-item-text">Баланс<span class="pop-up__user-item-text__balance">0 р.</span></a>   
+            </div>
+            <div class="pop-up__user-item">
+                <a href="#" class="pop-up__user-item-text">Настройки</a>   
+            </div>
+            <div class="pop-up__user-item">
+                <a href="#" class="pop-up__user-item-text">Текущая комиссия</a>   
+            </div>
+            <div class="pop-up__user-item">
+                <a href="#" class="pop-up__user-item-text">Избранные авторы<span class="pop-up__user-item-text__new">NEW</span></a>   
+            </div>
+            <div class="pop-up__user-item">
+                <a href="#" class="pop-up__user-item-text">Черный список</a>   
+            </div>
+            <div class="pop-up__user-item">
+                <a href="#" class="pop-up__user-item-text btn-pop-up__user-exit">Выход</a>   
+            </div>
+        </div>
+        <!--content-->
+        <div class="content container">
+            <div class="content-center"> 
+                <h2 class="content-center-description">Форма заказа учебной работы</h2>
+                <div class="error">
+                    <h2 class="error-caption"><i class="fa fa-exclamation-circle" aria-hidden="true"></i>Произошла ошибка</h2>
+                    <p class="error-text">У вас уже есть заказ<a href="#">546555</a> с аналогичным названием, который доступен авторам.</p>     
+                    <p class="error-text">
+                        Создание дубликата заказа <span>уменьшит количество предложений</span> авторов, вероятно это приведёт к               <span>падению качества и повышению цены.</span>
+                    </p>
+                    <p class="error-text">
+                        Мы стараемся повысить качество создаваемых работ, поэтому<span>новый заказ не был создан.</span>
+                    </p>
+                </div>   
+                <div class="content-form-orders">
+                    <form>
+                        <div class="content-form-orders-list">
+                            <div class="content-form-orders-list-item_main">
+                                <p class="content-form-orders-list-item content-form-orders-list-item_main-text">Основное</p>
+                                <div class="content-form-orders-list-item_main-list">
+                                    <div class="content-form-orders-list-item_main-list-item">
+                                        <i class="i i_middle i_low-coast"></i>
+                                        <div class="content-form-orders-list-item_main-list-item-content">
+                                            <p class="content-form-orders-list-item_main-list-item-content-description">Низкие цены</p>
+                                            <p class="content-form-orders-list-item_main-list-item-content-text">Работа с автором без посредников</p>
+                                        </div>
+                                    </div>
+                                    <div class="content-form-orders-list-item_main-list-item">
+                                        <i class="i i_middle i_guarantees"></i>
+                                        <div class="content-form-orders-list-item_main-list-item-content">
+                                            <p class="content-form-orders-list-item_main-list-item-content-description">Гарантии качества</p>
+                                            <p class="content-form-orders-list-item_main-list-item-content-text">После завершения заказа все доработки бесплатно</p>
+                                        </div>
+                                    </div>
+                                    <div class="content-form-orders-list-item_main-list-item">
+                                        <i class="i i_middle i_on-time"></i>
+                                        <div class="content-form-orders-list-item_main-list-item-content">
+                                            <p class="content-form-orders-list-item_main-list-item-content-description">Точно в срок</p>
+                                            <p class="content-form-orders-list-item_main-list-item-content-text">Вы сами указываете срок выполнения</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="content-form-orders-list-item_select">
+                                <div class="content-form-orders-list-item_select-top-panel">
+                                    <a class="active" href="#">Основное</a>
+                                    <a href="#">Технические характеристики</a>
+                                </div>
+                                <div class="content-form-orders-list-item_select-inner-list">
+                                    <div class="content-form-orders-list-item_select-inner-list-item">
+                                        <span class="content-form-orders-list-item_select-inner-list-item-text">Напишите тему вашей работы 
+                                            <sup>*</sup>
+                                        </span>
+                                        <input type="text" class="form-control">
+                                    </div>
+                                    <div class="content-form-orders-list-item_select-inner-list-item">
+                                        <span class="content-form-orders-list-item_select-inner-list-item-text">Выберете тип работы 
+                                            <sup>*</sup>
+                                        </span>
+                                        <select class="form-control js-example-basic-single">
+                                            <option value="AL">Выберете тип...</option>
+                                            <option value="WY">Экзамен</option>
+                                            <option value="WY">Контрольная</option>
+                                        </select>
+                                    </div>
+                                    <div class="content-form-orders-list-item_select-inner-list-item">
+                                        <span class="content-form-orders-list-item_select-inner-list-item-text">Выберете предмет 
+                                            <sup>*</sup>
+                                        </span>
+                                        <select class="form-control js-example-basic-single">
+                                            <option value="AL">Выберете предмет</option>
+                                            <option value="WY">Физика</option>
+                                            <option value="WY">Алгебра</option>
+                                        </select>
+                                    </div>
+                                    <div class="content-form-orders-list-item_select-inner-list-item">
+                                        <span class="content-form-orders-list-item_select-inner-list-item-text">Пояснения и коментарии к заказу</span>
+                                        <textarea cols="20"  maxlength="1200" name="Text" rows="5"></textarea>
+                                    </div>
+                                    <div class="content-form-orders-list-item_select-inner-list-item">
+                                        <span class="content-form-orders-list-item_select-inner-list-item-text">Номер заказа в вашей системе</span>
+                                        <p class="content-form-orders-list-item_select-inner-list-item-text">(эта информация скрыта от автора)</p>
+                                        <input type="password" class="form-control">
+                                    </div>
+                                    <div class="content-form-orders-list-item_select-inner-list-item">
+                                        <label class="btn-add-caption">
+                                            <i class="fa fa-paperclip btn-add-caption-icon"></i>
+                                            <input class="btn-add-caption-element" type="file" name="photo" accept="image/*,image/jpeg"> 
+                                            <span class="btn-add-caption-text">ПРИКРЕПИТЬ ФАЙЛ</span> 
+                                        </label>
+                                        <p class="content-form-orders-list-item_select-inner-list-item-text-bottom">Максимальный размер загружаемого файла 15 Мб</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <p class="text-bottom_all">
+                                <sup>*</sup>Обязательные поля формы
+                            </p>
+                        </div>
+                        <div class="btns-next-prev-inner">
+                            <button class="next" type="submit">ДАЛЕЕ</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="content-status">
+                <h2 class="content-status-description">Статус заказа</h2>
+                <div class="content-status-list">
+                    <div class="content-status-list-item content-status-list-item_active">
+                        <span class="content-status-list-item-numb">1</span>
+                        <span class="content-status-list-item-text">Создание</span>
+                    </div>
+                    <p class="content-status-list-divider">
+                        <i class="fa fa-angle-down" aria-hidden="true"></i>
+                    </p>
+                    <div class="content-status-list-item">
+                        <span class="content-status-list-item-numb">2</span>
+                        <span class="content-status-list-item-text">В аукционе</span>
+                    </div>
+                    <p class="content-status-list-divider">
+                        <i class="fa fa-angle-down" aria-hidden="true"></i>
+                    </p>
+                    <div class="content-status-list-item">
+                        <span class="content-status-list-item-numb">3</span>
+                        <span class="content-status-list-item-text">В работе</span>
+                    </div>
+                    <p class="content-status-list-divider">
+                        <i class="fa fa-angle-down" aria-hidden="true"></i>
+                    </p>
+                    <div class="content-status-list-item">
+                        <span class="content-status-list-item-numb">4</span>
+                        <span class="content-status-list-item-text">На гарантии</span>
+                    </div>
+                    <p class="content-status-list-divider">
+                        <i class="fa fa-angle-down" aria-hidden="true"></i>
+                    </p>
+                    <div class="content-status-list-item">
+                        <span class="content-status-list-item-numb">5</span>
+                        <span class="content-status-list-item-text">Завершен</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--footer-->
+        <div class="footer">
+            <div class="container footer-list">
+                <div class="footer-list-item footer-list-item__left">
+                    <ul class="footer-list-item__left-nav-list">
+                        <li class="footer-list-item__left-nav-list-item"><a href="#">Новости</a></li>
+                        <li class="footer-list-item__left-nav-list-item"><a href="#">Топ авторов</a></li>
+                        <li class="footer-list-item__left-nav-list-item"><a href="#">Агенствам</a></li>
+                        <li class="footer-list-item__left-nav-list-item"><a href="#">Помощь</a></li>
+                    </ul>
+                    <div class="footer-list-item__left-banner">
+                        <a href="#">
+                            <p class="footer-list-item__left-banner-text-inner">
+                                <span class="footer-list-item__left-banner-text-inner-text-top">Будь всегда на связи!</span>
+                                <span class="footer-list-item__left-banner-text-inner-text-bottom">Приложение от Автор25</span> 
+                            </p>
+                            <p class="footer-list-item__left-banner-img-inner">
+                                <i class="i i_google-play"></i>  
+                            </p>
+                        </a>
+                    </div>
+                    <div class="footer-list-item__left-copyright">
+                        <p>© 2016 Author25.</p>
+                        <p>Все права защищены</p>
+                    </div>
+                </div>
+                <div class="footer-list-item footer-list-item__center">
+                    <p class="footer-list-item__center-text-top">Мы принимаем</p>
+                    <div class=" footer-list-item__center-list">
+                        <div class="footer-list-item__center-list-item">
+                            <i class="i i_footer i_visa"></i>
+                        </div>
+                        <div class="footer-list-item__center-list-item">
+                            <i class="i i_footer i_mc"></i>
+                        </div>
+                        <div class="footer-list-item__center-list-item">
+                            <i class="i i_footer i_yandex"></i>
+                        </div>
+                        <div class="footer-list-item__center-list-item">
+                            <i class="i i_footer i_web"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-list-item footer-list-item__right">
+                    <p class="footer-list-item__right-phone">
+                        <i class="fa fa-phone" aria-hidden="true"></i>
+                        <span>8-800-100-03-20</span>
+                    </p>
+                    <p class="footer-list-item__right-mail">
+                        <i class="fa fa-envelope" aria-hidden="true"></i>
+                        <span>support@author25.ru</span>
+                    </p>
+                    <p class="footer-list-item__right-work">Служба поддержки работает
+                        <span>по будням <i class="fa fa-clock-o" aria-hidden="true"></i> с 10:00 до 20:00</span>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+<script src="js/libs/jquery-1.12.4.js"></script>
+<script src="js/libs/bootstrap.js"></script>
+<script src="js/libs/select2.min.js"></script>
+<script src="js/main.js"></script>
+<script src="js/form.js"></script>
+</body>
+</html>

@@ -1,0 +1,165 @@
+/*btn-more*/
+@import "less/components/btn-more.less";
+.content-notification{
+    margin-left: 25px;
+    &-history{    
+        background-color: #fff;
+        border: 1px solid #e1e1e1;
+        margin-bottom: 60px;
+        &-top-panel{
+            border-bottom: 1px solid #e6e6e6;
+            position: relative;
+            padding: 20px 0 20px 25px;
+            @media(max-width: 768px){
+                padding: 30px 0px 25px 15px;
+            }
+            &-btn-all, &-btn-delete-all{
+                font-size: 14px;
+                font-family: "OpenSansLight";
+                line-height: 24px;
+                color: #4786c8;
+                &:hover{
+                    text-decoration: none;
+                    color: #444444;
+                }
+
+            }
+            &-btn-all {
+                @media(max-width: 768px) {
+                    position: absolute;
+                    right: 15px;
+                    top: 25px;
+                    z-index: 2;
+                }
+            } 
+            &-btn-delete-all{
+                position: absolute;
+                right: 30px;
+                bottom: 20px;
+                @media(max-width: 768px){
+                    position: absolute;
+                    right: 15px;
+                    bottom: 10px;
+                }
+            }
+            &-text{
+                font-size: 18px;
+                font-family: "OpenSansRegular";
+                line-height: 24px;
+                color: #b0b0b0;
+                margin-right: 30px;
+                &-value {
+                    color: #444444;
+                }
+            }        
+        }
+        &-list{
+            &-item{
+                padding: 30px 0 20px 30px;
+                position: relative;
+                @media(max-width: 768px){
+                    padding: 30px 0px 20px 15px;
+                }
+                &-description {
+                    font-size: 24px;
+                    font-family: "OpenSansRegular";
+                    color: #444444;
+                }
+                .fa-check-circle{
+                    font-size: 24px;
+                    color: #a2c679;
+                    vertical-align: top;
+                    margin: 10px 30px 0 0;
+                    @media(max-width: 768px){
+                        margin: 10px 10px 0 0;
+                    }
+                }
+                &-content{
+                    display: inline-block;
+                    width: 70%;
+                    &-date{
+                        font-size: 12px;
+                        line-height: 24px;
+                        color: #4786c8;
+                        position: relative;
+                        display: inline-block;
+                        width: 100%;
+                        &-user{
+                            margin-right: 30px;
+                            color: #4786c8;
+                            i{
+                                color: #b0b0b0;
+                                margin-right: 10px;
+                            }
+                            &:hover{
+                                color: #004444;
+                                text-decoration: none;
+                            }
+                        }
+                        &-value{
+                            color: #b0b0b0;
+                            i{
+                                color: #b0b0b0;
+                                margin-right: 10px;
+                            }
+                        }
+                    }
+                    &-text{
+                        font-size: 14px;
+                        font-family: "OpenSansRegular";
+                        line-height: 24px;
+                        color: #444444;
+                        margin: 0;
+                        display: inline-block;
+                        width: 95%;
+                        a {
+                            color: #4786c8;
+                        }
+                        @media(max-width: 768px){
+                            width: 85%;
+                        }
+                    }
+                }
+                &:hover{
+                    background-color: #f5f5f5;
+                    cursor: pointer;
+                }
+                &-btn-inner{
+                    display: inline-block;
+                    position: absolute;
+                    right: 30px;
+                    top: 47px;
+                    @media(max-width: 768px){
+                        right: 15px;
+                    }
+                    &-add{
+                        font-size: 14px;
+                        line-height: 1;
+                        font-family: "OpenSansBold";
+                        color: #ffffff;
+                        background-color: #a2c679;
+                        padding: 12px 23px;
+                        border-radius: 3px;  
+                        cursor: pointer;
+                        &:hover{
+                            background-color: #b2d38d;
+                        }
+                    }
+                    .btn-delete{
+                        margin-left: 25px;
+                        color: #b0b0b0;
+                        cursor: pointer;
+                        font-size: 16px;
+                        @media(max-width: 768px){
+                            margin-left: 15px;
+                        }
+                        &:hover{
+                            color: #e95454;
+                        }
+                    }
+                }
+            }
+            
+        }   
+    }    
+}

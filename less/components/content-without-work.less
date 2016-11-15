@@ -1,0 +1,57 @@
+.i_work-list {
+    background: url(../img/interface/bg-works-list.png) bottom center;
+    width: 279px;
+    height: 194px;
+}
+.i_list {
+    background: url(../img/interface/list.png) bottom center;
+    width: 259px;
+    height: 258px;
+}
+.content-without-work {
+    background-image: url(../img/interface/bg-works.png);
+    background-size: 100% 100%;
+    padding: 50px 0 0px 0;
+    text-align: center;
+    @media(max-width: 992px) {
+        margin-bottom: 20px;
+    }
+    &-text {
+        font-size: 24px;
+        font-family: "OpenSansRegular";
+        color: #444444;
+        width: 70%;
+        margin: 0 auto 60px;
+        @media(max-width: 992px) {
+            width: 95%;
+            font-size: 20px;
+        }
+    }
+    
+    &-text-bottom {
+        font-family: "OpenSansRegular";
+        font-size: 14px;
+        color: #7e7e7e;
+        margin: 25px 0;
+        display: block;
+    }
+    &-bottom-panel {
+        background-color: #fff;
+        border: 1px solid #e1e1e1;
+        text-align: center;
+        padding: 30px;
+        &-text {
+            font-size: 13px;
+            font-family: "OpenSansRegular";
+            color: #444444;
+            width: 65%;
+            margin: 20px auto;
+            &-link {
+                color: #4786c8;
+            }
+        }
+        &-text__full-width {
+            width: 100%;
+        }
+    }
+}

@@ -1,0 +1,118 @@
+@import "main.less";
+/*stars*/
+@import "less/components/stars-active.less";
+/*author*/
+@import "less/components/author.less";
+/*btn-blue*/
+@import "less/components/btn-blue.less";
+/*btn-red*/
+@import "less/components/btn-red.less";
+/*btn-delete*/
+@import "components/btn-delete.less";
+/*btn-green*/
+@import "less/components/btn-green.less";
+/*btn-gray*/
+@import "less/components/btn-gray.less";
+/*btn-select-order*/
+@import "less/components/btn-select-order.less";
+/*top-menu*/
+@import "less/components/top-menu.less";
+/*error-complaint*/
+@import "less/components/alerts.less";
+/*rate*/
+@import "less/components/rate.less";
+/*tooltip*/
+@import "less/components/tooltip.less";
+/*checkbox*/
+@import "less/components/checkbox.less";
+/*pop-up-info*/
+@import "less/components/pop-up-info.less";
+/*message*/
+@import "less/components/message.less";
+/*select*/
+@import "less/components/select.less";
+/*content-description*/
+@import "less/components/content-description.less";
+/*orders-item*/
+@import "less/components/orders-item.less";
+
+/*lament*/
+@import "less/components/lament.less";
+/*offers-list*/
+@import "components/offers-list.less";
+
+
+.i_doc {
+    background-image: url(../img/interface/doc.png);
+    width: 26px;
+    height: 30px;
+    vertical-align: middle;
+    margin-left: 25px;
+}
+.i_download {
+    background-image: url(../img/interface/download.png);
+    width: 20px;
+    height: 23px;
+    vertical-align: top;
+}
+
+
+
+/*content*/
+.content {
+    position: relative;
+}
+.top-menu {
+    position: static;
+    @media (max-width: 860px) {
+        padding-top: 30px;
+        width: 100%;
+    }
+    a {
+        @media (max-width: 560px) {
+            margin-right: 25px;
+            font-size: 13px;
+        }
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+   
+}
+@media(max-width: 992px){
+    div.content-center{
+        margin-top: 0px;
+    }
+}
+.content-center-description {
+    font-size: 24px;
+    font-family: "OpenSansRegular";
+    margin-bottom: 30px;
+}
+.offers-list-item-author-info-bottom-panel-info-show {
+    @media(max-width: 751px) {
+        padding: 0;
+    }
+    &-opinion {
+        @media(max-width: 751px) {
+            position: static;
+            display: block;
+        }
+        .like,
+        .dislike,
+        .all-works {
+            @media(max-width: 751px) {
+                display: block;
+                padding: 0;
+            }
+        }
+    }
+}
+.top-menu {
+    border-bottom: none;
+}
+/*order-name*/
+/*order-name-description*/
+
+
+

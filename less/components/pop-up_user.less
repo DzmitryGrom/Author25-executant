@@ -1,0 +1,46 @@
+.pop-up__user{
+    background-color: #fff;
+    border: 1px solid #e6e6e6;
+    width: 196px;
+    position: absolute;
+    z-index: 10;
+    top: 60px;
+    right: 58px;
+    display: none;
+    @media(max-width: 1035px){
+        right: 5px;
+    }
+    &-item{
+        padding: 15px 0 15px 15px;
+        cursor: pointer;
+        &:hover{
+            background-color: #f4f9fe;
+        }
+        &-text{
+            font-size: 14px;
+            color: #444444;
+            font-family: "OpenSansLight";
+            line-height: 18px;
+            display: block;
+            &__balance{
+                color: #a2c679;
+                font-weight: 600;
+                margin-left: 8px;
+            }
+            &__new{
+                color: #fff;
+                background-color: #e95454;
+                display: inline-block;
+                margin-left: 8px;
+                font-weight: 600;
+                padding: 4px 6px 5px;
+                font-size: 10px;
+                line-height: 1;
+                vertical-align: middle;
+            }
+            &:hover{
+                text-decoration: none;
+            }
+        }  
+    }
+}

@@ -1,0 +1,54 @@
+@import "main.less";
+/*content*/
+/*btn-greey*/
+@import "components/btn-gray.less";
+/*btn-blue*/
+@import "components/btn-blue.less";
+/*btn-green*/
+@import "components/btn-green.less";
+/*btn-add*/
+@import "components/btn-add.less";
+/*textarea*/
+@import "components/textarea.less";
+/*select*/
+@import "less/components/select.less";
+/*checkbox*/
+@import "less/components/checkbox.less";
+/*top-menu*/
+@import "less/components/top-menu.less";
+/*content-description*/
+@import "less/components/content-description.less";
+
+@media (max-width: 992px) {
+    .content-sitebar-user-info {
+        width: 100%;
+        display: block;
+        vertical-align: top;
+        padding-left: 0px;
+    }
+}
+.content-center-description {
+    margin-left: 25px;
+    margin-bottom: 15px;
+    display: block;
+    @media(max-width: 768px) {
+        margin-left: 0;
+    }
+}
+.content-center-inner {
+    padding-left: 25px;
+    @media(max-width: 768px) {
+        padding-left: 0;
+    }
+    .content-description-top-panel {
+        @media(max-width: 768px) {
+            height: 55px;
+        }
+    }
+    .top-menu {
+        border-bottom: none; 
+        .active {
+            color: #b5b5b5;
+        }
+    }
+}

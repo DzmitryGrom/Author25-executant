@@ -1,0 +1,79 @@
+.select-item {
+    background-color: #fff;
+    border: 1px solid #e1e1e1;
+    text-align: center;
+    margin-bottom: 25px;
+    &-description {
+        font-size: 16px;
+        padding: 16px 0;
+    }
+    &-description, 
+    &-description__big,
+    &-text {
+        font-family: "OpenSansRegular";
+        color: #444444;
+        display: inline-block;
+        width: 85%;
+    }
+    &-description__big {
+        font-size: 18px;
+        padding: 16px 0;
+    }
+    &-text {
+        font-size: 14px;
+        padding: 0;
+    }
+    .solid {
+        border-bottom: 1px solid #e6e6e6;
+    }
+    &-user {
+        display: inline-block;
+        width: 80%;
+        margin: 0 auto 10px;
+        &-text {
+            font-size: 14px;
+            font-family: "OpenSansRegular";
+            color: #b0b0b0;
+            margin: 20px 0;
+        }
+        &-item {
+            height: 40px;
+            position: relative;
+            margin-top: 25px;
+        }
+        @media(max-width: 1015px) {
+            text-align: left;
+        }
+        img {
+            margin: 0;
+            position: absolute;
+            left: 0;
+            top: -10px;
+        }
+        .btn-inner {
+            margin-top: 10px;
+            text-align: center;
+        }
+        .btn-green {
+            padding: 12px 0;
+            width: 100%;
+            @media(max-width: 1015px) {
+                max-width: 192px;
+
+            }
+        }
+        .author-login {
+            vertical-align: middle;
+            padding-left: 10px;
+            @media(max-width: 1015px) {
+                padding-left: 0px;
+                margin-left: 60px;
+            }
+        }
+        .btn-delete {
+            position: absolute;
+            right: 0;
+            top: 0;
+        }
+    }
+}

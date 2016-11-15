@@ -1,0 +1,273 @@
+/*btn-add*/
+@import "less/components/btn-add.less";
+.i_download {
+    background-image: url(../img/interface/download.png);
+    width: 20px;
+    height: 23px;
+    vertical-align: top;
+}
+.content-messages-inner {
+    background-color: #fff;
+    border: 1px solid #e1e1e1;
+    margin-bottom: 30px;
+    display: table;
+    width: 100%;
+    &-description {
+        font-size: 18px;
+        font-family: "OpenSansRegular";
+        color: #c1c1c1;
+        padding: 30px;
+        margin: 0;
+    }
+    &-list {
+        display: table-row;
+        @media(max-width: 992px) {
+            display: block;
+        }
+        &-item {
+            display: table-cell;
+            @media(max-width: 992px) {
+                display: table-row;
+            }
+            &-theme {
+                background-color: #f5f5f5;
+                border-bottom: 1px solid #e6e6e6;
+                border-top: 1px solid #e6e6e6;
+                padding: 10px 14px 10px 0;
+                @media(max-width: 992px) {
+                    padding: 10px 14px 10px 15px;
+                }
+                &-text {
+                    color: #444444;
+                }
+                &-link {
+                    color: #4786c8;
+                }
+                &-text,
+                &-link {
+                    font-size: 13px;
+                    font-family: "OpenSansSemibold";
+                    margin-left: 15px;
+                }
+                .i,
+                .time-active,
+                &-login {
+                    vertical-align: middle;
+                    display: inline-block;
+                }
+                &-login,
+                &-status{
+                    font-size: 13px;
+                    font-family: "OpenSansRegular";
+                    color: #444444;
+                }
+                &-description {
+                    font-size: 13px;
+                    font-family: "OpenSansRegular";
+                    color: #b0b0b0;
+                }
+            }
+        }
+        &-item__left {
+            @media(max-width: 992px) {
+                display: table-footer-group;
+            }
+            .content-messages-inner-list-item-theme-status,
+            .time-active {
+                margin-left: 15px;
+            }
+            .content-messages-inner-list-item-theme-description {
+                display: block;
+                margin-left: 15px;
+            }
+        }
+        &-item__right {
+            border-left: 1px solid #e6e6e6;
+            .content-messages-inner-list-item-theme-login {
+                margin: 0 10px 0 5px;
+            }
+        }
+    }
+}
+.time-active {
+    color: #b0b0b0;
+    font-size: 14px;
+    font-family: "OpenSansRegular";
+}
+.messages {
+    img {
+        margin-left: 20px;
+    }
+    display: none;
+        &-content {
+        background-color: #fff;
+        min-height: 50px;
+        margin: 20px 0;
+        padding: 0 30px;
+        &-date {
+            font-size: 12px;
+            font-family: "OpenSansRegular";
+            color: #b0b0b0;
+            text-align: center;
+        }
+        &-question {
+            text-align: right;
+            &-user {
+                background-color: #f3f8fc;
+                border: 2px solid #c6dfed;
+                text-align: left;
+
+                span {
+                    display: inline-block;
+                }
+                &:after {
+                    content: "";
+                    background-image: url(../img/interface/arrow_message-user.png);
+                    width: 11px;
+                    height: 22px;
+                    position: absolute;
+                    right: -11px;
+                    top: 17px;
+                }
+            }
+        }
+        .file-info{
+            display: inline-block;
+            vertical-align: top;
+            line-height: 1;
+            &-name,
+            &-status {
+                font-size: 14px;
+                font-family: "OpenSansRegular";
+                display: block;
+            }
+            &-name {
+                color: #444444;
+
+            }
+            &-status {
+                color: #c7c7c7;
+            }
+        }
+        .file-download-link {
+            display: inline-block;
+            vertical-align: top;
+            line-height: 1;
+            margin-left: 23px;
+            color: #588fcc;
+        }
+        &-question img,
+        &-answer img {
+            vertical-align: top;
+            margin-top: 15px;
+        }
+        &-question-user,
+        &-answer-author {
+            color: #444444;
+            font-size: 14px;
+            font-family: "OpenSansRegular";
+            display: inline-block;
+            border-radius: 6px;
+            max-width: 86%;
+            padding: 15px;
+            position: relative;
+            margin-bottom: 10px;
+            &-name {
+                font-weight: 600;
+                margin-bottom: 15px;
+                display: inline-block;
+            }
+        }
+        &-answer {
+            text-align: left;
+            &-author {
+                background-color: #fff;
+                border: 2px solid #f5f5f5;
+                text-align: left;
+                .offline,
+                .online {
+                    font-size: 14px;
+                    font-family: "OpenSansRegular";
+                    color: #fff;
+                    display: inline-block;
+                    border-radius: 3px;
+                    line-height: 1;
+                    padding: 0px 7px 2px 7px;
+                    margin: 0 5px;
+                }
+                .offline {
+                    background-color: #c1c6c8;
+                }
+                .online {
+                    background-color: #a1c67a;
+                }
+
+                &:after {
+                    content: "";
+                    background-image: url(../img/interface/arrow_message-author.png);
+                    width: 11px;
+                    height: 22px;
+                    position: absolute;
+                    left: -11px;
+                    top: 17px;
+                }
+            }
+            img {
+                margin: 15px 20px 0 0;
+            }
+        }
+    }
+        &-answer {
+        padding: 20px 0;
+        background-color: #f5f5f5;
+            @media(max-width: 992px) {
+                padding: 20px 10px
+            }
+        form {
+            height: 35px;
+            position: relative;
+        }
+        &-left, &-right {
+            display: inline-block;
+            vertical-align: top;
+            position: absolute;
+            z-index: 2;
+        }
+        &-left {
+            left: 0;
+            right: 250px;
+            padding-left: 20px;
+            input {
+                border: 2px solid #3582ce;
+            }
+        }
+        &-right {
+            padding-left: 20px;
+            right: 20px;
+            top: 0;
+            .btn-add-caption {
+                padding: 8px 0px;
+                margin: 0;
+                vertical-align: top;
+                width: 35px;
+                i {
+                    margin: 0;
+                }
+            }
+            .btn-answer {
+                background-color: #3582ce;
+                color: #fff;
+                vertical-align: top;
+                font-size: 12px;
+                line-height: 1;
+                border: none;
+                padding: 11px 0px;
+                width: 155px;
+                margin-left: 20px;
+                vertical-align: middle;
+                border-radius: 3px;
+            }
+        }
+
+    }
+}

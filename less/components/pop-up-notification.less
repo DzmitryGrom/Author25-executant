@@ -1,0 +1,86 @@
+.pop-up-notification.pop-up-notification_message{
+    left: 2px;
+}
+.pop-up-notification{
+    background-color: #fff;
+    border: 1px solid #e6e6e6;
+    width: 300px;
+    position: absolute;
+    z-index: 10;
+    top: 60px;
+    left: 64px;
+    display: none;
+    @media(max-width: 768px){
+        right: 0px;
+        left: inherit;
+    }
+    @media(max-width: 1140px){
+        right: 22px;
+    }
+    &-caption{
+        font-size: 14px;
+        font-family: "OpenSansLight";
+        line-height: 24px;
+        color: #444444;
+        margin: 10px 0 10px 15px;
+    }
+    &-inner{
+        &-item{
+            border-top: 1px solid #e6e6e6;
+            padding: 15px 0;
+            cursor: pointer;
+            i{
+                float: left;
+                margin-right: 5px;
+            }
+            i,&-date,
+            &-link {
+                margin-left: 15px;
+            }
+            &-text-top{
+                font-size: 14px;
+                color: #444444;
+                font-family: "OpenSansLight";
+                line-height: 18px;
+                width: 90%;
+                margin-left: 15px;
+            }
+            &-date {
+                font-size: 12px;
+                line-height: 18px;
+                color: #b0b0b0;
+                font-family: "OpenSansLight";
+            }
+            &-link{
+                font-size: 14px;
+                line-height: 18px;
+                color: #4786c8;
+                display: inline-block;
+                font-family: "OpenSansLight";
+                &:hover{
+                    text-decoration: none;
+                }
+            }
+            &:hover{
+               background-color: #f4f9fe; 
+            }
+        }
+       
+    }
+    &-btn-remove-inner{
+        border-top: 1px solid #e6e6e6;
+        text-align: center;
+        &-btn{
+            font-size: 14px;
+            font-family: "OpenSansLight";
+            line-height: 24px;
+            color: #444444;
+            display: block;
+            padding: 10px 0 15px 0;
+            &:hover{
+                text-decoration: none;
+            }
+        }
+    }
+  
+}

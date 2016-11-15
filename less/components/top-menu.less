@@ -1,0 +1,46 @@
+.top-menu {
+    border-bottom: 1px solid #e6e6e6;
+    margin-bottom: 30px;
+
+    @media(max-width: 1010px) {
+        position: absolute;
+        top: 20px;
+        left: 0;
+        right: 0;
+        width: 90%;
+        margin: 0 auto;
+
+    }
+
+    a {
+        font-size: 14px;
+        font-family: "OpenSansSemibold";
+        color: #b5b5b5;
+        padding-bottom: 15px;
+        display: inline-block;
+        margin-right: 55px;
+
+        &:last-child {
+            margin-right: 0px;
+        }
+        &:hover {
+            text-decoration: none;
+            color: #444444;
+        }
+        &.active {
+            color: #444444;
+            border-bottom: 3px solid #4786c8;
+        }
+        .value {
+            color: #444444;
+        }
+        @media(max-width: 1090px) {
+            font-size: 12px;
+        } 
+
+        @media(max-width: 768px) {
+            font-size: 14px;
+        }
+
+    }
+}

@@ -1,0 +1,29 @@
+{
+  "name": "Author25",
+  "version": "1.0.0",
+  "description": "Author25",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DzmitryGrom/Author25.git"
+  },
+  "keywords": [
+    "html",
+    "css",
+    "js"
+  ],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/DzmitryGrom/Author25/issues"
+  },
+  "homepage": "https://github.com/DzmitryGrom/Author25#readme",
+  "dependencies": {
+    "grunt": "^1.0.1",
+    "grunt-contrib-less": "^1.3.0",
+    "grunt-contrib-watch": "^1.0.0"
+  }
+}

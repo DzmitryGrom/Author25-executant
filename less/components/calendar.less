@@ -1,0 +1,215 @@
+.no-overwlow{
+    overflow: visible!important;
+} 
+.calendar-open{
+    margin-top: 0!important;
+}
+span.btn-toggle-calendar{
+    display: none;
+    color: #4786c8;
+    font-size: 50px;
+    line-height: 1;
+    position: absolute;
+    top: 0;
+    right: 15px;
+    @media(max-width: 768px){
+        display: inline-block;
+    }
+}
+.content-sitebar-calendar{
+    background-color: #fff;
+    padding: 0px;
+    border: 1px solid #e1e1e1;
+    margin-bottom: 25px;
+    
+    @media(max-width: 992px){
+        width: 50%;
+        display: inline-block;
+        vertical-align: top;
+    }
+    
+    @media(max-width: 768px){
+        display: block;
+        width: 100%;
+        overflow: hidden;
+    }
+    
+    &-text-top{
+        background-color: #fff;
+        font-size: 18px;
+        font-family: "OpenSansRegular";
+        position: relative;
+        z-index: 5;
+        
+        @media(max-width: 768px){
+            padding: 13px 0 13px 15px;
+        } 
+    }
+    .today-info{
+        &-block{
+            position: absolute;
+            max-width: 178px;
+            top: -83px;
+            left: 45px;
+            min-width: 170px;
+            text-align: left;
+            
+            @media(max-width: 768px){
+                left: 75px;
+            }
+            
+            &-value{
+                background-color: #4786c8;
+                text-align: center;
+                width: 140px;
+                padding: 9px 0;
+                span{
+                    color: #ffffff;
+                    font-size: 13px;
+                    line-height: 22px;
+                    font-family: "OpenSansSemibold";
+                }
+            }
+            &-content{
+                background-color: #fff;
+                padding: 10px;
+                border: 1px solid #d7dcde;
+                border-radius: 2px;
+                box-shadow: 6px 7px 0 0 rgba(212, 212, 212, 0.2);
+                &-number{
+                    font-size: 13px; 
+                    color: #444444;
+                    font-family: "OpenSansSemibold";
+                }
+                &-name{
+                    font-size: 13px;
+                    color: #444444;
+                    font-family: "OpenSansSemibold";
+                }
+                &-theme{
+                    font-family: "OpenSansSemibold";
+                    color: #b0b0b0;
+                    font-size: 13px;
+                    width: 90%;
+                }
+            }
+            &_tr{
+                background-image: url(../img/interface/treangel.png);
+                width: 11px;
+                height: 23px;
+                position: absolute;
+                left: -9px;
+                top: 88px;
+                z-index: 6;
+            }
+        }
+        
+    }
+   
+    #calendar {
+        width: 100%;
+        line-height: 18px;
+        font-size: 12px;
+        text-align: center;
+        .calendar-open{
+            margin-top: 0;
+        }
+        @media(max-width: 768px){
+            margin-top: -311px;
+        }
+
+        .fa{
+            color: #4786c8;
+            font-size: 32px;
+        }
+        
+        thead{
+            background-color: #f5f5f5;
+            border-top: 1px solid #e1e1e1;
+            border-bottom: 1px solid #e1e1e1;
+            tr{
+                &:last-child {
+                    font-size: small;
+                    color: rgb(85, 85, 85);
+                    height: 30px;
+                }
+                &:nth-child(1) td:nth-child(2) {
+                    font-size: 15px;
+                    font-family: "OpenSansRegular";
+                    line-height: 70px;
+                    color: #004444;
+                }
+                &:nth-child(1) td:nth-child(1):hover, thead tr:nth-child(1) td:nth-child(3):hover {
+                    cursor: pointer;
+                }
+                td{
+                    color: #b0b0b0;
+                }
+            }
+        }
+        tbody{
+            tr{
+                height: 35px;
+                width: 100%;
+
+                @media(max-width: 768px){
+                    width: 90%;
+                    margin: 0 auto;
+                }
+                td {
+                    color: rgb(44, 86, 122);
+                    width: 14%;
+                    &:nth-child(n+6), #calendar .holiday {
+                        color: #a3a3a3;
+                    }
+                    @media(max-width: 768px){
+                        &:nth-child(5) .today-info-block,
+                        &:nth-child(6) .today-info-block,
+                        &:nth-child(7) .today-info-block{
+                            left: inherit;
+                            right: 75px;
+                        }
+                        &:nth-child(5) .today-info-block .today-info-block_tr,
+                        &:nth-child(6) .today-info-block .today-info-block_tr,
+                        &:nth-child(7) .today-info-block .today-info-block_tr{
+                            left: inherit;
+                            right: -8px;
+                            transform: rotate(180deg);
+                            -moz-transform: rotate(180deg); /* Для Firefox */
+                            -ms-transform: rotate(180deg); /* Для IE */
+                            -webkit-transform: rotate(180deg); /* Для Safari, Chrome, iOS */
+                            -o-transform: rotate(180deg); /* Для Opera */
+                        }
+                        &:nth-child(5) .today-info-block .today-info-block-content,
+                        &:nth-child(6) .today-info-block .today-info-block-content,
+                        &:nth-child(7) .today-info-block .today-info-block-content{
+                            box-shadow: -5px 7px 7px 0px rgba(212, 212, 212, 0.2);
+                        }
+
+                    }
+                }
+                td.today{
+                    color: #fff;
+                    position: relative;
+                    z-index: 5;
+                    cursor: pointer;
+                    &:before {
+                        content: '';
+                        background: #ffa8a8;
+                        border-radius: 100px;
+                        color: #fff;
+                        position: absolute;
+                        z-index: -1;
+                        width: 22px;
+                        height: 22px;
+                        left: 50%;
+                        top: 50%;
+                        margin-left: -11px;
+                        margin-top: -12px;
+                    }
+                }
+            }
+        } 
+
+    }
+}

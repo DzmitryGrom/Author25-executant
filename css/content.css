@@ -1,0 +1,14 @@
+.list-item {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+.list-item a {
+  color: #1e6f1a;
+  font-size: 18px;
+  font-family: "OpenSansRegular";
+  font-weight: bold;
+  text-decoration: none;
+}
+.list-item a span {
+  color: #444444;
+}

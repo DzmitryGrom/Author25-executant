@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    <meta name="format-detection" content="telephone=no">
+    <title>Author25-work</title>
+    <link rel="stylesheet" href="css/libs/bootstrap.min.css">
+    <link rel="stylesheet" href="css/libs/select2.css">
+    <link rel="stylesheet" href="css/work.css">
+</head>
+<body>
+    <div class="page">
+        <!--nav-->
+        <div class="container-nav container-fluid">
+            <div class="container">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header">
+                    <button id="show_button" type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false"> 
+                        <span class="sr-only">Toggle navigation</span> 
+                        <span class="icon-bar"></span> 
+                        <span class="icon-bar"></span> 
+                        <span class="icon-bar"></span> 
+                    </button>
+                    <a class="navbar-brand" href="#"></a>
+                </div>
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <i class="collapse-tr"></i>
+                    <ul class="nav navbar-nav">
+                        <li>
+                            <i class="fa fa-angle-right" aria-hidden="true"></i>
+                            <a href="#">Главная<span class="sr-only">(current)</span></a>
+                        </li>
+                        <li>
+                            <i class="fa fa-angle-right" aria-hidden="true"></i>
+                            <a href="#">Мои заказы</a>
+                        </li>
+                        <li>
+                            <i class="fa fa-angle-right" aria-hidden="true"></i>
+                            <a href="#">Магазин готовых работ</a>
+                        </li>
+                        <li>
+                            <i class="fa fa-angle-right" aria-hidden="true"></i>
+                            <a href="#">Топ авторов</a>
+                        </li>
+                        <li class="active">
+                            <i class="fa fa-angle-right" aria-hidden="true"></i>
+                            <a href="#">Сделать заказ</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="navbar-info">
+                    <span class="navbar-info-item navbar-info-item__notifications">
+                        <i class="fa fa-info-circle" aria-hidden="true"></i>
+                        <i class="pop-up_tr"></i>
+                    </span>
+                    <span class="navbar-info-item navbar-info-item__message">
+                        <i class="fa fa-envelope" aria-hidden="true"></i>
+                        <i class="pop-up_tr"></i>
+                    </span>
+                    <span class="navbar-info-item navbar-info-item__user">
+                        <i class="fa fa-user" aria-hidden="true"></i>
+                        <i class="fa fa-angle-down" aria-hidden="true"></i>
+                        <i class="pop-up_tr__user"></i>
+                    </span>
+                </div>
+                <!-- /.navbar-collapse -->
+            </div>
+        </div>
+        <!--widgets-->
+        <div class="widget-help">
+            <a class="widget-help-item" href="#">О проекте</a>
+            <a class="widget-help-item" href="#">Соглашение</a>
+            <a class="widget-help-item" href="#">Правила работы</a>
+            <a class="widget-help-item" href="#">Новости</a>
+            <a class="widget-help-item" href="#">Помощь</a>
+            <a class="widget-help-item" href="#">Как оплатить</a>
+            <a class="widget-help-item" href="#">Узнать среднюю стоимость работы</a>
+        </div>
+        <div class="pop-up-notification pop-up-notification__info">
+            <p class="pop-up-notification-caption">Новые уведомления:</p>
+            <div class="pop-up-notification-inner">
+                <div class="pop-up-notification-inner-item">
+                    <i class="fa fa-angle-double-right" aria-hidden="true"></i>
+                    <p class="pop-up-notification-inner-item-text-top">Гарантийный срок по заказу "Физика 2" истек</p>
+                    <p class="pop-up-notification-inner-item-date">26 июня 2016 в 20:43</p>
+                    <a class="pop-up-notification-inner-item-link" href="#">физика 2</a>
+                </div>
+                <div class="pop-up-notification-inner-item">
+                    <i class="fa fa-angle-double-right" aria-hidden="true"></i>
+                    <p class="pop-up-notification-inner-item-text-top">Автор сделал ставку к Вашему заказу контрольная "РАСЧЕТ УСТОЙЧИВОСТИ ЭЛЕКТРОЭНЕРГЕТИЧЕСКОЙ СИСТЕМЫ"</p>
+                    <p class="pop-up-notification-inner-item-date">26 июня 2016 в 20:43</p>
+                    <a class="pop-up-notification-inner-item-link" href="#">контрольная РАСЧЕТ УСТОЙЧИВОСТИ ЭЛЕКТРОЭНЕРГЕТИЧЕСКОЙ СИСТЕМЫ</a>
+                </div>
+            </div>
+            <div class="pop-up-notification-btn-remove-inner">
+                <a href="#" class="pop-up-notification-btn-remove-inner-btn">Очистить уведомления</a>
+            </div>
+        </div>
+        <div class="pop-up-notification pop-up-notification__message">
+            <p class="pop-up-notification-caption">Новые собщения:</p>
+            <div class="pop-up-notification-inner">
+                <div class="pop-up-notification-inner-item">
+                    <i class="fa fa-angle-double-right" aria-hidden="true"></i>
+                    <p class="pop-up-notification-inner-item-text-top">Привет, я готова приступить к проекту, только мне нуджно предоплата</p>
+                    <p class="pop-up-notification-inner-item-date">26 июня 2016 в 20:43</p>
+                    <a class="pop-up-notification-inner-item-link" href="#">физика 2</a>
+                </div>
+                <div class="pop-up-notification-inner-item">
+                    <i class="fa fa-angle-double-right" aria-hidden="true"></i>
+                    <p class="pop-up-notification-inner-item-text-top">Очень интересно получается! Я могу сделать прямо на этой странице, но для этого мне надо время</p>
+                    <p class="pop-up-notification-inner-item-date">26 июня 2016 в 20:43</p>
+                    <a class="pop-up-notification-inner-item-link" href="#">контрольная РАСЧЕТ УСТОЙЧИВОСТИ ЭЛЕКТРОЭНЕРГЕТИЧЕСКОЙ СИСТЕМЫ</a>
+                </div>
+            </div>
+            <div class="pop-up-notification-btn-remove-inner">
+                <a href="#" class="pop-up-notification-btn-remove-inner-btn">Очистить уведомления</a>
+            </div>
+        </div>
+        <div class="pop-up__user">
+            <div class="pop-up__user-item">
+                <a href="#" class="pop-up__user-item-text">Баланс<span class="pop-up__user-item-text__balance">0 р.</span></a>   
+            </div>
+            <div class="pop-up__user-item">
+                <a href="#" class="pop-up__user-item-text">Настройки</a>   
+            </div>
+            <div class="pop-up__user-item">
+                <a href="#" class="pop-up__user-item-text">Текущая комиссия</a>   
+            </div>
+            <div class="pop-up__user-item">
+                <a href="#" class="pop-up__user-item-text">Избранные авторы<span class="pop-up__user-item-text__new">NEW</span></a>   
+            </div>
+            <div class="pop-up__user-item">
+                <a href="#" class="pop-up__user-item-text">Черный список</a>   
+            </div>
+            <div class="pop-up__user-item">
+                <a href="#" class="pop-up__user-item-text btn-pop-up__user-exit">Выход</a>   
+            </div>
+        </div>
+        <!--content-->
+        <div class="content container">
+            <div class="content-sitebar">
+                <div class="content-sitebar-user content-sitebar-user__without-paddings">
+                    <div class="content-sitebar-user-info">
+                        <p class="content-sitebar-user-info-orders-description content-sitebar-user-info-orders-description__without-margin">Заказы</p>
+                        <ul class="content-sitebar-user-info-list">
+                            <li class="content-sitebar-user-info-list-item">
+                                <a class="content-sitebar-user-info-list-item-link" href="#">Поиск готовых работ
+                                </a>
+                            </li>
+                            <li class="content-sitebar-user-info-list-item">
+                                <a class="content-sitebar-user-info-list-item-link" href="#">Я продаю работы 
+                                    <span class="content-sitebar-user-info-list-item-link-value-inner">
+                                        <span class="content-sitebar-user-info-list-item-link-value">0</span>
+                                    </span>
+                                    
+                                </a>
+                            </li>
+                            <li class="content-sitebar-user-info-list-item">
+                                <a class="content-sitebar-user-info-list-item-link" href="#">Я купил работы
+                                    <span class="content-sitebar-user-info-list-item-link-value-inner">
+                                        <span class="content-sitebar-user-info-list-item-link-value">1</span>
+                                    </span>
+                                    
+                                </a>
+                            </li>
+                        </ul>
+                        <div class="content-sitebar-user-info-btn-inner">
+                            <a href="#" class="btn-blue">ПРОДАТЬ РАБОТУ</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="content-sitebar-user content-sitebar-user__without-paddings">
+                    <div class="content-sitebar-user-info">
+                        <p class="content-sitebar-user-info-orders-description">Похожие работы</p>
+                        <ul class="content-sitebar-user-info-list">
+                            <li class="content-sitebar-user-info-list-item content-sitebar-user-info-list-item__narrow">
+                                <a class="content-sitebar-user-info-list-item-link" href="#">Курсовая работа, Право и юриспруденция
+                                </a>
+                                <p class="content-sitebar-user-info-list-item-section">Юридическая ответсвенность</p>
+                                <p class="content-sitebar-user-info-list-item-price">Цена:
+                                    <span class="content-sitebar-user-info-list-item-price-value">250 руб.</span>
+                                </p>
+                            </li>
+                            <li class="content-sitebar-user-info-list-item content-sitebar-user-info-list-item__narrow">
+                                <a class="content-sitebar-user-info-list-item-link" href="#">Курсовая работа, Право и юриспруденция
+                                </a>
+                                <p class="content-sitebar-user-info-list-item-section">Юридическая ответсвенность</p>
+                                <p class="content-sitebar-user-info-list-item-price">Цена:
+                                    <span class="content-sitebar-user-info-list-item-price-value">250 руб.</span>
+                                </p>
+                            </li>
+                            <li class="content-sitebar-user-info-list-item content-sitebar-user-info-list-item__narrow">
+                                <a class="content-sitebar-user-info-list-item-link" href="#">Курсовая работа, Право и юриспруденция
+                                </a>
+                                <p class="content-sitebar-user-info-list-item-section">Правовая культура в системе общественных отношений</p>
+                                <p class="content-sitebar-user-info-list-item-price">Цена:
+                                    <span class="content-sitebar-user-info-list-item-price-value">250 руб.</span>
+                                </p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+               
+            </div>
+            <div class="content-center">    
+                <span class="content-center-description">Доказательства и доказывание в гражданском процессе</span>
+                <div class="content-center-inner">
+                    <div class="content-description">
+                        <div class="content-description-top-panel">
+                            <div class="top-menu">
+                                <a href="#" class="active">Описание</a>
+                            </div>
+                        </div>
+                        <div class="content-description-list-description">
+                            <p class="content-description-list-description-text-top">Введение</p>
+                            <p>Глава 1. ТЕОРИТИЧЕСКИЕ ОСНОВЫ ДОКАЗАТЕЛЬСТВА И ДОКАЗАНИЯ В ГРАЖДАНСКОМ ПРОЦЕССЕ</p>
+                            <p>Глава 2. ХАРАКТЕРИСТИКА ОСНОВЫХ СВОЙСТВ ДОКАЗАТЕЛЬСТВ В ГРАЖДАНСКОМ ПРОЦЕССЕ</p>
+                            <p>Глава 3. ЗНАЧЕНИЕ СВОЙСТВ ДОКАЗАТЕЛЬСТВ НА ОСНОВЕ АНАЛИЗА СУДЕБНОЙ ПРАКТИКИ ЗАКЛЮЧЕНИЕ</p>
+                            <p>СПИСОК ИСПОЛЬЗОВАННЫХ ИСТОЧНИКОВ</p>
+                        </div>
+                        <div class="solid"></div>
+                        <div class="content-description-info">
+                            <img src="img/interface/avatar-square.jpg" alt="аватар">
+                            <div class="content-description-info-left">
+                                <p class="content-description-info-left-name">borisbrecha</p>
+                                <p class="content-description-info-left-date">Загрузили 
+                                    <span class="content-description-info-left-date-value">25.07.2016</span>
+                                </p>
+                            </div>
+                            <div class="content-description-info-right">
+                                <span class="content-description-info-right-price">100 руб</span>
+                                <a href="#" class="btn-green">
+                                    <i class="fa fa-money" aria-hidden="true"></i>ВНЕСТИ СРЕДСТВА
+                                </a>
+                            </div>
+                        </div>
+                        <div class="solid"></div>
+                        <div class="content-description-list">
+                            <div class="content-description-list-item">
+                                <div>   
+                                    <div class="content-description-list-item-left-side">
+                                        <p>Предмет:</p>
+                                    </div>
+                                    <div class="content-description-list-item-right-side">
+                                        <p>Право и юрисприденция</p>
+                                    </div>
+                                </div> 
+                                <div>
+                                    <div class="content-description-list-item-left-side">
+                                        <p>Тип работы:</p>
+                                    </div>
+                                    <div class="content-description-list-item-right-side">
+                                        <p>Курсовая работа</p>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="content-description-list-item-left-side">
+                                        <p>Год работы:</p>
+                                    </div>
+                                    <div class="content-description-list-item-right-side">
+                                        <p>2016</p>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="content-description-list-item-left-side">
+                                        <p>Страниц:</p>
+                                    </div>
+                                    <div class="content-description-list-item-right-side">
+                                        <p>50</p>
+                                    </div>
+                                </div>  
+                            </div>
+                            <div class="content-description-list-item">
+                                <div>
+                                    <div class="content-description-list-item-left-side">
+                                        <p>Номер работы:</p>
+                                    </div>
+                                    <div class="content-description-list-item-right-side">
+                                        <p>123456</p>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="content-description-list-item-left-side">
+                                        <p>Куплено:</p>
+                                    </div>
+                                    <div class="content-description-list-item-right-side">
+                                        <p>0<span class="gray">раз</span></p>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="content-description-list-item-left-side">
+                                        <p>Просмотрено:</p>
+                                    </div>
+                                    <div class="content-description-list-item-right-side">
+                                        <p>10<span class="gray">раз</span></p>
+                                    </div>   
+                                </div>
+                                <div>
+                                    <div class="content-description-list-item-left-side">
+                                        <p>Оригинальность:</p>
+                                    </div>
+                                    <div class="content-description-list-item-right-side">
+                                        <p>Неизвестно</p>
+                                    </div>   
+                                </div>
+                            </div>
+                        </div>
+                        <div class="content-description-ad">
+                            <i class="i i_schedule"></i>
+                            <p class="content-description-ad-text">
+                                <a href="#">После покупки вы можете повысить уникальность этой работы до 80-100%</a>
+                                с помощью нашего 
+                                <a href="#">сервиса повышения уникальности</a> 
+                            </p>
+                        </div>
+                    </div>
+                    <div class="content-description">
+                        <div class="content-description-top-panel">
+                            <div class="top-menu">
+                                <a href="#" class="active">Введение</a>
+                                <a  href="#">Содержание</a>
+                                <a  href="#">Список литературы</a>
+                            </div>
+                        </div>
+                        <div class="content-description-text">
+                            <p class="text-hidden">
+                                Различные теоретические и практические института доказательств в гражданском процессе вызывают активный исследовательский интерес в связи с тем, что в любой сфере юридической деятельности специалисты сталкиваться с вопросами доказательств и доказывания: это и представление интересов граждан или юридических лиц в гражданском процессе, судейскя деятельность и др. Вопросы, которые возникают в практической деятельности юриста, необходимо разрешать, опираясь не только на нормы действующего законодательства, но и теоритические постулаты, выработанные юридической наукой. Безусловным является то, что процесс доказывания занимает центральное, ключевое место при рассмотрении и разрешении дела в суде, от его результатов зависит принятие важнейших процессуальных решений, обеспечивающих выполнение стстстстсттстстстстсттст доказывания занимает центральное, ключевое место при рассмотрении и разрешении дела в суде, от его результатов зависит принятие важнейших процессуальных решений, обеспечивающих выполнение стстстстсттстстстстсттст
+                            </p>
+                            <span class="content-description-text-point">...</span>
+                            <span class="read-more">Читать подробнее</span>
+                        </div>
+                    </div>
+                    <div class="content-description">
+                        <div class="content-description-info">
+                            <div class="content-description-info-tooltip-inner">
+                                <span class="content-description-info-tooltip-inner-question">Условия покупки?</span>
+                                <div class="content-description-info-tooltip">
+                                    <p>
+                                       Для того, чтобы купить готовую работу, необходимо иметь на балансе достаточную сумму денег. Все загруженные работы имеют уникальность не менее 50%. Сразу после покупки работы вы получите ссылку на скачивание файла. Срок скачивания не ограничен по времени.
+                                    </p>
+                                    <i class="i i_tr"></i> 
+                                </div>
+                            </div>
+                            <div class="content-description-info-right">
+                                <span class="content-description-info-right-price">100 руб</span>
+                                <a href="#" class="btn-green">
+                                    <i class="fa fa-money" aria-hidden="true"></i>ВНЕСТИ СРЕДСТВА
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--footer-->
+        <div class="footer">
+            <div class="container footer-list">
+                <div class="footer-list-item footer-list-item__left">
+                    <ul class="footer-list-item__left-nav-list">
+                        <li class="footer-list-item__left-nav-list-item"><a href="#">Новости</a></li>
+                        <li class="footer-list-item__left-nav-list-item"><a href="#">Топ авторов</a></li>
+                        <li class="footer-list-item__left-nav-list-item"><a href="#">Агенствам</a></li>
+                        <li class="footer-list-item__left-nav-list-item"><a href="#">Помощь</a></li>
+                    </ul>
+                    <div class="footer-list-item__left-banner">
+                        <a href="#">
+                            <p class="footer-list-item__left-banner-text-inner">
+                               <span class="footer-list-item__left-banner-text-inner-text-top">Будь всегда на связи!</span>
+                               <span class="footer-list-item__left-banner-text-inner-text-bottom">Приложение от Автор25</span> 
+                            </p>
+                            <p class="footer-list-item__left-banner-img-inner">
+                                <i class="i i_google-play"></i>  
+                            </p>
+                        </a>
+                    </div>
+                    <div class="footer-list-item__left-copyright">
+                        <p>© 2016 Author25.</p>
+                        <p>Все права защищены</p>
+                    </div>
+                </div>
+                <div class="footer-list-item footer-list-item__center">
+                    <p class="footer-list-item__center-text-top">Мы принимаем</p>
+                    <div class=" footer-list-item__center-list">
+                        <div class="footer-list-item__center-list-item">
+                            <i class="i i_footer i_visa"></i>
+                        </div>
+                        <div class="footer-list-item__center-list-item">
+                            <i class="i i_footer i_mc"></i>
+                        </div>
+                        <div class="footer-list-item__center-list-item">
+                            <i class="i i_footer i_yandex"></i>
+                        </div>
+                         <div class="footer-list-item__center-list-item">
+                            <i class="i i_footer i_web"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-list-item footer-list-item__right">
+                    <p class="footer-list-item__right-phone">
+                        <i class="fa fa-phone" aria-hidden="true"></i>
+                        <span>8-800-100-03-20</span>
+                    </p>
+                    <p class="footer-list-item__right-mail">
+                        <i class="fa fa-envelope" aria-hidden="true"></i>
+                        <span>support@author25.ru</span>
+                    </p>
+                    <p class="footer-list-item__right-work">Служба поддержки работает
+                        <span>по будням <i class="fa fa-clock-o" aria-hidden="true"></i> с 10:00 до 20:00</span>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+<script src="js/libs/jquery-1.12.4.js"></script>
+<script src="js/libs/bootstrap.js"></script>
+<script src="js/libs/select2.min.js"></script>
+<script src="js/select.js"></script>
+<script src="js/main.js"></script>
+<script src="js/work.js"></script>
+
+</body>
+</html>

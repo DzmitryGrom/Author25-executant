@@ -1,0 +1,38 @@
+@import "less/components/btn-delete.less";
+.message-inner {
+    position: absolute;
+    left: 20px;
+    top: 450px;
+    z-index: 20;
+}
+.message {
+    position: relative;
+    width: 290px;
+    min-height: 80px;
+    background-color: #313131;
+    border-radius: 3px;
+    padding: 0 25px 15px 55px;
+    opacity: 0.9;
+    margin-bottom: 10px;
+    &-text {
+        font-family: "OpenSansRegular";
+        font-size: 13px;
+    }
+    &-text, .fa {
+        color: #e0e0e0;
+    }
+    .fa-envelope {
+        font-size: 15px;
+        position: absolute;
+        left: 25px;
+        top: 23px;
+        z-index: 2;
+    }
+    .fa-times {
+        position: absolute;
+        top: 14px;
+        right: 14px;
+        z-index: 2;
+    }    
+        
+}
