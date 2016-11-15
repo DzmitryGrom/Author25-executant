@@ -3,24 +3,37 @@
 .jslider .jslider-pointer { background: url(../img/interface/jslider.png) no-repeat 0 0; }
 
 .jslider { display: block; width: 100%; height: 1em; position: relative; top: 0.6em; left: 9px; font-family: Arial, sans-serif;margin-top: 50px }
-#Slider4 + .jslider {
+#Slider4 + .jslider,
+#Slider3 + .jslider {
     margin-top: 5px;
 }
-#Slider4 + .jslider .jslider-scale {
+#Slider4 + .jslider .jslider-scale,
+#Slider3 + .jslider .jslider-scale {
     top: 15px;
 }
-#Slider4 + .jslider .jslider-scale ins {
+#Slider4 + .jslider .jslider-scale ins,
+#Slider3 + .jslider .jslider-scale ins {
     top: 0;
+    left: -21px;
+}
+#Slider4 + .jslider .jslider-scale span:first-child ins,
+#Slider3 + .jslider .jslider-scale span:first-child ins {
     left: -4px;
 }
-#Slider4 + .jslider .jslider-scale span:nth-child(2) ins {
+#Slider4 + .jslider .jslider-scale span:nth-child(2) ins,
+#Slider3 + .jslider .jslider-scale span:nth-child(2) ins {
     left: -12px;
 }
-#Slider4 + .jslider .jslider-scale span:nth-child(3) ins {
+#Slider4 + .jslider .jslider-scale span:nth-child(3) ins,
+#Slider3 + .jslider .jslider-scale span:nth-child(3) ins  {
     left: -16px;
 }
-#Slider4 + .jslider .jslider-scale span:last-child ins {
-    left: -24px;
+#Slider3 + .jslider .jslider-scale span:nth-child(8) ins {
+    left: -5px;
+}
+#Slider4 + .jslider .jslider-scale span:last-child ins,
+#Slider3 + .jslider .jslider-scale span:last-child ins {
+    left: -4px;
 }
 .jslider table { width: 100%; border-collapse: collapse; border: 0; }
 .jslider td, .jslider th { padding: 0; vertical-align: top; text-align: left; border: 0; }

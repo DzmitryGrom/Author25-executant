@@ -7,6 +7,10 @@
         color: #444444;
         padding: 0 30px;
         text-align: left;
+        &-value {
+            color: #b0b0b0;
+            margin-left: 10px;
+        }
     }
     &-search-panel {
         font-size: 0;
@@ -127,6 +131,7 @@
         @media(max-width: 900px) {
             padding: 30px 30px 70px 30px;
         }
+        
         &-left, 
         &-right,
         &-center {
@@ -166,6 +171,28 @@
             @media(max-width: 640px) {
                 right: 30px;
             }
+        }
+        &-item {
+            margin-bottom: 30px;
+            text-align: left;
+            position: relative;
+            .filter-item-slider-panel-left {
+                width: 22%;
+            }
+            .filter-item-slider-panel-center {
+                width: 57%;
+            }
+            .filter-item-slider-panel-right {
+                width: 20%;
+                text-align: left;
+                position: absolute;
+                right: -24px;
+                top: 0;
+                z-index: 2;
+            }
+        }
+        &-item__slider {
+            margin-bottom: 50px;
         }
         .checkbox-dynamic {
             margin: 0 10px 0 0;

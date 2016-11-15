@@ -161,44 +161,52 @@
         <div class="content container">
             <div class="content-center">    
                 <div class="content-center-inner">
-                    <div class="content-search-list">
-                        <div  class="content-search-list-item filter-item">
-                            <form>
-                               <p class="filter-item-description">Фильтр работ
-                                   <span>Найдено 5 заказов</span>
-                               </p>
-                                <div class="filter-item-search-panel">
-                                    <div class="filter-item-search-panel-input-inner">
-                                        <input type="text" class="form-control">
-                                    </div>
-                                    <span class="btn-green">НАЙТИ ЗАКАЗ</span>
+                    <div  class="content-search-list-item filter-item">
+                        <form>
+                           <p class="filter-item-description">Фильтр работ
+                               <span class="filter-item-description-value">Найдено 5 заказов</span>
+                           </p>
+                            <div class="filter-item-search-panel">
+                                <div class="filter-item-search-panel-input-inner">
+                                    <input type="text" class="form-control">
                                 </div>
-                                <div class="filter-item-select-panel">
-                                    <div class="filter-item-select-panel-item filter-item-select-panel-item__left">
-                                        <div class="filter-item-select-panel-item-left">
-                                            <select class="form-control js-example-basic-single">
-                                                <option value="AL">Все предметы...</option>
-                                                <option value="WY">Экзамен</option>
-                                                <option value="WY">Контрольная</option>
-                                            </select>
-                                        </div>
-                                        <div class="filter-item-select-panel-item-right">
-                                            <select class="form-control js-example-basic-single">
-                                                <option value="AL">Все типы работ...</option>
-                                                <option value="WY">Экзамен</option>
-                                                <option value="WY">Контрольная</option>
-                                            </select>
-                                        </div>
+                                <span class="btn-green">НАЙТИ ЗАКАЗ</span>
+                            </div>
+                            <div class="filter-item-select-panel">
+                                <div class="filter-item-select-panel-item filter-item-select-panel-item__left">
+                                    <div class="filter-item-select-panel-item-left">
+                                        <select class="form-control js-example-basic-single">
+                                            <option value="AL">Все предметы...</option>
+                                            <option value="WY">Экзамен</option>
+                                            <option value="WY">Контрольная</option>
+                                        </select>
                                     </div>
-                                    <div class="filter-item-select-panel-item filter-item-select-panel-item__right">
+                                    <div class="filter-item-select-panel-item-right">
+                                        <select class="form-control js-example-basic-single">
+                                            <option value="AL">Все типы работ...</option>
+                                            <option value="WY">Экзамен</option>
+                                            <option value="WY">Контрольная</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="filter-item-select-panel-item filter-item-select-panel-item__right">
+                                    <div class="checkbox-dynamic__green checkbox-dynamic">
+                                        <input type="checkbox">
+                                    </div>
+                                    <span class="filter-item-slider-panel-text">В заказе меньше 3-х ставок</span>
+                                </div>
+                            </div>
+                            <span class="btn-open"><i class="fa fa-angle-down" aria-hidden="true"></i>Дополнительно</span>
+                            <div class="filter-item-slider-panel hidden">
+                                <div class="filter-item-slider-panel-item">
+                                    <div class="filter-item-slider-panel-left">
                                         <div class="checkbox-dynamic__green checkbox-dynamic">
                                             <input type="checkbox">
                                         </div>
-                                        <span class="filter-item-slider-panel-text">В заказе меньше 3-х ставок</span>
+                                        <span class="filter-item-slider-panel-text">Заказчик онлайн</span>
                                     </div>
                                 </div>
-                                <span class="btn-open"><i class="fa fa-angle-down" aria-hidden="true"></i>Дополнительно</span>
-                                <div class="filter-item-slider-panel hidden">
+                                <div class="filter-item-slider-panel-item filter-item-slider-panel-item__slider">
                                     <div class="filter-item-slider-panel-left">
                                         <div class="checkbox-dynamic__green checkbox-dynamic">
                                             <input type="checkbox">
@@ -206,204 +214,122 @@
                                         <span class="filter-item-slider-panel-text">Стоимость</span>
                                     </div>
                                     <div class="filter-item-slider-panel-center">
-                                        <input id="Slider4" type="range" name="area" value="0;75000" />
+                                        <input id="Slider4" type="range" name="area" value="0;72000" />
                                     </div>
                                     <div class="filter-item-slider-panel-right">
-                                        <span class="filter-item-slider-panel-text">0 - 41750 руб</span>
+                                        <span class="filter-item-slider-panel-text">100 - 7200 руб</span>
                                     </div>
                                 </div>
-                            </form>
+                                <div class="filter-item-slider-panel-item filter-item-slider-panel-item__slider">
+                                    <div class="filter-item-slider-panel-left">
+                                        <div class="checkbox-dynamic__green checkbox-dynamic">
+                                            <input type="checkbox">
+                                        </div>
+                                        <span class="filter-item-slider-panel-text">Срок сдачи</span>
+                                    </div>
+                                    <div class="filter-item-slider-panel-center">
+                                        <input id="Slider3" type="range" name="area" value="0;25" />
+                                    </div>
+                                    <div class="filter-item-slider-panel-right">
+                                        <span class="filter-item-slider-panel-text">через 0-25 дней</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="alert-warning">Что бы видеть заказы по вашей тематике - <a href="#">заполните квалификацию</a></div>
+                    <div class="order-list">
+                        <div class="order-list-head">
+                            <div class="order-list-col order-list-col__one">Название и тип работы</div>
+                            <div class="order-list-col order-list-col__two">Создано</div>
+                            <div class="order-list-col order-list-col__three">Сроки сдачи</div>
+                            <div class="order-list-col order-list-col__foure">Отклики</div>
+                            <div class="order-list-col order-list-col__five">Цена</div>
                         </div>
-                        <div class="content-search-list-item content-search-list-item__work">
-                            <div class="content-search-list-item__work-top-panel">
-                                <div class="content-search-list-item__work-top-panel-item">
-                                    <span class="content-search-list-item__work-top-panel-item-text">Курсовая работа</span>
-                                </div>
-                                <div class="content-search-list-item__work-top-panel-item">
-                                    <span class="content-search-list-item__work-top-panel-item-text">Социальная работа</span>
-                                </div>
-                                <div class="content-search-list-item__work-top-panel-item">
-                                    <span class="content-search-list-item__work-top-panel-item-number">2016
-                                        <span class="content-search-list-item__work-top-panel-item-number-name">год</span>
-                                    </span>
-                                </div>
-                                <div class="content-search-list-item__work-top-panel-item">
-                                    <span class="content-search-list-item__work-top-panel-item-number">32
-                                        <span class="content-search-list-item__work-top-panel-item-number-name">стр.</span>
-                                    </span>
-                                </div>
+                        <div class="order-list-item">
+                            <span class="order-list-item-online">ЗАКАЗЧИК ОНЛАЙН</span>
+                            <span class="liked">
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                            </span>
+                            <div class="order-list-item-link-inner">
+                                <a class="order-list-item-link" href="#">
+                                    <i class="fa fa-envelope" aria-hidden="true"></i>
+                                    
+                                    Чертеж в автокаде Втулка dwg/dwt
+                                </a>
                             </div>
-                            <div class="content-search-list-item__work-middle-panel">
-                                <a href="#" class="content-search-list-item__work-middle-panel-text">Социальный контроль и вщздействие социальной среды на образ жизни людей</a>
-                            </div>
-                            <div class="content-search-list-item__work-bottom-panel">
-                                <div class="content-search-list-item__work-bottom-panel-left">
+                            <div class="order-list-col  order-list-col__one">Отчёт по практике, Авиационная и ракетно-космическая техника</div>
+                            <div class="order-list-col  order-list-col__two order-list-col__gray">26 мая 2016
+                                <div class="tooltip-text tooltip-text__order-list">
                                     <a href="#" class="author">
-                                        <img src="img/interface/user-line.png" alt="user">                                     
+                                        <img src="img/interface/author.jpg" alt="автор">                                     
                                         <span class="author-login">Неверова</span>
-                                        <span class="i author-offline"></span>
                                     </a>
                                 </div>
-                                <div class="content-search-list-item__work-bottom-panel-right">
-                                    <span class="content-search-list-item__work-bottom-panel-right-price">200
-                                        <i class="fa fa-rub" aria-hidden="true"></i>
-                                    </span>
-                                    <a href="#" class="btn-gray">КУПИТЬ</a>
-                                </div>
                             </div>
+                            <div class="order-list-col  order-list-col__three order-list-col__gray">
+                                <i class="fa fa-arrow-right" aria-hidden="true"></i> 
+                                26 мая 2016
+                            </div>
+                            <div class="order-list-col  order-list-col__foure "><a href="#" class="order-list-item-link">2</a></div>
+                            <div class="order-list-col  order-list-col__five">Договорная</div>
                         </div>
-                        <div class="content-search-list-item content-search-list-item__work">
-                            <div class="content-search-list-item__work-top-panel">
-                                <div class="content-search-list-item__work-top-panel-item">
-                                    <span class="content-search-list-item__work-top-panel-item-text">Курсовая работа</span>
-                                </div>
-                                <div class="content-search-list-item__work-top-panel-item">
-                                    <span class="content-search-list-item__work-top-panel-item-text">Социальная работа</span>
-                                </div>
-                                <div class="content-search-list-item__work-top-panel-item">
-                                    <span class="content-search-list-item__work-top-panel-item-number">2016
-                                        <span class="content-search-list-item__work-top-panel-item-number-name">год</span>
-                                    </span>
-                                </div>
-                                <div class="content-search-list-item__work-top-panel-item">
-                                    <span class="content-search-list-item__work-top-panel-item-number">32
-                                        <span class="content-search-list-item__work-top-panel-item-number-name">стр.</span>
-                                    </span>
-                                </div>
+                        <div class="order-list-item">
+                            <span class="liked">
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                            </span>
+                            <div class="order-list-item-link-inner">
+                                <a class="order-list-item-link" href="#">
+                                    <i class="fa fa-envelope" aria-hidden="true"></i>
+                                    
+                                    Чертеж в автокаде Втулка dwg/dwt
+                                </a>
                             </div>
-                            <div class="content-search-list-item__work-middle-panel">
-                                <a href="#" class="content-search-list-item__work-middle-panel-text">Социальный контроль и вщздействие социальной среды на образ жизни людей</a>
-                            </div>
-                            <div class="content-search-list-item__work-bottom-panel">
-                                <div class="content-search-list-item__work-bottom-panel-left">
+                            <div class="order-list-col  order-list-col__one order-list-col__gray">Отчёт по практике, Авиационная и ракетно-космическая техника</div>
+                            <div class="order-list-col  order-list-col__two order-list-col__gray">26 мая 2016
+                                <div class="tooltip-text tooltip-text__order-list">
                                     <a href="#" class="author">
-                                        <img src="img/interface/user-line.png" alt="user">                                     
+                                        <img src="img/interface/author.jpg" alt="автор">                                     
                                         <span class="author-login">Неверова</span>
-                                        <span class="i author-offline"></span>
                                     </a>
                                 </div>
-                                <div class="content-search-list-item__work-bottom-panel-right">
-                                    <span class="content-search-list-item__work-bottom-panel-right-price">200
-                                        <i class="fa fa-rub" aria-hidden="true"></i>
-                                    </span>
-                                    <a href="#" class="btn-gray">КУПИТЬ</a>
+                            </div>
+                            <div class="order-list-col  order-list-col__three order-list-col__gray">
+                                <i class="fa fa-arrow-right" aria-hidden="true"></i> 
+                                26 мая 2016
+                            </div>
+                            <div class="order-list-col  order-list-col__foure "><a href="#" class="order-list-item-link">2</a></div>
+                            <div class="order-list-col  order-list-col__five order-list-col__gray">7500руб.</div>
+                        </div>
+                        <div class="order-list-item">
+                            <span class="liked">
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                            </span>
+                            <div class="order-list-item-link-inner">
+                                <a class="order-list-item-link" href="#">
+                                    <i class="fa fa-envelope" aria-hidden="true"></i>
+                                    Анализ особенностей конструкции и технической эксплуатаци НК-16-СТ, сконструированного на базе авиационного
+                                </a>
+                            </div>
+                            <div class="order-list-col  order-list-col__one">Отчёт по практике, Авиационная и ракетно-космическая техника</div>
+                            <div class="order-list-col  order-list-col__two order-list-col__gray">26 мая 2016
+                                <div class="tooltip-text tooltip-text__order-list">
+                                    <a href="#" class="author">
+                                        <img src="img/interface/author.jpg" alt="автор">                                     
+                                        <span class="author-login">Неверова</span>
+                                    </a>
                                 </div>
                             </div>
-                        </div>
-                        <div class="pagination">
-                            <span class="pagination-prev">
-                                <i class="fa fa-arrow-circle-left" aria-hidden="true"></i>
-                            </span>
-                            <ul class="pagination-list">
-                                <li class="pagination-list-item"><a class="active" href="#"><span>1</span></a></li>
-                                <li class="pagination-list-item"><a href="#"><span>2</span></a></li>
-                                <li class="pagination-list-item"><a href="#"><span>3</span></a></li>
-                            </ul>
-                            <span class="pagination-next">
-                                <i class="fa fa-arrow-circle-right" aria-hidden="true"></i>
-                            </span>
+                            <div class="order-list-col  order-list-col__three order-list-col__gray">
+                                <i class="fa fa-arrow-right" aria-hidden="true"></i> 
+                                26 мая 2016
+                            </div>
+                            <div class="order-list-col  order-list-col__foure "><a href="#" class="order-list-item-link">2</a></div>
+                            <div class="order-list-col  order-list-col__five">Договорная</div>
                         </div>
                     </div>
                 </div>
-                <div>
-                    <div class="content-center-description content-center-description__relative">Мои работы в продаже
-                        <div class="content-center-search">
-                            <form>
-                               <input type="text" class="search form-control">
-                               <button class="btn-green">НАЙТИ</button>
-                            </form>
-                        </div>
-                    </div>
-                </div>
-                <div class="content-center-inner">
-                    <div class="content-without-work">
-                        <p class="content-without-work-text">В настоящий момент у вас нет работ выставленных на продажу.</p>
-                        <i class="i i_work-list"></i>
-                    </div>
-                </div>
-                <span class="content-center-description">Купленные мною работы</span>
-                <div class="content-center-inner">
-                    <div class="content-search-list-item content-search-list-item__work">
-                        <div class="content-search-list-item__work-top-panel">
-                            <div class="content-search-list-item__work-top-panel-item">
-                                <span class="content-search-list-item__work-top-panel-item-text">Курсовая работа</span>
-                            </div>
-                            <div class="content-search-list-item__work-top-panel-item">
-                                <span class="content-search-list-item__work-top-panel-item-text">Социальная работа</span>
-                            </div>
-                            <div class="content-search-list-item__work-top-panel-item">
-                                <span class="content-search-list-item__work-top-panel-item-number">2016
-                                    <span class="content-search-list-item__work-top-panel-item-number-name">год</span>
-                                </span>
-                            </div>
-                            <div class="content-search-list-item__work-top-panel-item">
-                                <span class="content-search-list-item__work-top-panel-item-number">32
-                                    <span class="content-search-list-item__work-top-panel-item-number-name">стр.</span>
-                                </span>
-                            </div>
-                        </div>
-                        <div class="content-search-list-item__work-middle-panel">
-                            <a href="#" class="content-search-list-item__work-middle-panel-text">Социальный контроль и вщздействие социальной среды на образ жизни людей</a>
-                        </div>
-                        <div class="content-search-list-item__work-bottom-panel">
-                            <div class="content-search-list-item__work-bottom-panel-left content-search-list-item__work-bottom-panel-left__without-padding">
-                                <span class="content-search-list-item__work-bottom-panel-text">260094</span>
-                            </div>
-                            <div class="content-search-list-item__work-bottom-panel-right">
-                                <a href="#" class="content-search-list-item__work-bottom-panel-text content-search-list-item__work-bottom-panel-link">
-                                    <i class="fa fa-line-chart" aria-hidden="true"></i>Повысить актуальность
-                                </a>
-                                <a href="#" class="content-search-list-item__work-bottom-panel-text
-                                   content-search-list-item__work-bottom-panel-link">
-                                    <i class="fa fa-paper-plane" aria-hidden="true"></i>Отправить работу
-                                </a>
-                                <a href="#" class="content-search-list-item__work-bottom-panel-text content-search-list-item__work-bottom-panel-link" download="#">
-                                    <i class="fa fa-download" aria-hidden="true"></i>Скачать работу
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="content-search-list-item content-search-list-item__work">
-                        <div class="content-search-list-item__work-top-panel">
-                            <div class="content-search-list-item__work-top-panel-item">
-                                <span class="content-search-list-item__work-top-panel-item-text">Курсовая работа</span>
-                            </div>
-                            <div class="content-search-list-item__work-top-panel-item">
-                                <span class="content-search-list-item__work-top-panel-item-text">Социальная работа</span>
-                            </div>
-                            <div class="content-search-list-item__work-top-panel-item">
-                                <span class="content-search-list-item__work-top-panel-item-number">2016
-                                    <span class="content-search-list-item__work-top-panel-item-number-name">год</span>
-                                </span>
-                            </div>
-                            <div class="content-search-list-item__work-top-panel-item">
-                                <span class="content-search-list-item__work-top-panel-item-number">32
-                                    <span class="content-search-list-item__work-top-panel-item-number-name">стр.</span>
-                                </span>
-                            </div>
-                        </div>
-                        <div class="content-search-list-item__work-middle-panel">
-                            <a href="#" class="content-search-list-item__work-middle-panel-text">Социальный контроль и вщздействие социальной среды на образ жизни людей</a>
-                        </div>
-                        <div class="content-search-list-item__work-bottom-panel">
-                            <div class="content-search-list-item__work-bottom-panel-left content-search-list-item__work-bottom-panel-left__without-padding">
-                                <span class="content-search-list-item__work-bottom-panel-text">260094</span>
-                            </div>
-                            <div class="content-search-list-item__work-bottom-panel-right">
-                                <a href="#" class="content-search-list-item__work-bottom-panel-text content-search-list-item__work-bottom-panel-link">
-                                    <i class="fa fa-line-chart" aria-hidden="true"></i>Повысить актуальность
-                                </a>
-                                <a href="#" class="content-search-list-item__work-bottom-panel-text
-                                   content-search-list-item__work-bottom-panel-link">
-                                    <i class="fa fa-paper-plane" aria-hidden="true"></i>Отправить работу
-                                </a>
-                                <a href="#" class="content-search-list-item__work-bottom-panel-text content-search-list-item__work-bottom-panel-link" download="#">
-                                    <i class="fa fa-download" aria-hidden="true"></i>Скачать работу
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                
             </div>
         </div>
         <!--footer-->
