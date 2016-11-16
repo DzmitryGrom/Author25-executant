@@ -2246,7 +2246,11 @@ textarea:focus {
 }
 .nav > li > a,
 .content-notification-history-list-item-btn-inner-add,
+.btn-red,
 .btn-green,
+.btn-white,
+.btn-gray,
+.btn-blue,
 .content-notification-history-list-item-btn-inner-delete,
 .content-notification-history-list-item-content-date-user,
 .content-notification-history-list-item,

@@ -11,7 +11,7 @@
 <body>
     <div class="page">
         <!--nav-->
-        <div class="container-nav container-fluid">
+        <div class="container-nav container-nav__blue container-fluid">
             <div class="container">
                 <!-- Brand and toggle get grouped for better mobile display -->
                 <div class="navbar-header">
@@ -24,40 +24,29 @@
                     <a class="navbar-brand" href="#"></a>
                 </div>
                 <!-- Collect the nav links, forms, and other content for toggling -->
-                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                    <i class="collapse-tr"></i>
-                    <ul class="nav navbar-nav">
-                        <li>
-                            <i class="fa fa-angle-right" aria-hidden="true"></i>
-                            <a href="#">Главная<span class="sr-only">(current)</span></a>
-                        </li>
-                        <li>
-                            <i class="fa fa-angle-right" aria-hidden="true"></i>
-                            <a href="#">Мои заказы</a>
-                        </li>
-                        <li>
-                            <i class="fa fa-angle-right" aria-hidden="true"></i>
-                            <a href="#">Магазин готовых работ</a>
-                        </li>
-                        <li>
-                            <i class="fa fa-angle-right" aria-hidden="true"></i>
-                            <a href="#">Топ авторов</a>
-                        </li>
-                        <li class="active">
-                            <i class="fa fa-angle-right" aria-hidden="true"></i>
-                            <a href="#">Сделать заказ</a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="navbar-info">
+                <div class="navbar-info  navbar-info__static">
                     <span class="navbar-info-item navbar-info-item__notifications">
                         <i class="fa fa-info-circle" aria-hidden="true"></i>
+                        <span class="navbar-info-item-value">4</span>
                         <i class="pop-up_tr"></i>
                     </span>
                     <span class="navbar-info-item navbar-info-item__message">
                         <i class="fa fa-envelope" aria-hidden="true"></i>
+                        <span class="navbar-info-item-value">11</span>
                         <i class="pop-up_tr"></i>
                     </span>
+                    <a href="#" class="btn-nav-bar">
+                        <i class="fa fa-search" aria-hidden="true"></i>НАЙТИ ЗАКАЗ
+                    </a>
+                    <a href="#" class="btn-nav-bar">
+                        <i class="fa fa-tag" aria-hidden="true"></i>ГОТОВЫЕ РАБОТЫ
+                    </a>
+                </div>
+                <div class="navbar-info">
+                    <a href="#" class="btn-money-value"><i class="i i_cash"></i>0 руб.</a>
+                    <a href="#" class="btn-nav-bar">
+                        <i class="fa fa-sign-out" aria-hidden="true"></i>ВЫВЕСТИ ДЕНЬГИ
+                    </a>
                     <span class="navbar-info-item navbar-info-item__user">
                         <i class="fa fa-user" aria-hidden="true"></i>
                         <i class="fa fa-angle-down" aria-hidden="true"></i>
@@ -65,6 +54,36 @@
                     </span>
                 </div>
                 <!-- /.navbar-collapse -->
+            </div>
+        </div>
+        <div class="container-nav container-nav__white">
+            <div class="container">    
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <i class="collapse-tr"></i>
+                    <ul class="nav navbar-nav">
+                        <li class="active"> 
+                            <a href="#">Главная<span class="sr-only">(current)</span></a>
+                        </li>
+                        <li>
+                            <a href="#">Аукцион заказов</a>
+                        </li>
+                        <li>
+                            <a href="#">Мои заказы</a>
+                        </li>
+                        <li>
+                            <a href="#">Баланс</a>
+                        </li>
+                        <li>
+                            <a href="#">Профиль</a>
+                        </li>
+                        <li>
+                            <a href="#">Настройки</a>
+                        </li>
+                        <li>
+                            <a href="#">Сообщества</a>
+                        </li>
+                    </ul>
+                </div>
             </div>
         </div>
         <!--widgets-->
@@ -144,8 +163,10 @@
                 <div class="content-full-width">
                     <div class="content-settings">
                         <div class="top-menu">
-                            <a href="#">Личные данные</a>
-                            <a class="active" href="#">Настройки подписки</a>
+                            <a href="settings-qualification.html">Квалификация</a>
+                            <a href="settings-personal.html">Личные данные</a>
+                            <a href="settings-template.html">Шаблоны</a>
+                            <a class="active" href="settings-subscription.html">Настройки подписки</a>
                         </div>
                         <div class="content-settings-list">
                             <div class="content-settings-list-item">
@@ -155,7 +176,7 @@
                                 <div class="content-settings-list-item-side content-settings-list-item-side__center">
                                     <p class="content-settings-list-item-side__center-description">Укажите какие уведомления вы хотели бы получать</p>
                                     <form>
-                                        <ul class="content-settings-list-item-side__center-list">
+                                        <ul class="content-settings-list-item-side__center-list content-settings-list-item-side__center-list__block">
                                             <li class="content-settings-list-item-side__center-list-item">
                                                 <div class="checkbox-dynamic__green checkbox-dynamic">
                                                     <input type="checkbox">
@@ -184,6 +205,12 @@
                                                 <div class="checkbox-dynamic__green checkbox-dynamic">
                                                     <input type="checkbox">
                                                 </div>
+                                                <span class="content-settings-list-item-side__center-list-item-text">Получать приглашения от заказчиков</span>
+                                            </li>
+                                            <li class="content-settings-list-item-side__center-list-item">
+                                                <div class="checkbox-dynamic__green checkbox-dynamic">
+                                                    <input type="checkbox">
+                                                </div>
                                                 <span class="content-settings-list-item-side__center-list-item-text">Советы</span>
                                             </li>
                                             <li class="content-settings-list-item-side__center-list-item">
@@ -198,11 +225,174 @@
                                                 </div>
                                                 <span class="content-settings-list-item-side__center-list-item-text">Всплывающие уведомления</span>
                                             </li>
+                                            <li class="content-settings-list-item-side__center-list-item">
+                                                <div class="checkbox-dynamic__green checkbox-dynamic">
+                                                    <input type="checkbox">
+                                                </div>
+                                                <span class="content-settings-list-item-side__center-list-item-text">Уведомление в раузер</span>
+                                            </li>
                                         </ul>
                                         <button type="submit" class="btn-blue">СОХРАНИТЬ</button>
                                         <i class="fa fa-check-circle" aria-hidden="true"></i>
                                     </form>
                                 </div>
+                            </div>
+                            
+                            <div class="content-settings-list-item">
+                                <form>
+                                    <div>
+                                        <div class="content-settings-list-item-side content-settings-list-item-side__left">
+                                            <p class="content-settings-list-item-side__left-description">НАСТРОЙКА</p>
+                                        </div>
+                                        <div class="content-settings-list-item-side content-settings-list-item-side__center">
+                                            <div class="content-settings-list-item-side__center-description">
+                                                <p>Получать уведомления о новых заказах</p>
+                                                <div class="checkbox-dynamic__green checkbox-dynamic">
+                                                    <input type="checkbox">
+                                                </div>
+                                                <span class="content-settings-list-item-side__center-list-item-text">
+                                                    Уведомление о комментариях к заказу
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <div class="content-settings-list-item-side content-settings-list-item-side__left">
+                                            <p class="content-settings-list-item-side__left-description content-settings-list-item-side__left-description-margin-top">БЮДЖЕТ</p>
+                                        </div>
+                                        <div class="content-settings-list-item-side content-settings-list-item-side__center">
+                                            <ul class="content-settings-list-item-side__center-list">
+                                                <li class="content-settings-list-item-side__center-list-item">
+                                                    <div class="checkbox-dynamic__green checkbox-dynamic">
+                                                        <input type="checkbox">
+                                                    </div>
+                                                    <span class="content-settings-list-item-side__center-list-item-text">По договоренности</span>
+                                                </li>
+                                                <li class="content-settings-list-item-side__center-list-item">
+                                                    <div class="checkbox-dynamic__green checkbox-dynamic">
+                                                        <input type="checkbox">
+                                                    </div>
+                                                    <span class="content-settings-list-item-side__center-list-item-text">менее 200</span>
+                                                </li>
+                                                <li class="content-settings-list-item-side__center-list-item">
+                                                    <div class="checkbox-dynamic__green checkbox-dynamic">
+                                                        <input type="checkbox">
+                                                    </div>
+                                                    <span class="content-settings-list-item-side__center-list-item-text">от 200 до 500</span>
+                                                </li>
+                                                <li class="content-settings-list-item-side__center-list-item">
+                                                    <div class="checkbox-dynamic__green checkbox-dynamic">
+                                                        <input type="checkbox">
+                                                    </div>
+                                                    <span class="content-settings-list-item-side__center-list-item-text">от 500 до 2 000</span>
+                                                </li>
+                                                <li class="content-settings-list-item-side__center-list-item">
+                                                    <div class="checkbox-dynamic__green checkbox-dynamic">
+                                                        <input type="checkbox">
+                                                    </div>
+                                                    <span class="content-settings-list-item-side__center-list-item-text">от 2 000 до 5 000</span>
+                                                </li>
+                                                <li class="content-settings-list-item-side__center-list-item">
+                                                    <div class="checkbox-dynamic__green checkbox-dynamic">
+                                                        <input type="checkbox">
+                                                    </div>
+                                                    <span class="content-settings-list-item-side__center-list-item-text">от 5 000 до 10 000</span>
+                                                </li>
+                                                <li class="content-settings-list-item-side__center-list-item">
+                                                    <div class="checkbox-dynamic__green checkbox-dynamic">
+                                                        <input type="checkbox">
+                                                    </div>
+                                                    <span class="content-settings-list-item-side__center-list-item-text">более 10 000</span>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <div class="content-settings-list-item-side content-settings-list-item-side__left">
+                                            <p class="content-settings-list-item-side__left-description content-settings-list-item-side__left-description-margin-top">СРОК СДАЧИ РАБОТЫ</p>
+                                        </div>
+                                        <div class="content-settings-list-item-side content-settings-list-item-side__center">
+                                            <ul class="content-settings-list-item-side__center-list">
+                                                <li class="content-settings-list-item-side__center-list-item">
+                                                    <div class="checkbox-dynamic__green checkbox-dynamic">
+                                                        <input type="checkbox">
+                                                    </div>
+                                                    <span class="content-settings-list-item-side__center-list-item-text">Менее 3 дней</span>
+                                                </li>
+                                                <li class="content-settings-list-item-side__center-list-item">
+                                                    <div class="checkbox-dynamic__green checkbox-dynamic">
+                                                        <input type="checkbox">
+                                                    </div>
+                                                    <span class="content-settings-list-item-side__center-list-item-text">от 3 до 7</span>
+                                                </li>
+                                                <li class="content-settings-list-item-side__center-list-item">
+                                                    <div class="checkbox-dynamic__green checkbox-dynamic">
+                                                        <input type="checkbox">
+                                                    </div>
+                                                    <span class="content-settings-list-item-side__center-list-item-text">от 7 до 14</span>
+                                                </li>
+                                                <li class="content-settings-list-item-side__center-list-item">
+                                                    <div class="checkbox-dynamic__green checkbox-dynamic">
+                                                        <input type="checkbox">
+                                                    </div>
+                                                    <span class="content-settings-list-item-side__center-list-item-text">от 14 до 30</span>
+                                                </li>
+                                                <li class="content-settings-list-item-side__center-list-item">
+                                                    <div class="checkbox-dynamic__green checkbox-dynamic">
+                                                        <input type="checkbox">
+                                                    </div>
+                                                    <span class="content-settings-list-item-side__center-list-item-text">более месяца</span>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <div class="content-settings-list-item-side content-settings-list-item-side__left">
+                                            <p class="content-settings-list-item-side__left-description content-settings-list-item-side__left-description-margin-top">КОЛИЧЕСТВО СТАВОК</p>
+                                        </div>
+                                        <div class="content-settings-list-item-side content-settings-list-item-side__center">
+                                            <ul class="content-settings-list-item-side__center-list">
+                                                <li class="content-settings-list-item-side__center-list-item">
+                                                    <div class="checkbox-dynamic__green checkbox-dynamic">
+                                                        <input type="checkbox">
+                                                    </div>
+                                                    <span class="content-settings-list-item-side__center-list-item-text">нет</span>
+                                                </li>
+                                                <li class="content-settings-list-item-side__center-list-item">
+                                                    <div class="checkbox-dynamic__green checkbox-dynamic">
+                                                        <input type="checkbox">
+                                                    </div>
+                                                    <span class="content-settings-list-item-side__center-list-item-text">менее 2</span>
+                                                </li>
+                                                <li class="content-settings-list-item-side__center-list-item">
+                                                    <div class="checkbox-dynamic__green checkbox-dynamic">
+                                                        <input type="checkbox">
+                                                    </div>
+                                                    <span class="content-settings-list-item-side__center-list-item-text">от 2 до 5</span>
+                                                </li>
+                                                <li class="content-settings-list-item-side__center-list-item">
+                                                    <div class="checkbox-dynamic__green checkbox-dynamic">
+                                                        <input type="checkbox">
+                                                    </div>
+                                                    <span class="content-settings-list-item-side__center-list-item-text">от 5 до 7</span>
+                                                </li>
+                                                <li class="content-settings-list-item-side__center-list-item">
+                                                    <div class="checkbox-dynamic__green checkbox-dynamic">
+                                                        <input type="checkbox">
+                                                    </div>
+                                                    <span class="content-settings-list-item-side__center-list-item-text">от 7 до 10</span>
+                                                </li>
+                                                <li class="content-settings-list-item-side__center-list-item">
+                                                    <div class="checkbox-dynamic__green checkbox-dynamic">
+                                                        <input type="checkbox">
+                                                    </div>
+                                                    <span class="content-settings-list-item-side__center-list-item-text">более 10</span>
+                                                </li>
+                                            </ul>
+                                            <button type="submit" class="btn-blue">СОХРАНИТЬ</button>
+                                        </div>
+                                    </div>
+                                </form>
                             </div>
                         </div>
                     </div>

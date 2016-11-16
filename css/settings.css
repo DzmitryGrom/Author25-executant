@@ -2246,7 +2246,11 @@ textarea:focus {
 }
 .nav > li > a,
 .content-notification-history-list-item-btn-inner-add,
+.btn-red,
 .btn-green,
+.btn-white,
+.btn-gray,
+.btn-blue,
 .content-notification-history-list-item-btn-inner-delete,
 .content-notification-history-list-item-content-date-user,
 .content-notification-history-list-item,
@@ -4684,6 +4688,29 @@ input[type=file] {
   text-decoration: none;
   color: #fff;
 }
+/*btn-white*/
+.btn-white {
+  font-size: 16px;
+  line-height: 1;
+  font-family: "OpenSansSemibold";
+  color: #444444;
+  background-color: #fff;
+  padding: 10px 23px;
+  border-radius: 3px;
+  cursor: pointer;
+  border: none;
+  display: inline-block;
+  text-align: center;
+}
+.btn-white:hover {
+  background-color: #4786c8;
+  color: #fff;
+  text-decoration: none;
+}
+.btn-white:focus {
+  outline: none;
+  border: none;
+}
 /*btn-gray*/
 .btn-gray {
   font-size: 14px;
@@ -4868,6 +4895,33 @@ input[type=file] {
   border-color: #ececec;
 }
 /*notification-without-orders*/
+.btn-white {
+  margin: 0 15px 15px 0;
+}
+.btn-white:last-child {
+  margin-right: 0;
+}
+.btn-white.active {
+  background-color: #4786c8;
+  color: #fff;
+}
+textarea {
+  resize: none;
+  margin-bottom: 25px;
+}
+.textarea__no-margin {
+  margin: 0;
+}
+.form-control__margin-bottom {
+  margin-bottom: 15px;
+}
+.checkbox-dynamic {
+  margin-top: 0;
+}
+.checkbox-dynamic,
+.content-settings-list-item-side__center-list-item-text {
+  vertical-align: middle;
+}
 .content-center {
   width: 100%;
   display: block;
@@ -4989,15 +5043,29 @@ input[type=file] {
   color: #444444;
   font-weight: 600;
 }
+.content-center .content-settings-list-item-side-text__gray {
+  color: #b0b0b0;
+  margin-bottom: 20px;
+  font-weight: 400;
+}
 .content-center .content-settings-list-item-side__left-description,
 .content-center .content-settings-list-item-side__center-description {
   font-size: 16px;
   font-family: "OpenSansRegular";
 }
+.content-center .content-settings-list-item-side__left {
+  width: 20%;
+}
 .content-center .content-settings-list-item-side__left-description {
   color: #444444;
   margin-bottom: 40px;
-  width: 225px;
+  padding-right: 10px;
+}
+.content-center .content-settings-list-item-side__left-description-margin-top {
+  margin-top: 25px;
+}
+.content-center .content-settings-list-item-side__left-description__withot-margin {
+  margin: 0;
 }
 @media (max-width: 825px) {
   .content-center .content-settings-list-item-side__left-description {
@@ -5030,6 +5098,9 @@ input[type=file] {
   .content-center .content-settings-list-item-side__left .btn-add-foto {
     padding: 10px 17px;
   }
+}
+.content-center .content-settings-list-item-side__center {
+  width: 70%;
 }
 @media (max-width: 825px) {
   .content-center .content-settings-list-item-side__center {
@@ -5076,26 +5147,26 @@ input[type=file] {
   }
 }
 .content-center .content-settings-list-item-side__center-list {
-  margin: 20px 0 20px 0;
-  border-bottom: 1px solid #e6e6e6;
+  margin: 5px 0 0 0;
   border-top: 1px solid #e6e6e6;
   padding: 20px 0 0 0;
-  min-width: 460px;
 }
 @media (max-width: 600px) {
   .content-center .content-settings-list-item-side__center-list {
     min-width: 350px;
   }
 }
+.content-center .content-settings-list-item-side__center-list__block .content-settings-list-item-side__center-list-item {
+  display: block;
+  width: 100%;
+}
 .content-center .content-settings-list-item-side__center-list-item {
   margin-bottom: 20px;
+  display: inline-block;
+  width: 50%;
 }
 .content-center .content-settings-list-item-side__center-list-item .checkbox-dynamic {
   margin: 0;
-}
-.content-center .content-settings-list-item-side__center-list-item .checkbox-dynamic,
-.content-center .content-settings-list-item-side__center-list-item-text {
-  vertical-align: middle;
 }
 .content-center .content-settings-list-item-side__center-list-item-text {
   display: inline-block;
@@ -5156,6 +5227,9 @@ input[type=file] {
   .content-center .content-settings-list-item-side__right-btn-inner .btn-gray {
     width: 48%;
   }
+}
+.content-center .content-settings-list-item__avatar .content-settings-list-item-side__center {
+  width: auto;
 }
 @media (max-width: 826px) {
   .content-center .content-settings-list-item__avatar {
