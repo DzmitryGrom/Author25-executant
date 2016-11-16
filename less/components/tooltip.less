@@ -125,6 +125,14 @@
     right: 50%;
     bottom: 28px;
     margin: 0 -53px 0 0;
+    @media (max-width: 1010px) {
+        top: inherit;
+        left: inherit;
+    }
+    @media(max-width: 1108px) {
+        bottom: 48px;
+        margin: 0 -37px 0 0;
+    }
     .author img {
         left: 10px;
     }    
@@ -141,6 +149,9 @@
         -o-transform: rotate(-90deg);
         -webkit-transform: rotate(-90deg);
         -ms-transform: rotate(-90deg);
+        @media (max-width: 1010px) {
+        top: inherit;
+        }
     }
 }
 .tooltip-black {

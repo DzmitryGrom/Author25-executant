@@ -5322,6 +5322,18 @@ textarea::-webkit-input-placeholder {
   bottom: 28px;
   margin: 0 -53px 0 0;
 }
+@media (max-width: 1010px) {
+  .content-form-orders-list-item_select-inner-list-item .tooltip-text__order-list {
+    top: inherit;
+    left: inherit;
+  }
+}
+@media (max-width: 1108px) {
+  .content-form-orders-list-item_select-inner-list-item .tooltip-text__order-list {
+    bottom: 48px;
+    margin: 0 -37px 0 0;
+  }
+}
 .content-form-orders-list-item_select-inner-list-item .tooltip-text__order-list .author img {
   left: 10px;
 }
@@ -5338,6 +5350,11 @@ textarea::-webkit-input-placeholder {
   -o-transform: rotate(-90deg);
   -webkit-transform: rotate(-90deg);
   -ms-transform: rotate(-90deg);
+}
+@media (max-width: 1010px) {
+  .content-form-orders-list-item_select-inner-list-item .tooltip-text__order-list:after {
+    top: inherit;
+  }
 }
 .content-form-orders-list-item_select-inner-list-item .tooltip-black {
   position: absolute;

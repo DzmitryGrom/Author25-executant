@@ -4792,6 +4792,18 @@ textarea:focus {
   bottom: 28px;
   margin: 0 -53px 0 0;
 }
+@media (max-width: 1010px) {
+  .tooltip-text__order-list {
+    top: inherit;
+    left: inherit;
+  }
+}
+@media (max-width: 1108px) {
+  .tooltip-text__order-list {
+    bottom: 48px;
+    margin: 0 -37px 0 0;
+  }
+}
 .tooltip-text__order-list .author img {
   left: 10px;
 }
@@ -4808,6 +4820,11 @@ textarea:focus {
   -o-transform: rotate(-90deg);
   -webkit-transform: rotate(-90deg);
   -ms-transform: rotate(-90deg);
+}
+@media (max-width: 1010px) {
+  .tooltip-text__order-list:after {
+    top: inherit;
+  }
 }
 .tooltip-black {
   position: absolute;

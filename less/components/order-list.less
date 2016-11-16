@@ -2,10 +2,9 @@
     &-head {
         font-size: 0;
         padding: 15px 60px;
-    }
-    &-head,
-    &-item {
-        
+        @media(max-width: 768px) {
+            padding: 15px 30px;
+        }
     }
     &-item {
         background-color: #fff;
@@ -13,6 +12,9 @@
         border: 1px solid #e1e1e1;
         margin-bottom: 20px;
         position: relative;
+        @media(max-width: 768px) {
+            padding: 30px;
+        }
         .order-list-col__two {
             text-decoration: underline;
             position: relative;
@@ -66,6 +68,9 @@
             .fa-envelope {
                 left: -28px;
                 top: 3px;
+                @media(max-width: 768px) {
+                    display: none;
+                }
             }
         }
     }
@@ -76,6 +81,17 @@
         font-family: "OpenSansSemibold";
         color: #444444;
         text-align: left;
+        &-text {
+            @media(max-width: 768px) {
+                display: none;
+            }
+        }
+        &-hidden {
+            display: none;
+            @media(max-width: 768px) {
+                display: inline-block;
+            }
+        }
         &__one {
             width: 35%;
         }
