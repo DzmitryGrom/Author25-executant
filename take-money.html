@@ -4,10 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
     <meta name="format-detection" content="telephone=no">
-    <title>Author25-settings-subscription</title>
+    <title>Author25-take-money</title>
     <link rel="stylesheet" href="css/libs/bootstrap.min.css">
-    <link rel="stylesheet" href="css/libs/select2.css">
-    <link rel="stylesheet" href="css/settings.css">
+    <link rel="stylesheet" href="css/take-money.css">
 </head>
 <body>
     <div class="page">
@@ -160,144 +159,9 @@
         <!--content-->
         <div class="content container">
             <div class="content-center">
-                <h2 class="content-center-description">Настройки</h2>
-                <div class="content-full-width">
-                    <div class="content-settings">
-                        <div class="top-menu">
-                            <div class="top-menu-inner">
-                                <a  href="settings-qualification.html">Квалификация</a>
-                                <a class="active" href="settings-personal.html">Личные данные</a>
-                                <a href="settings-template.html">Шаблоны</a>
-                                <a href="settings-subscription.html">Настройки подписки</a>
-                            </div>
-                        </div>
-                        <div class="content-settings-list">
-                            <div class="content-settings-list-item content-settings-list-item__avatar">
-                                <form>
-                                    <div class="content-settings-list-item-side content-settings-list-item-side__left content-settings-list-item-side__left-no-wrap">
-                                        <p class="content-settings-list-item-side__left-description">АВАТАР</p>
-                                        <label class="btn-add-foto active">
-                                            <i class="i i_load"></i>
-                                            <input type="file" name="photo" accept="image/*,image/jpeg"> 
-                                            <span class="btn-add-foto-text">Загрузить фото</span> 
-                                        </label>
-                                    </div>
-                                    <div class="content-settings-list-item-side content-settings-list-item-side__center content-settings-list-item-side__center-no-wrap">
-                                        <img src="img/interface/avatar-settings.jpg" class="avatar" alt="аватар">
-                                        <div class="content-settings-list-item-side__center-size-avatar">
-                                            <p>
-                                                <img src="img/interface/square-big.png" class="i i_icon-size" alt="квадрат">
-                                                <img  src="img/interface/circle-big.png" class="i i_icon-size" alt="круг">
-                                            </p>
-                                            <p>
-                                                <img src="img/interface/square-little.png" class="i i_icon-size" alt="квадрат-маленький">
-                                                <img  src="img/interface/circle-little.png" class="i i_icon-size" alt="круг-маленький">
-                                            </p>
-                                        </div>
-                                        <div class="content-settings-list-item-side__center-btn-inner">
-                                            <button class="btn-blue">СОХРАНИТЬ</button>
-                                        </div>
-                                    </div>
-                                    <div class="content-settings-list-item-side content-settings-list-item-side__right">
-                                        <img src="img/interface/resize.png" alt="максимальный размер" class="i">
-                                        <div class="content-settings-list-item-side__right-btn-inner">
-                                            <button class="btn-green">ОБРЕЗАТЬ</button>
-                                            <button class="btn-gray">ОТМЕНИТЬ</button>
-                                        </div>
-                                        
-                                    </div>
-                                </form>
-                            </div>
-                            <div class="content-settings-list-item">
-                                <form>
-                                    <div class="content-settings-list-item-side content-settings-list-item-side__left">
-                                        <p class="content-settings-list-item-side__left-description">ИНФОРМАЦИЯ</p>
-                                        
-                                    </div>
-                                    <div class="content-settings-list-item-side content-settings-list-item-side__center">
-                                        <p class="content-settings-list-item-side-text">Имя на сайте</p>
-                                        <input type="text" class="form-control half-width" disabled placeholder="4968494">
-                                        <div class="content-settings-list-item-side-list">
-                                            <div class="content-settings-list-item-side-list-item content-settings-list-item-side-list-item__left">
-                                                <p class="content-settings-list-item-side-text">Имя</p>
-                                                <input type="text" class="form-control"  placeholder="Имя">
-                                            </div>
-                                            <div class="content-settings-list-item-side-list-item content-settings-list-item-side-list-item__right">
-                                                <p class="content-settings-list-item-side-text">Фамилия</p>
-                                                <input type="text" class="form-control"  placeholder="Фамилия">
-                                            </div>
-                                        </div>
-                                        <button class="btn-blue">СОХРАНИТЬ</button>
-                                    </div>
-                                </form>
-                            </div>
-                            <div class="content-settings-list-item">
-                                <form>
-                                    <div class="content-settings-list-item-side content-settings-list-item-side__left">
-                                        <p class="content-settings-list-item-side__left-description">КОНТАКТЫ</p>
-                                    </div>
-                                    <div class="content-settings-list-item-side content-settings-list-item-side__center">
-                                        <p class="content-settings-list-item-side-text">Email<sup>*</sup></p>
-                                        <input type="text" class="form-control half-width" placeholder="referat-fort@mail.ru" disabled>
-                                        <div class="content-settings-list-item-side-list">
-                                            <div class="content-settings-list-item-side-list-item content-settings-list-item-side-list-item__left">
-                                                <p class="content-settings-list-item-side-text">Странна</p>
-                                                <select class="form-control js-example-basic-single">
-                                                    <option value="AL">Выберите страну</option>
-                                                    <option value="WY">Экзамен</option>
-                                                    <option value="WY">Контрольная</option>
-                                                </select>
-                                            </div>
-                                            <div class="content-settings-list-item-side-list-item content-settings-list-item-side-list-item__right">
-                                                <p class="content-settings-list-item-side-text">Город</p>
-                                                <input type="text" class="form-control">
-                                            </div>
-                                        </div>
-                                        <div class="content-settings-list-item-side-list">
-                                            <div class="content-settings-list-item-side-list-item content-settings-list-item-side-list-item__left">
-                                                <p class="content-settings-list-item-side-text">Телефон</p>
-                                                <input type="text" class="form-control" placeholder="+7-908-xxx-xx-48" disabled>
-                                                <i class="fa fa-check-circle" aria-hidden="true"></i>
-                                            </div>
-                                            <div class="content-settings-list-item-side-list-item content-settings-list-item-side-list-item__right">
-                                                <p class="content-settings-list-item-side-text__bottom">Номер подтвержден</p>
-                                                <a href="#" class="content-settings-list-item-side-text__link">Изменить номер</a>
-                                            </div>
-                                        </div>
-                                        <button class="btn-gray">СОХРАНИТЬ</button>
-                                    </div>
-                                </form>
-                            </div>
-                            <div class="content-settings-list-item">
-                                <form>
-                                    <div class="content-settings-list-item-side content-settings-list-item-side__left">
-                                        <p class="content-settings-list-item-side__left-description">Пароль</p>
-                                    </div>
-                                    <div class="content-settings-list-item-side content-settings-list-item-side__center">
-                                        <div class="content-settings-list-item-side-list">
-                                            <div class="content-settings-list-item-side-list-item content-settings-list-item-side-list-item__left">
-                                                <p class="content-settings-list-item-side-text">Старый пароль<sup>*</sup></p>
-                                                <input type="text" class="form-control">
-                                            </div>
-                                        </div>
-                                        <div class="content-settings-list-item-side-list">
-                                            <div class="content-settings-list-item-side-list-item content-settings-list-item-side-list-item__left">
-                                                <p class="content-settings-list-item-side-text">Новый пароль<sup>*</sup></p>
-                                                <input type="text" class="form-control">
-                                            </div>
-                                        </div>
-                                        <div class="content-settings-list-item-side-list">
-                                            <div class="content-settings-list-item-side-list-item content-settings-list-item-side-list-item__left">
-                                                <p class="content-settings-list-item-side-text">Повторите<sup>*</sup></p>
-                                                <input type="text" class="form-control">
-                                            </div>
-                                        </div>
-                                        <button class="btn-blue">СОХРАНИТЬ</button>
-                                    </div>
-                                </form>
-                            </div>
-                        </div>
-                    </div>
+                <h2 class="content-center-description">Вывести средства</h2>
+                <div class="content-center-item">
+                    <span class="content-center-item-text-top">Вы не можете вывести средства - у вас менее 150 руб. на счету.</span>
                 </div>
             </div>
             
@@ -365,7 +229,5 @@
 <script src="js/libs/bootstrap.js"></script>
 <script src="js/libs/select2.min.js"></script>
 <script src="js/main.js"></script>
-<script src="js/settings.js"></script>
-<script src="js/select.js"></script>
 </body>
 </html>

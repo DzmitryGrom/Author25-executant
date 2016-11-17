@@ -18,9 +18,10 @@
 @import "components/checkbox.less";
 /*select*/
 @import "less/components/select.less";
-/*notification-without-orders*/
 .btn-white {
     margin: 0 15px 15px 0;
+    padding: 10px 0;
+    width: 150px;    
     &:last-child {
         margin-right: 0;
     }
@@ -40,11 +41,11 @@ textarea {
     margin-bottom: 15px;
 }
 .checkbox-dynamic {
-    margin-top: 0;
-}
-.checkbox-dynamic,
-.content-settings-list-item-side__center-list-item-text {
-    vertical-align: middle;
+    margin: 0;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 2;
 }
 .content-center {
     width: 100%;
@@ -55,6 +56,25 @@ textarea {
     .content-settings {
         .top-menu {
             padding: 30px 30px 0 30px;
+            &-inner {
+                @media(max-width: 768px) {
+                    display: table-row;
+                }
+            }
+            a {
+                @media (max-width: 768px) {
+                    margin-right: 0px;
+                    font-size: 13px;
+                    width: 25%;
+                    text-align: center;
+                    vertical-align: top;
+                    margin-right: 0;
+                    display: table-cell;
+                }
+            }
+            @media(max-width: 768px) {
+                display: table;
+            }
             @media(max-width: 1010px) {
                 position: static;
                 width: 100%;
@@ -160,6 +180,9 @@ textarea {
                 }
                 &-side__left {
                     width: 20%;
+                    @media(max-width: 825px) {
+                        width: 100%;
+                    }
                     &-description {
                         color: #444444;
                         margin-bottom: 40px;
@@ -172,6 +195,7 @@ textarea {
                         }
                         @media(max-width: 825px) {
                             width: 100%;
+                            margin-bottom: 15px;
                         }
                     }
                     &-no-wrap {
@@ -203,9 +227,30 @@ textarea {
                     width: 70%;
                     @media(max-width: 825px) {
                         margin-left: 0;
+                        width: 100%;
+                        display: block;
                     }
+                    
                     &-description {
                         color: #b5b5b5;
+                        .checkbox-dynamic {
+                            position: static;
+                        }
+                        .content-settings-list-item-side__center-list-item-text {
+                            margin-left: 10px;
+                        }
+                        &-btns-inner {
+                            .btn-white {
+                                @media(max-width: 600px) {
+                                    &:nth-child(2) {
+                                        margin-right: 0;
+                                    }
+                                }
+                            }
+                            @media(max-width: 600px) {
+                                text-align: center;
+                            }
+                        }
                         @media(max-width: 600px) {
                             font-size: 14px;
                         }
@@ -232,12 +277,22 @@ textarea {
                     }
                     &-btn-inner {
                         margin-top: 20px;
+                        .btn-gray {
+                            margin-right: 15px;
+                        }
                         .btn-blue {
                             padding: 10px 47px 10px 47px;
                             @media(max-width: 826px) {
-                                width: 100%;
                                 padding: 10px 0;
                             }
+                        }
+                    }
+                    &-btn-inner-template {
+                        padding-bottom: 15px;
+                        border-bottom: 1px solid #e6e6e6;
+                        .btn-blue {
+                           width: 230px;
+                            text-align: center;
                         }
                     }
                     &-list {
@@ -256,16 +311,19 @@ textarea {
                         &-item {
                             margin-bottom: 20px;
                             display: inline-block;
+                            position: relative;
                             width: 50%;
-                            .checkbox-dynamic {
-                                margin: 0;
+                            padding-right: 10px;
+                            @media(max-width: 992px) {
+                                width: 100%;
                             }
                             &-text {
                                 display: inline-block;
                                 font-size: 14px;
                                 font-family: "OpenSansRegular";
                                 color: #444444;
-                                margin-left: 10px;
+                                margin-left: 30px;
+                                vertical-align: top;
                             }
                            
                         }

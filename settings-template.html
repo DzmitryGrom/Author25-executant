@@ -163,10 +163,12 @@
                 <div class="content-full-width">
                     <div class="content-settings">
                         <div class="top-menu">
-                            <a href="settings-qualification.html">Квалификация</a>
-                            <a href="settings-personal.html">Личные данные</a>
-                            <a class="active" href="settings-template.html">Шаблоны</a>
-                            <a href="settings-subscription.html">Настройки подписки</a>
+                            <div class="top-menu-inner">
+                                <a href="settings-qualification.html">Квалификация</a>
+                                <a href="settings-personal.html">Личные данные</a>
+                                <a class="active" href="settings-template.html">Шаблоны</a>
+                                <a href="settings-subscription.html">Настройки подписки</a>
+                            </div>
                         </div>
                         <div class="content-settings-list">
                             <div class="content-settings-list-item">
@@ -179,7 +181,23 @@
                                         <input type="text" class="form-control form-control__margin-bottom">
                                         <p class="content-settings-list-item-side-text">Текст комментария</p>
                                         <textarea class="form-control" cols="20" data-val="true"maxlength="1200" name="Text" rows="4"></textarea>
-                                        <button class="btn-blue">СОХРАНИТЬ</button>
+                                        <div class="content-settings-list-item-side__center-btn-inner">
+                                            <button class="btn-gray">ОТМЕНИТЬ</button>
+                                            <button class="btn-blue">СОХРАНИТЬ</button>
+                                        </div>
+                                        
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="content-settings-list-item">
+                                <form>
+                                    <div class="content-settings-list-item-side content-settings-list-item-side__left">
+                                        <p class="content-settings-list-item-side__left-description">ШАБЛОНЫ КОММЕНТАРИЕВ К СТАВКАМ</p>
+                                    </div>
+                                    <div class="content-settings-list-item-side content-settings-list-item-side__center">
+                                        <div class="content-settings-list-item-side__center-btn-inner-template">
+                                            <a href="#" class="btn-blue">СОЗДАТЬ НОВЫЙ ШАБЛОН</a>
+                                        </div>
                                     </div>
                                 </form>
                             </div>
