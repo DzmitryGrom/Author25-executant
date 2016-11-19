@@ -4619,6 +4619,16 @@ textarea:focus {
   display: block;
 }
 /*content*/
+/*btn-delete*/
+.btn-delete {
+  margin-left: 25px;
+  color: #b0b0b0;
+  cursor: pointer;
+  font-size: 16px;
+}
+.btn-delete:hover {
+  color: #e95454;
+}
 .i_schedule {
   background-image: url(../img/interface/schedule.png);
   width: 74px;
@@ -5013,6 +5023,61 @@ textarea:focus {
   text-decoration: none;
   color: #444444;
 }
+/*orders-item*/
+.orders-item {
+  background-color: #fff;
+  border: 1px solid #e6e6e6;
+  position: relative;
+  padding: 25px 5px 25px 15px;
+}
+.orders-item:hover {
+  cursor: pointer;
+  background-color: #f5f5f5;
+}
+.orders-item-text {
+  font-size: 13px;
+  font-family: "OpenSansSemibold";
+  color: #444444;
+  position: relative;
+}
+.orders-item-text-value {
+  color: #444444;
+  position: absolute;
+  right: 17px;
+  top: 0;
+  z-index: 2;
+}
+@media (max-width: 1090px) {
+  .orders-item-text {
+    font-size: 10px;
+  }
+}
+@media (max-width: 992px) {
+  .orders-item-text {
+    font-size: 13px;
+  }
+}
+.orders-item-text__gray {
+  color: #c1c1bf;
+}
+.orders-item-link {
+  font-size: 13px;
+  font-family: "OpenSansRegular";
+  color: #4786c8;
+  display: block;
+  margin-bottom: 10px;
+  width: 90%;
+}
+.orders-item .btn-delete {
+  position: absolute;
+  right: 17px;
+  top: 22px;
+  z-index: 2;
+}
+.orders-item__yellow {
+  background-color: #fefff4;
+  border-color: #f4d350;
+}
 @media (max-width: 992px) {
   .content-sitebar-user-info {
     width: 100%;
@@ -5060,4 +5125,7 @@ textarea:focus {
 }
 .content-description-item-text-gray .btn-more .fa {
   color: #4786c8;
+}
+.content-description-item-inner-more-info {
+  display: none;
 }

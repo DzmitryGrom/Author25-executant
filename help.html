@@ -13,7 +13,7 @@
 <body>
     <div class="page">
         <!--nav-->
-        <div class="container-nav container-fluid">
+        <div class="container-nav container-nav__blue container-fluid">
             <div class="container">
                 <!-- Brand and toggle get grouped for better mobile display -->
                 <div class="navbar-header">
@@ -26,40 +26,29 @@
                     <a class="navbar-brand" href="#"></a>
                 </div>
                 <!-- Collect the nav links, forms, and other content for toggling -->
-                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                    <i class="collapse-tr"></i>
-                    <ul class="nav navbar-nav">
-                        <li>
-                            <i class="fa fa-angle-right" aria-hidden="true"></i>
-                            <a href="#">Главная<span class="sr-only">(current)</span></a>
-                        </li>
-                        <li>
-                            <i class="fa fa-angle-right" aria-hidden="true"></i>
-                            <a href="#">Мои заказы</a>
-                        </li>
-                        <li>
-                            <i class="fa fa-angle-right" aria-hidden="true"></i>
-                            <a href="#">Магазин готовых работ</a>
-                        </li>
-                        <li>
-                            <i class="fa fa-angle-right" aria-hidden="true"></i>
-                            <a href="#">Топ авторов</a>
-                        </li>
-                        <li class="active">
-                            <i class="fa fa-angle-right" aria-hidden="true"></i>
-                            <a href="#">Сделать заказ</a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="navbar-info">
+                <div class="navbar-info  navbar-info__static">
                     <span class="navbar-info-item navbar-info-item__notifications">
                         <i class="fa fa-info-circle" aria-hidden="true"></i>
+                        <span class="navbar-info-item-value">4</span>
                         <i class="pop-up_tr"></i>
                     </span>
                     <span class="navbar-info-item navbar-info-item__message">
                         <i class="fa fa-envelope" aria-hidden="true"></i>
+                        <span class="navbar-info-item-value">11</span>
                         <i class="pop-up_tr"></i>
                     </span>
+                    <a href="#" class="btn-nav-bar">
+                        <i class="fa fa-search" aria-hidden="true"></i>НАЙТИ ЗАКАЗ
+                    </a>
+                    <a href="#" class="btn-nav-bar">
+                        <i class="fa fa-tag" aria-hidden="true"></i>ГОТОВЫЕ РАБОТЫ
+                    </a>
+                </div>
+                <div class="navbar-info">
+                    <a href="#" class="btn-money-value"><i class="i i_cash"></i>0 руб.</a>
+                    <a href="#" class="btn-nav-bar">
+                        <i class="fa fa-sign-out" aria-hidden="true"></i>ВЫВЕСТИ ДЕНЬГИ
+                    </a>
                     <span class="navbar-info-item navbar-info-item__user">
                         <i class="fa fa-user" aria-hidden="true"></i>
                         <i class="fa fa-angle-down" aria-hidden="true"></i>
@@ -69,16 +58,37 @@
                 <!-- /.navbar-collapse -->
             </div>
         </div>
-        <!--widgets-->
-        <div class="widget-help">
-            <a class="widget-help-item" href="#">О проекте</a>
-            <a class="widget-help-item" href="#">Соглашение</a>
-            <a class="widget-help-item" href="#">Правила работы</a>
-            <a class="widget-help-item" href="#">Новости</a>
-            <a class="widget-help-item" href="#">Помощь</a>
-            <a class="widget-help-item" href="#">Как оплатить</a>
-            <a class="widget-help-item" href="#">Узнать среднюю стоимость работы</a>
+        <div class="container-nav container-nav__white">
+            <div class="container">    
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <i class="collapse-tr"></i>
+                    <ul class="nav navbar-nav">
+                        <li class="active"> 
+                            <a href="#">Главная<span class="sr-only">(current)</span></a>
+                        </li>
+                        <li>
+                            <a href="#">Аукцион заказов</a>
+                        </li>
+                        <li>
+                            <a href="#">Мои заказы</a>
+                        </li>
+                        <li>
+                            <a href="#">Баланс</a>
+                        </li>
+                        <li>
+                            <a href="#">Профиль</a>
+                        </li>
+                        <li>
+                            <a href="#">Настройки</a>
+                        </li>
+                        <li>
+                            <a href="#">Сообщества</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </div>
+        <!--widgets-->
         <div class="pop-up-notification pop-up-notification__info">
             <p class="pop-up-notification-caption">Новые уведомления:</p>
             <div class="pop-up-notification-inner">
@@ -299,6 +309,59 @@
                             </ol>
                         </div>
                     </div>
+                </div>
+            </div>
+            <div class="right-panel">
+                <div class="right-panel-description">
+                    <span>Рекомендуемые заказы</span>
+                </div>
+                <div class="orders-item orders-item__yellow">
+                    <span class="btn-delete">
+                        <i class="fa fa-times" aria-hidden="true"></i>
+                    </span>
+                    <p class="orders-item-text"># 1295206</p>
+                    <a href="#" class="orders-item-link">
+                        перспективные направления государственного регулирования обеспечения продовольсвенной безопасности...
+                    </a>
+                    <p class="orders-item-text">Статья, Экономика</p>
+                    <p class="orders-item-text orders-item-text__gray">Цена: 
+                        <span class="orders-item-text-value">480 руб.</span>
+                    </p>
+                    <p class="orders-item-text orders-item-text__gray">Срок сдачи: 
+                        <span class="orders-item-text-value">12.07.2016</span>
+                    </p>
+                </div>
+                <div class="orders-item">
+                    <span class="btn-delete">
+                        <i class="fa fa-times" aria-hidden="true"></i>
+                    </span>
+                    <p class="orders-item-text"># 1295206</p>
+                    <a href="#" class="orders-item-link">
+                        использование икт создание дидактических игр старшем дошкольном возрасте
+                    </a>
+                    <p class="orders-item-text">Курсовая работа, Педагогика</p>
+                    <p class="orders-item-text orders-item-text__gray">Цена: 
+                        <span class="orders-item-text-value">480 руб.</span>
+                    </p>
+                    <p class="orders-item-text orders-item-text__gray">Срок сдачи: 
+                        <span class="orders-item-text-value">12.07.2016</span>
+                    </p>
+                </div>
+                <div class="orders-item">
+                    <span class="btn-delete">
+                        <i class="fa fa-times" aria-hidden="true"></i>
+                    </span>
+                    <p class="orders-item-text"># 1295206</p>
+                    <a href="#" class="orders-item-link">
+                        использование икт создание дидактических игр старшем дошкольном возрасте
+                    </a>
+                    <p class="orders-item-text">Курсовая работа, Педагогика</p>
+                    <p class="orders-item-text orders-item-text__gray">Цена: 
+                        <span class="orders-item-text-value">480 руб.</span>
+                    </p>
+                    <p class="orders-item-text orders-item-text__gray">Срок сдачи: 
+                        <span class="orders-item-text-value">12.07.2016</span>
+                    </p>
                 </div>
             </div>
         </div>
