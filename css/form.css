@@ -5085,8 +5085,9 @@ textarea::-webkit-input-placeholder {
 .content-form-orders-list-item_select-inner-list-item {
   position: relative;
   margin-bottom: 30px;
-  /*RADIO btn*/
   /*btn-add*/
+  /*radio-btn*/
+  /*RADIO btn*/
 }
 .content-form-orders-list-item_select-inner-list-item-text {
   font-size: 14px;
@@ -5151,6 +5152,41 @@ textarea::-webkit-input-placeholder {
   width: 30%;
   max-width: 50px;
 }
+.content-form-orders-list-item_select-inner-list-item .select2-container--default .select2-selection--single .select2-selection__rendered {
+  line-height: 40px;
+  padding-right: 40px;
+}
+.content-form-orders-list-item_select-inner-list-item .select2-container--default .select2-selection--single .select2-selection__arrow {
+  height: 39px;
+  border-left: 1px solid #ececec;
+  width: 35px;
+}
+.content-form-orders-list-item_select-inner-list-item textarea {
+  width: 100%;
+}
+.content-form-orders-list-item_select-inner-list-item .btn-add-caption {
+  background-color: #c1c6c8;
+  position: relative;
+  padding: 11px 45px;
+  text-align: center;
+  vertical-align: middle;
+  cursor: pointer;
+  border-radius: 2px;
+}
+.content-form-orders-list-item_select-inner-list-item .btn-add-caption i {
+  margin-right: 5px;
+  color: #fff;
+  font-size: 12px;
+}
+.content-form-orders-list-item_select-inner-list-item .btn-add-caption input[type=file] {
+  display: none;
+}
+.content-form-orders-list-item_select-inner-list-item .btn-add-caption-text {
+  font-family: "OpenSansSemibold";
+  color: #fff;
+  font-size: 12px;
+  white-space: nowrap;
+}
 .content-form-orders-list-item_select-inner-list-item .radio {
   display: none;
 }
@@ -5165,6 +5201,10 @@ textarea::-webkit-input-placeholder {
 .content-form-orders-list-item_select-inner-list-item .label {
   display: inline-block;
   vertical-align: middle;
+}
+.content-form-orders-list-item_select-inner-list-item .radio-custom:hover,
+.content-form-orders-list-item_select-inner-list-item .label:hover {
+  cursor: pointer;
 }
 .content-form-orders-list-item_select-inner-list-item .radio:checked + .radio-custom::before {
   content: "";
@@ -5402,45 +5442,32 @@ textarea::-webkit-input-placeholder {
     margin: 0;
   }
 }
+.content-form-orders-list-item_select-inner-list-item .tooltip-text__test {
+  top: 80px;
+  right: 100%;
+  margin-right: -40px;
+  width: 390px;
+}
+.content-form-orders-list-item_select-inner-list-item .tooltip-text__test:after {
+  content: "";
+  right: 34px;
+  top: -17px;
+  margin-right: -11.5px;
+  transform: rotate(90deg);
+  -moz-transform: rotate(90deg);
+  -o-transform: rotate(90deg);
+  -webkit-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+}
+@media (max-width: 1010px) {
+  .content-form-orders-list-item_select-inner-list-item .tooltip-text__test:after {
+    top: -10px;
+  }
+}
 .content-form-orders-list-item_select-inner-list-item .radio-inner {
   margin-top: 10px;
   position: relative;
   display: inline-block;
-}
-.content-form-orders-list-item_select-inner-list-item .select2-container--default .select2-selection--single .select2-selection__rendered {
-  line-height: 40px;
-  padding-right: 40px;
-}
-.content-form-orders-list-item_select-inner-list-item .select2-container--default .select2-selection--single .select2-selection__arrow {
-  height: 39px;
-  border-left: 1px solid #ececec;
-  width: 35px;
-}
-.content-form-orders-list-item_select-inner-list-item textarea {
-  width: 100%;
-}
-.content-form-orders-list-item_select-inner-list-item .btn-add-caption {
-  background-color: #c1c6c8;
-  position: relative;
-  padding: 11px 45px;
-  text-align: center;
-  vertical-align: middle;
-  cursor: pointer;
-  border-radius: 2px;
-}
-.content-form-orders-list-item_select-inner-list-item .btn-add-caption i {
-  margin-right: 5px;
-  color: #fff;
-  font-size: 12px;
-}
-.content-form-orders-list-item_select-inner-list-item .btn-add-caption input[type=file] {
-  display: none;
-}
-.content-form-orders-list-item_select-inner-list-item .btn-add-caption-text {
-  font-family: "OpenSansSemibold";
-  color: #fff;
-  font-size: 12px;
-  white-space: nowrap;
 }
 .content-form-orders-list-item_select-inner-list-item_hidden-content {
   display: none;

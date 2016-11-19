@@ -192,3 +192,23 @@
         }
     }
 }
+.tooltip-text__test {
+    top: 80px;
+    right: 100%;
+    margin-right: -40px;
+    width: 390px;
+    &:after {
+        content: "";
+        right: 34px;
+        top: -17px;
+        margin-right: -11.5px;
+        transform: rotate(90deg);
+        -moz-transform: rotate(90deg);
+        -o-transform: rotate(90deg);
+        -webkit-transform: rotate(90deg);
+        -ms-transform: rotate(90deg);
+        @media (max-width: 1010px) {
+        top: -10px;
+        }
+    }
+}

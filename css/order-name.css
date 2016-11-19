@@ -5335,6 +5335,28 @@ span.reviewStars__active-value {
     margin: 0;
   }
 }
+.tooltip-text__test {
+  top: 80px;
+  right: 100%;
+  margin-right: -40px;
+  width: 390px;
+}
+.tooltip-text__test:after {
+  content: "";
+  right: 34px;
+  top: -17px;
+  margin-right: -11.5px;
+  transform: rotate(90deg);
+  -moz-transform: rotate(90deg);
+  -o-transform: rotate(90deg);
+  -webkit-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+}
+@media (max-width: 1010px) {
+  .tooltip-text__test:after {
+    top: -10px;
+  }
+}
 /*checkbox*/
 .checkbox-item {
   margin-bottom: 20px;
