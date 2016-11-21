@@ -5067,7 +5067,7 @@ textarea:focus {
 }
 .content-center-inner {
   font-size: 0;
-  margin-left: 25px;
+  margin: 0 0 25px 25px;
 }
 @media (max-width: 992px) {
   .content-center-inner {
@@ -5089,6 +5089,11 @@ textarea:focus {
   margin-bottom: 0;
   position: relative;
 }
+@media (max-width: 600px) {
+  .content-center-item {
+    padding: 0;
+  }
+}
 .content-center-item-value {
   position: absolute;
   right: 20px;
@@ -5097,6 +5102,11 @@ textarea:focus {
   font-size: 14px;
   font-family: "OpenSansRegular";
   color: #c7c7c7;
+}
+@media (max-width: 600px) {
+  .content-center-item-value {
+    top: 15px;
+  }
 }
 .content-center-item-left-side,
 .content-center-item-right-side {
@@ -5108,9 +5118,21 @@ textarea:focus {
   max-width: 150px;
   text-align: center;
 }
+@media (max-width: 600px) {
+  .content-center-item-left-side {
+    display: none;
+  }
+}
 .content-center-item-right-side {
   width: 80%;
   text-align: left;
+  padding-right: 5px;
+}
+@media (max-width: 600px) {
+  .content-center-item-right-side {
+    width: 100%;
+    padding: 15px;
+  }
 }
 .content-center-item-name {
   color: #4786c8;

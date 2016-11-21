@@ -76,7 +76,7 @@
 .content-center {
     &-inner {
         font-size: 0;
-        margin-left: 25px;
+        margin: 0 0 25px 25px;
         @media(max-width: 992px) {
             margin-left: 0;
         }
@@ -93,6 +93,9 @@
         border-bottom: none;
         margin-bottom: 0;
         position: relative;
+        @media (max-width: 600px) {
+            padding: 0;
+        }
         &-value {
             position: absolute;
             right: 20px;
@@ -101,6 +104,9 @@
             font-size: 14px;
             font-family: "OpenSansRegular";
             color: #c7c7c7;
+            @media (max-width: 600px) {
+                top: 15px;
+            }
         }
         &-left-side,
         &-right-side {
@@ -111,10 +117,18 @@
             width: 20%;
             max-width: 150px;
             text-align: center;
+            @media (max-width: 600px) {
+                display: none;
+            }
         }
         &-right-side {
             width: 80%;
             text-align: left;
+            padding-right: 5px;
+            @media (max-width: 600px) {
+                width: 100%;
+                padding: 15px;
+            }
         }
         &-name {
             color: #4786c8;
