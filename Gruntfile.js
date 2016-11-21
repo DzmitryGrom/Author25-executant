@@ -10,6 +10,7 @@ module.exports = function (grunt) {
                     'css/balance.css': 'less/balance.less',
                     'css/main.css': 'less/main.less',
                     'css/form.css': 'less/form.less',
+                    'css/forum.css': 'less/forum.less',
                     'css/info.css': 'less/info.less',
                     'css/order-name.css': 'less/order-name.less',
                     'css/all-orders.css': 'less/all-orders.less',

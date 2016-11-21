@@ -1,4 +1,5 @@
-
+/*increasing-number*/
+@import "components/increasing-number.less";
 .content-sitebar{
     display: inline-block;
     width: 20%;
@@ -180,13 +181,6 @@
                 &:hover {
                     background-color: #f5f5f5;
                 }
-                .increasing-number {
-                    color: #fff;
-                    background-color: #e95454;
-                    border-radius: 12px;
-                    padding: 1px 6px;
-                    margin-left: 5px;
-                }
                 ul {
                     padding-left: 18px;
                     margin-top: 15px;
@@ -210,12 +204,15 @@
                 }
             }
             &-list-item__black {
-                .content-sitebar-user-info-list-item-text {
+                .content-sitebar-user-info-list-item-text, .content-sitebar-user-info-list-item-link {
                     color: #444444; 
                     position: relative;
                     .fa {
                         color: #b0b0b0;
                         margin-right: 5px;
+                    }
+                    .fa-envelope-o {
+                        color: #e95454;
                     }
                     &-value {
                         position: absolute;
@@ -264,6 +261,22 @@
             font-size: 14px;
             font-family: "OpenSansRegular";
             color: #444444;
+        }
+    }
+    &-search {
+        position: relative;
+        margin-bottom: 25px;
+        input {
+            padding: 0 15px;
+        }
+        .fa {
+            font-size: 13px;
+            color: #b0b0b0;
+            position: absolute;
+            right: 15px;
+            top: 50%;
+            margin-top: -6px;
+            z-index: 2;
         }
     }
     .select-item-text {

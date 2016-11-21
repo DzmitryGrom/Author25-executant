@@ -99,7 +99,7 @@
         margin-left: 20px;
     }
     display: none;
-        &-content {
+    &-content {
         background-color: #fff;
         min-height: 50px;
         margin: 20px 0;
@@ -217,7 +217,7 @@
             }
         }
     }
-        &-answer {
+    &-answer {
         padding: 20px 0;
         background-color: #f5f5f5;
             @media(max-width: 992px) {
@@ -250,6 +250,7 @@
                 margin: 0;
                 vertical-align: top;
                 width: 35px;
+                height: 34px;
                 i {
                     margin: 0;
                 }
@@ -269,5 +270,105 @@
             }
         }
 
+    }
+    &__forum {
+        .messages-content {
+            text-align: right;
+            .time {
+                display: inline-block;
+            }
+            .new-author {
+                margin-bottom: 15px;
+            }
+            &-link {
+                color: #4786c8;
+                margin-right: 10px;
+            }
+            &-question {
+                background-color: #fff;
+                border: 1px solid #e6e6e6;
+                text-align: left;
+                span {
+                    margin-bottom: 10px;
+                    display: block;
+                }
+                &-user {
+                    background-color: transparent;
+                    border: none;
+                    margin-bottom: 0;
+                    padding-bottom: 0;
+                    max-width: 90%;
+                    @media(max-width: 786px) {
+                        width: 80%;
+                    }
+                    &:after {
+                        content: "";
+                        display: none;
+                    }
+                }
+            }
+            &-answer {
+                width: 90%;
+                display: inline-block;
+                background-color: #fff;
+                border-left: 1px solid #e6e6e6;
+                border-right: 1px solid #e6e6e6;
+                border-bottom: 1px solid #e6e6e6;
+                text-align: left;
+                
+                &__last {
+                    margin-bottom: 20px;
+                }
+                img {
+                    margin: 15px 0 0 20px;
+                }
+                &-author {
+                    border: none;
+                    max-width: 90%;
+                    @media (max-width: 886px) {
+                        width: 80%;
+                    }
+                    &:after {
+                        content: "";
+                        display: none;
+                    }
+                    span {
+                        display: block;
+                    }
+                }
+                
+            }
+        }
+        .messages-answer {
+            border-top: 1px solid #e6e6e6;
+            background-color: #fff;
+            &-left {
+                right: 275px;
+                @media(max-width: 700px) {
+                    right: 20px;
+                }
+            }
+            &-right {
+                @media(max-width: 700px) {
+                    top: 45px;
+                }
+            }
+            form {
+                @media(max-width: 700px) {
+                    height: 80px;
+                }
+            }
+            .form-control {
+                border-color: #c1c6c8;
+            }
+            .btn-add-caption {
+                margin: 0 10px;
+            }
+            .btn-answer {
+                background-color: #c1c6c8;
+                margin-left: 0;
+            }
+        }
+        
     }
 }

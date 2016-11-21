@@ -1,0 +1,681 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    <meta name="format-detection" content="telephone=no">
+    <title>Author25-forum</title>
+    <link rel="stylesheet" href="css/libs/bootstrap.min.css">
+    <link rel="stylesheet" href="css/libs/select2.css">
+    <link rel="stylesheet" href="css/forum.css">
+</head>
+<body>
+    <div class="page">
+        <!--nav-->
+        <div class="container-nav container-nav__blue container-fluid">
+            <div class="container">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header">
+                    <button id="show_button" type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false"> 
+                        <span class="sr-only">Toggle navigation</span> 
+                        <span class="icon-bar"></span> 
+                        <span class="icon-bar"></span> 
+                        <span class="icon-bar"></span> 
+                    </button>
+                    <a class="navbar-brand" href="#"></a>
+                </div>
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="navbar-info  navbar-info__static">
+                    <span class="navbar-info-item navbar-info-item__notifications">
+                        <i class="fa fa-info-circle" aria-hidden="true"></i>
+                        <span class="navbar-info-item-value">4</span>
+                        <i class="pop-up_tr"></i>
+                    </span>
+                    <span class="navbar-info-item navbar-info-item__message">
+                        <i class="fa fa-envelope" aria-hidden="true"></i>
+                        <span class="navbar-info-item-value">11</span>
+                        <i class="pop-up_tr"></i>
+                    </span>
+                    <a href="#" class="btn-nav-bar">
+                        <i class="fa fa-search" aria-hidden="true"></i>НАЙТИ ЗАКАЗ
+                    </a>
+                    <a href="#" class="btn-nav-bar">
+                        <i class="fa fa-tag" aria-hidden="true"></i>ГОТОВЫЕ РАБОТЫ
+                    </a>
+                </div>
+                <div class="navbar-info">
+                    <a href="#" class="btn-money-value"><i class="i i_cash"></i>0 руб.</a>
+                    <a href="#" class="btn-nav-bar">
+                        <i class="fa fa-sign-out" aria-hidden="true"></i>ВЫВЕСТИ ДЕНЬГИ
+                    </a>
+                    <span class="navbar-info-item navbar-info-item__user">
+                        <i class="fa fa-user" aria-hidden="true"></i>
+                        <i class="fa fa-angle-down" aria-hidden="true"></i>
+                        <i class="pop-up_tr__user"></i>
+                    </span>
+                </div>
+                <!-- /.navbar-collapse -->
+            </div>
+        </div>
+        <div class="container-nav container-nav__white">
+            <div class="container">    
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <i class="collapse-tr"></i>
+                    <ul class="nav navbar-nav">
+                        <li class="active"> 
+                            <a href="#">Главная<span class="sr-only">(current)</span></a>
+                        </li>
+                        <li>
+                            <a href="#">Аукцион заказов</a>
+                        </li>
+                        <li>
+                            <a href="#">Мои заказы</a>
+                        </li>
+                        <li>
+                            <a href="#">Баланс</a>
+                        </li>
+                        <li>
+                            <a href="#">Профиль</a>
+                        </li>
+                        <li>
+                            <a href="#">Настройки</a>
+                        </li>
+                        <li>
+                            <a href="#">Сообщества</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!--widgets-->
+        <div class="pop-up-notification pop-up-notification__info">
+            <p class="pop-up-notification-caption">Новые уведомления:</p>
+            <div class="pop-up-notification-inner">
+                <div class="pop-up-notification-inner-item">
+                    <i class="fa fa-angle-double-right" aria-hidden="true"></i>
+                    <p class="pop-up-notification-inner-item-text-top">Гарантийный срок по заказу "Физика 2" истек</p>
+                    <p class="pop-up-notification-inner-item-date">26 июня 2016 в 20:43</p>
+                    <a class="pop-up-notification-inner-item-link" href="#">физика 2</a>
+                </div>
+                <div class="pop-up-notification-inner-item">
+                    <i class="fa fa-angle-double-right" aria-hidden="true"></i>
+                    <p class="pop-up-notification-inner-item-text-top">Автор сделал ставку к Вашему заказу контрольная "РАСЧЕТ УСТОЙЧИВОСТИ ЭЛЕКТРОЭНЕРГЕТИЧЕСКОЙ СИСТЕМЫ"</p>
+                    <p class="pop-up-notification-inner-item-date">26 июня 2016 в 20:43</p>
+                    <a class="pop-up-notification-inner-item-link" href="#">контрольная РАСЧЕТ УСТОЙЧИВОСТИ ЭЛЕКТРОЭНЕРГЕТИЧЕСКОЙ СИСТЕМЫ</a>
+                </div>
+            </div>
+            <div class="pop-up-notification-btn-remove-inner">
+                <a href="#" class="pop-up-notification-btn-remove-inner-btn">Очистить уведомления</a>
+            </div>
+        </div>
+        <div class="pop-up-notification pop-up-notification__message">
+            <p class="pop-up-notification-caption">Новые собщения:</p>
+            <div class="pop-up-notification-inner">
+                <div class="pop-up-notification-inner-item">
+                    <i class="fa fa-angle-double-right" aria-hidden="true"></i>
+                    <p class="pop-up-notification-inner-item-text-top">Привет, я готова приступить к проекту, только мне нуджно предоплата</p>
+                    <p class="pop-up-notification-inner-item-date">26 июня 2016 в 20:43</p>
+                    <a class="pop-up-notification-inner-item-link" href="#">физика 2</a>
+                </div>
+                <div class="pop-up-notification-inner-item">
+                    <i class="fa fa-angle-double-right" aria-hidden="true"></i>
+                    <p class="pop-up-notification-inner-item-text-top">Очень интересно получается! Я могу сделать прямо на этой странице, но для этого мне надо время</p>
+                    <p class="pop-up-notification-inner-item-date">26 июня 2016 в 20:43</p>
+                    <a class="pop-up-notification-inner-item-link" href="#">контрольная РАСЧЕТ УСТОЙЧИВОСТИ ЭЛЕКТРОЭНЕРГЕТИЧЕСКОЙ СИСТЕМЫ</a>
+                </div>
+            </div>
+            <div class="pop-up-notification-btn-remove-inner">
+                <a href="#" class="pop-up-notification-btn-remove-inner-btn">Очистить уведомления</a>
+            </div>
+        </div>
+        <div class="pop-up__user">
+            <div class="pop-up__user-item">
+                <a href="#" class="pop-up__user-item-text">Баланс<span class="pop-up__user-item-text__balance">0 р.</span></a>   
+            </div>
+            <div class="pop-up__user-item">
+                <a href="#" class="pop-up__user-item-text">Настройки</a>   
+            </div>
+            <div class="pop-up__user-item">
+                <a href="#" class="pop-up__user-item-text">Текущая комиссия</a>   
+            </div>
+            <div class="pop-up__user-item">
+                <a href="#" class="pop-up__user-item-text">Избранные авторы<span class="pop-up__user-item-text__new">NEW</span></a>   
+            </div>
+            <div class="pop-up__user-item">
+                <a href="#" class="pop-up__user-item-text">Черный список</a>   
+            </div>
+            <div class="pop-up__user-item">
+                <a href="#" class="pop-up__user-item-text btn-pop-up__user-exit">Выход</a>   
+            </div>
+        </div>
+        <div class="pop-up-info pop-up-info__order-confirmation">
+            <span class="btn-delete">
+                <i class="fa fa-times" aria-hidden="true"></i>
+            </span>
+            <p class="pop-up-info-description">
+                Ограничение
+            </p>
+            <div class="pop-up-info-text">
+                <p>
+                    К сожалению, вы не можете оставить комментарий или создать новую тему в данном разделе, пока не выполните 5 заказов. Если считаете это ошибкой, пожайлуста, свяжитесь со службой поддержки
+                </p>
+            </div>
+            <div class="pop-up-info-btn-inner">
+                <a href="#" class="btn-green">ОТКАЗАТЬ</a>
+            </div>
+        </div>
+        <div class="pop-up__shadow"></div>
+        <!--content-->
+        <div class="content container">
+            <div class="content-sitebar">
+                <a href="#" class="btn-blue">
+                    <i class="fa fa-pencil-square-o" aria-hidden="true"></i>
+                    СОЗДАТЬ СВОЮ ТЕМУ
+                </a>
+                <div class="content-sitebar-user content-sitebar-user__without-paddings">
+                    <div class="content-sitebar-user-info">
+                        <p class="content-sitebar-user-info-orders-description content-sitebar-user-info-orders-description__without-margin">Заказы</p>
+                        <ul class="content-sitebar-user-info-list">
+                            <li class="content-sitebar-user-info-list-item content-sitebar-user-info-list-item__black">
+                                <a class="content-sitebar-user-info-list-item-link" href="#">База знаний 
+                                    <span class="content-sitebar-user-info-list-item-link-value-inner">
+                                        <span class="content-sitebar-user-info-list-item-link-value">130</span>
+                                    </span>
+                                    
+                                </a>
+                            </li>
+                            <li class="content-sitebar-user-info-list-item content-sitebar-user-info-list-item__black">
+                                <a class="content-sitebar-user-info-list-item-link" href="#">
+                                    <i class="fa fa-envelope-o" aria-hidden="true"></i>Идеи и предложения
+                                    <span class="content-sitebar-user-info-list-item-link-value-inner">
+                                        <span class="content-sitebar-user-info-list-item-link-value">2</span>
+                                    </span>
+                                    
+                                </a>
+                            </li>
+                            <li class="content-sitebar-user-info-list-item content-sitebar-user-info-list-item__black">
+                                <a class="content-sitebar-user-info-list-item-link" href="#">Новичкам
+                                    <span class="content-sitebar-user-info-list-item-link-value-inner">
+                                        <span class="content-sitebar-user-info-list-item-link-value">1</span>
+                                    </span>
+                                </a>
+                            </li>
+                            <li class="content-sitebar-user-info-list-item content-sitebar-user-info-list-item__black">
+                                <a class="content-sitebar-user-info-list-item-link" href="#">Беседка
+                                    <span class="content-sitebar-user-info-list-item-link-value-inner">
+                                        <span class="content-sitebar-user-info-list-item-link-value">130</span>
+                                    </span>
+                                </a>
+                            </li>
+                            <li class="content-sitebar-user-info-list-item content-sitebar-user-info-list-item__black">
+                                <a class="content-sitebar-user-info-list-item-link" href="#">Обсуждение заказов
+                                    <span class="content-sitebar-user-info-list-item-link-value-inner">
+                                        <span class="content-sitebar-user-info-list-item-link-value">2</span>
+                                    </span>
+                                </a>
+                            </li>
+                            <li class="content-sitebar-user-info-list-item content-sitebar-user-info-list-item__black">
+                                <a class="content-sitebar-user-info-list-item-link" href="#">Правила работы 
+                                    <span class="content-sitebar-user-info-list-item-link-value-inner">
+                                        <span class="content-sitebar-user-info-list-item-link-value">1</span>
+                                    </span>
+                                </a>
+                            </li>
+                            <li class="content-sitebar-user-info-list-item content-sitebar-user-info-list-item__black">
+                                <a class="content-sitebar-user-info-list-item-link" href="#">Архив 
+                                    <span class="content-sitebar-user-info-list-item-link-value-inner">
+                                        <span class="content-sitebar-user-info-list-item-link-value">6</span>
+                                    </span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="content-sitebar-search">
+                    <input type="text" class="form-control">
+                    <i class="fa fa-search" aria-hidden="true"></i>
+                </div>
+                <div class="content-sitebar-banner content-sitebar-banner__section">
+                    <i class="i i__banner-section"></i>
+                    <p class="content-sitebar-banner-text">В этом разделе вы можете делиться своими наработками с другими авторами и просить помощи в выполнении заказов. Полезные ссылки для работы. Делитесь опытом с другими исполнителями!</p>
+                </div>
+                
+            </div>
+            <div class="content-center">    
+                <p class="content-center-description">База знаний</p>
+                <div class="content-center-inner">
+                    <!--item-->
+                    <div class="content-center-item content-center-item__creat">
+                        <div class="content-center-item-top-panel">
+                            <p class="content-center-item-text-bottom">Создать новую тему</p>
+                        </div>
+                        <div class="content-center-item__left">
+                            <div class="content-center-item-side">
+                                <p class="content-center-item-text-top">Зоголовок темы</p>
+                                <input type="text" class="form-control">
+                            </div>
+                            <div  class="content-center-item-side">
+                                <p class="content-center-item-text-top">Раздел</p>
+                                <select class="form-control js-example-basic-single select2-hidden-accessible" tabindex="-1" aria-hidden="true">
+                                    <option value="AL">База знаний</option>
+                                    <option value="WY">Экзамен</option>
+                                    <option value="WY">Контрольная</option>
+                                </select>
+                            </div>
+                            <label class="btn-add-caption">
+                                <i class="fa fa-paperclip btn-add-caption-icon"></i>
+                                <input class="btn-add-caption-element" type="file" name="photo" accept="image/*,image/jpeg"> 
+                                <span class="btn-add-caption-text">ПРИКРЕПИТЬ ФАЙЛ</span> 
+                            </label>
+                        </div>
+                        <div class="content-center-item__right">
+                            <p class="content-center-item-text-top">Описание темы</p>
+                            <textarea class="form-control" cols="20" data-val="true" maxlength="1200" name="Text" rows="5"></textarea>
+                        </div>
+                        <span class="btn-blue btn-new-theme">ОПУБЛИКОВАТЬ НОВУЮ ТЕМУ</span>
+                        <div>
+                            <span class="btn-gray btn-add-list">
+                                <i class="fa fa-list" aria-hidden="true"></i>
+                                ДОБАВИТЬ ОПРОС
+                            </span>
+                        </div>
+                        <div class="content-center-item__left hidden">
+                            <div class="content-center-item-side">
+                                <p class="content-center-item-text-top">Опрос
+                                    <span class="btn-close-more content-center-item-text-top-link">Удалить опрос</span>
+                                </p>
+                                <input type="text" class="form-control" placeholder="Укажите тему опроса">
+                            </div>
+                            <div  class="content-center-item-side content-center-item-side__margin-bottom">
+                                <p class="content-center-item-text-top">Пользователи могут выбрать</p>
+                                <div class="radio-inner">
+                                    <label>
+                                        <input class="radio" type="radio" name="radio-test" checked="">
+                                        <span class="radio-custom"></span>
+                                        <span class="radio-custom-text">Один вариант ответа</span>
+                                    </label>
+                                </div>
+                                 <div class="radio-inner">
+                                    <label>
+                                        <input class="radio" type="radio" name="radio-test" checked="">
+                                        <span class="radio-custom"></span>
+                                        <span class="radio-custom-text">Несколько вариантов ответа</span>
+                                    </label>
+                                </div>
+                                <input type="text" class="form-control" placeholder="Укажите варианты ответа">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <p class="content-center-description">База знаний</p>
+                <div class="content-center-inner">
+                    <!--item-->
+                        <div class="content-forum-table">
+                            <div class="content-forum-table-row content-forum-table-row__header">
+                                <div class="content-forum-table-row-col">
+                                    Тема
+                                </div>
+                                <div class="content-forum-table-row-col">
+                                    Автор
+                                </div>
+                                <div class="content-forum-table-row-col">
+                                    Ответов
+                                </div>
+                                <div class="content-forum-table-row-col">
+                                    Последний комментарий
+                                </div>
+                            </div>
+                            <div class="content-forum-table-row">
+                                <div class="content-forum-table-row-col content-forum-table-row-col__gray">
+                                    <a href="#">
+                                        <i class="i i__ellipse"></i>
+                                        Временная приостоновка вывода средств на кошелек Веб Мани.
+                                    </a>    
+                                </div>
+                                <div class="content-forum-table-row-col">
+                                    <div class="new-author">
+                                        <span>АДМИНИСТРАЦИЯ</span>
+                                    </div>
+                                </div>
+                                <div class="content-forum-table-row-col">
+                                    <span>300</span>
+                                </div>
+                                <div class="content-forum-table-row-col">
+                                    <div>
+                                        <div class="new-author">
+                                            <span>АДМИНИСТРАЦИЯ</span>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <span class="time time__static">создано 18 апреля 2016</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="content-forum-table-row content-forum-table-row__active">
+                                <div class="content-forum-table-row-col">
+                                    <a href="#">
+                                        <i class="i i__ellipse"></i>
+                                        Временная приостоновка вывода средств на кошелек Веб Мани.
+                                    </a>
+                                </div>
+                                <div class="content-forum-table-row-col">
+                                    <div class="new-author">
+                                        <span>АДМИНИСТРАЦИЯ</span>
+                                    </div>
+                                </div>
+                                <div class="content-forum-table-row-col">
+                                    <span>300</span>
+                                </div>
+                                <div class="content-forum-table-row-col">
+                                    <div>
+                                        <a href="#">dobryanskaya73</a>
+                                    </div>
+                                    <div>
+                                        <span class="time time__static">создано 18 апреля 2016</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="content-forum-table-row">
+                                <div class="content-forum-table-row-col">
+                                    <a href="#">
+                                        <i class="i i__ellipse"></i>
+                                        Временная приостоновка вывода средств на кошелек Веб Мани.
+                                    </a>
+                                </div>
+                                <div class="content-forum-table-row-col">
+                                    <div class="new-author">
+                                        <span>АДМИНИСТРАЦИЯ</span>
+                                    </div>
+                                </div>
+                                <div class="content-forum-table-row-col">
+                                    <span>300</span>
+                                    <span class="i increasing-number">+10</span>
+                                </div>
+                                <div class="content-forum-table-row-col">
+                                    <div>
+                                        <a href="#">dobryanskaya73</a>
+                                    </div>
+                                    <div>
+                                        <span class="time time__static">создано 18 апреля 2016</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="content-forum-table-row">
+                                <div class="content-forum-table-row-col">
+                                    <a href="#">
+                                        <i class="i i__ellipse"></i>
+                                        Информация по выводу средств для авторов из Республики Беларусь
+                                    </a>
+                                </div>
+                                <div class="content-forum-table-row-col">
+                                    <a href="#">dobryanskaya73</a>
+                                </div>
+                                <div class="content-forum-table-row-col">
+                                    <span>300</span>
+                                </div>
+                                <div class="content-forum-table-row-col">
+                                    <div>
+                                        <a href="#">dobryanskaya73</a>
+                                    </div>
+                                    <div>
+                                        <span class="time time__static">создано 18 апреля 2016</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="pagination">
+                            <span class="pagination-prev">
+                                <i class="fa fa-arrow-circle-left" aria-hidden="true"></i>
+                            </span>
+                            <ul class="pagination-list">
+                                <li class="pagination-list-item"><a class="active" href="#"><span>1</span></a></li>
+                                <li class="pagination-list-item"><a href="#"><span>2</span></a></li>
+                                <li class="pagination-list-item"><a href="#"><span>3</span></a></li>
+                            </ul>
+                            <span class="pagination-next">
+                                <i class="fa fa-arrow-circle-right" aria-hidden="true"></i>
+                            </span>
+                        </div>
+                </div>
+                <p class="content-center-text-section">СООБЩЕСТВА АВТОРОВ / БАЗА ЗНАНИЙ</p>
+                <p class="content-center-description content-center-description__middle">
+                    ВРЕМЕННАЯ ПРИОСТАНОВКА ВЫВОДА СРЕДСТВ НА КОШЕЛЕК ВЕБ МАНИ.
+                </p>
+                <div class="content-center-inner">
+                    <div class="content-center-item">
+                        <div class="content-post">
+                            <div class="content-post-top-panel">
+                                <img src="img/interface/avatar-square.jpg" alt="автор">
+                                <div class="new-author">
+                                    <span>АДМИНИСТРАЦИЯ</span>
+                                </div>
+                                <span class="time">создано 18 апреля 2016</span>
+                                <div class="content-post-top-panel-notification">
+                                    <span class="content-post-top-panel-notification-item">
+                                        <i class="fa fa-user" aria-hidden="true"></i>
+                                        16
+                                    </span>
+                                    <span class="content-post-top-panel-notification-item">
+                                        <i class="fa fa-comments" aria-hidden="true"></i>
+                                        16
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="content-post-info">
+                                <p class="content-post-info-text-top">Временная приостановка вывода средств на кошелек Веб Мани.</p>
+                                <p class="content-post-info-text-bottom">
+                                    В понедельник, 18.04.16 наши партнеры - платежная система - предоставили информацию о техническох проблемах при осуществлении перевода средств с сервиса АВТОР24 на кошельки Веб Мани. Проблема возникла между самой платежной системой и эл.кошельком Веб Мани.
+                                </p>
+                                <p class="content-post-info-text-bottom">
+                                    В связи с тем, что сроки решения и сложность проблемы пока неизвестны, мы вынеждены временно приостоновить вывод средств с сайта на кошельки Веб Мани, во измебажние"зависания" средств по заявкам на вывод созданным пользователями сайта.
+                                </p>
+                                <p class="content-post-info-text-bottom">
+                                    Отлица наших партнеров приносим извинения за доставленные неудобства. Как только поступит актуальная информация по данной проблеме, мы сообщим ее пользователям сайта.
+                                </p>
+                            </div>
+                            <div class="content-post-pagination">
+                                <span class="content-post-text-top">339 комментариев</span>
+                                <div class="pagination">
+                                    <span class="pagination-prev">
+                                        <i class="fa fa-angle-double-left" aria-hidden="true"></i>
+                                    </span>
+                                    <ul class="pagination-list">
+                                        <li class="pagination-list-item pagination-list-item__blue">
+                                            <a class="active" href="#">
+                                                <span>1</span>
+                                            </a>
+                                        </li>
+                                        <li class="pagination-list-item pagination-list-item__blue">
+                                            <a href="#">
+                                                <span>2</span>
+                                            </a>
+                                        </li>
+                                        <li class="pagination-list-item pagination-list-item__blue">
+                                            <a href="#">
+                                                <span>3</span>
+                                            </a>
+                                        </li>
+                                        <li class="pagination-list-item pagination-list-item__blue">
+                                            <a href="#">
+                                                <span>4</span>
+                                            </a>
+                                        </li>
+                                        <li class="pagination-list-item pagination-list-item__blue">
+                                            <a href="#">
+                                                <span>5</span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                    <span class="pagination-next">
+                                        <i class="fa fa-angle-double-right" aria-hidden="true"></i>
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="messages messages__forum">
+                                <div class="messages-content">
+                                    <div class="messages-content-question">
+                                        <img src="img/interface/avatar-square.jpg" alt="avatar">
+                                        <div class="messages-content-question-user">
+                                            <div>
+                                                <a href="#" class="messages-content-question-user-name messages-content-link">User</a>
+                                                <span class="time time__static">18 апреля 2016</span>
+                                            </div>
+                                            <span>
+                                                Очень огорчительно, теперь авторам из Украины вообще никак деньги не вывести.
+                                            </span>
+                                            <p>
+                                                <a href="#" class="messages-content-link">5 ответов</a>
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="messages-content-answer">
+                                        <img src="img/interface/avatar-square.jpg" alt="avatar">
+                                        <div class="messages-content-answer-author">
+                                            <div>
+                                                <a href="#" class="messages-content-question-user-name messages-content-link">User</a>
+                                                <span class="time time__static">18 апреля 2016</span>
+                                            </div>
+                                            <span>
+                                                Здравствуйте! Выводите на Киви кошелек, созданный на украинский номер. Затем выводите на карточку напрямую через меню "Вывести". В полях ввести вручную все данные, сумму и номер карты. Ничего прикреплять не нужно, карта не прикрепится т.к идентификацию нерезиденту не пройти.
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <div class="messages-content-answer messages-content-answer__last">
+                                        <img src="img/interface/avatar-square.jpg" alt="avatar">
+                                        <div class="messages-content-answer-author">
+                                            <div>
+                                                <div class="new-author">
+                                                    <span>АДМИНИСТРАЦИЯ</span>
+                                                </div>
+                                                <span class="time time__static">18 апреля 2016</span>
+                                            </div>
+                                            <span>
+                                                Здравствуйте! Выводите на Киви кошелек, созданный на украинский номер. Затем выводите на карточку напрямую через меню "Вывести". В полях ввести вручную все данные, сумму и номер карты. Ничего прикреплять не нужно, карта не прикрепится т.к идентификацию нерезиденту не пройти.
+                                            </span>
+                                        </div>
+                                        <div class="messages-answer">
+                                            <form>
+                                                <div class="messages-answer-left">
+                                                    <input type="text" class="form-control">
+                                                </div>
+                                                <div class="messages-answer-right">
+                                                    <span class="btn-smiley">
+                                                        <i class="fa fa-smile-o" aria-hidden="true"></i>
+                                                    </span>
+                                                    <label class="btn-add-caption">
+                                                        <i class="fa fa-paperclip btn-add-caption-icon"></i>
+                                                        <input class="btn-add-caption-element" type="file" name="photo" accept="image/*,image/jpeg"> 
+                                                        <span class="btn-add-caption-text"></span> 
+                                                    </label>
+                                                    <button type="submit" class="btn-answer">ОТВЕТИТЬ</button> 
+                                                </div>
+                                            </form>
+                                        </div>
+                                    </div>
+                                    <div class="messages-content-question">
+                                        <img src="img/interface/avatar-square.jpg" alt="avatar">
+                                        <div class="messages-content-question-user">
+                                            <div>
+                                                <a href="#" class="messages-content-question-user-name messages-content-link">User</a>
+                                                <span class="time time__static">18 апреля 2016</span>
+                                            </div>
+                                            <span>
+                                                Очень огорчительно, теперь авторам из Украины вообще никак деньги не вывести.
+                                            </span>
+                                            <p>
+                                                <a href="#" class="messages-content-link">Ответить на комментарий</a>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="messages-answer">
+                                    <form>
+                                        <div class="messages-answer-left">
+                                            <input type="text" class="form-control">
+                                        </div>
+                                        <div class="messages-answer-right">
+                                            <span class="btn-smiley">
+                                                <i class="fa fa-smile-o" aria-hidden="true"></i>
+                                            </span>
+                                            <label class="btn-add-caption">
+                                                <i class="fa fa-paperclip btn-add-caption-icon"></i>
+                                                <input class="btn-add-caption-element" type="file" name="photo" accept="image/*,image/jpeg"> 
+                                                <span class="btn-add-caption-text"></span> 
+                                            </label>
+                                            <button type="submit" class="btn-answer">ОТВЕТИТЬ</button> 
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--footer-->
+        <div class="footer">
+            <div class="container footer-list">
+                <div class="footer-list-item footer-list-item__left">
+                    <ul class="footer-list-item__left-nav-list">
+                        <li class="footer-list-item__left-nav-list-item"><a href="#">Новости</a></li>
+                        <li class="footer-list-item__left-nav-list-item"><a href="#">Топ авторов</a></li>
+                        <li class="footer-list-item__left-nav-list-item"><a href="#">Агенствам</a></li>
+                        <li class="footer-list-item__left-nav-list-item"><a href="#">Помощь</a></li>
+                    </ul>
+                    <div class="footer-list-item__left-banner">
+                        <a href="#">
+                            <p class="footer-list-item__left-banner-text-inner">
+                               <span class="footer-list-item__left-banner-text-inner-text-top">Будь всегда на связи!</span>
+                               <span class="footer-list-item__left-banner-text-inner-text-bottom">Приложение от Автор25</span> 
+                            </p>
+                            <p class="footer-list-item__left-banner-img-inner">
+                                <i class="i i_google-play"></i>  
+                            </p>
+                        </a>
+                    </div>
+                    <div class="footer-list-item__left-copyright">
+                        <p>© 2016 Author25.</p>
+                        <p>Все права защищены</p>
+                    </div>
+                </div>
+                <div class="footer-list-item footer-list-item__center">
+                    <p class="footer-list-item__center-text-top">Мы принимаем</p>
+                    <div class=" footer-list-item__center-list">
+                        <div class="footer-list-item__center-list-item">
+                            <i class="i i_footer i_visa"></i>
+                        </div>
+                        <div class="footer-list-item__center-list-item">
+                            <i class="i i_footer i_mc"></i>
+                        </div>
+                        <div class="footer-list-item__center-list-item">
+                            <i class="i i_footer i_yandex"></i>
+                        </div>
+                         <div class="footer-list-item__center-list-item">
+                            <i class="i i_footer i_web"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-list-item footer-list-item__right">
+                    <p class="footer-list-item__right-phone">
+                        <i class="fa fa-phone" aria-hidden="true"></i>
+                        <span>8-800-100-03-20</span>
+                    </p>
+                    <p class="footer-list-item__right-mail">
+                        <i class="fa fa-envelope" aria-hidden="true"></i>
+                        <span>support@author25.ru</span>
+                    </p>
+                    <p class="footer-list-item__right-work">Служба поддержки работает
+                        <span>по будням <i class="fa fa-clock-o" aria-hidden="true"></i> с 10:00 до 20:00</span>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+<script src="js/libs/jquery-1.12.4.js"></script>
+<script src="js/libs/bootstrap.js"></script>
+<script src="js/main.js"></script>
+<script src="js/libs/select2.min.js"></script>
+<script src="js/select.js"></script>
+<script src="js/forum.js"></script>
+</body>
+</html>
