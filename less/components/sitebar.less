@@ -274,10 +274,21 @@
             color: #b0b0b0;
             position: absolute;
             right: 15px;
-            top: 50%;
-            margin-top: -6px;
+            top: 10px;
             z-index: 2;
         }
+        
+        &-more {
+            background-color: #fff;
+            padding: 15px;
+            display: none;
+        }
+        &__active {
+            border: 2px solid #4786c8;
+            .content-sitebar-search-more {
+                display: block;
+            }  
+        } 
     }
     .select-item-text {
         width: 80%;

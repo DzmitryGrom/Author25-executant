@@ -3102,6 +3102,11 @@ textarea:focus {
 .content-center-item-search .btn-green {
   padding: 10px 23px;
 }
+.content-center-item-name {
+  font-size: 18px;
+  font-family: "OpenSansRegular";
+  color: #444444;
+}
 .content-center-item-text-top {
   font-size: 14px;
   font-family: "OpenSansSemibold";
@@ -3451,9 +3456,19 @@ textarea:focus {
   color: #b0b0b0;
   position: absolute;
   right: 15px;
-  top: 50%;
-  margin-top: -6px;
+  top: 10px;
   z-index: 2;
+}
+.content-sitebar-search-more {
+  background-color: #fff;
+  padding: 15px;
+  display: none;
+}
+.content-sitebar-search__active {
+  border: 2px solid #4786c8;
+}
+.content-sitebar-search__active .content-sitebar-search-more {
+  display: block;
 }
 .content-sitebar .select-item-text {
   width: 80%;
@@ -3753,6 +3768,7 @@ textarea:focus {
   background-image: none;
   padding: 0;
   background-color: #fff;
+  margin-bottom: 25px;
   height: auto;
   text-align: center;
 }
