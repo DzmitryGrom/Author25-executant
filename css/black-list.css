@@ -8256,33 +8256,39 @@ div p.more-info-inner-item-text-bottom .fa {
   text-align: left;
   margin-bottom: 15px;
 }
+.content-center {
+  width: 80%;
+}
 @media (max-width: 1015px) {
   .content-center {
     margin-top: 0px;
   }
 }
-@media (max-width: 750px) {
-  .content-order-name-offers-list-item-author-info__padding-bottom {
-    padding: 15px 0;
+@media (max-width: 992px) {
+  .content-center {
+    width: 100%;
   }
 }
-@media (max-width: 500px) {
-  .content-order-name-offers-list-item-author-info__padding-bottom .like,
-  .content-order-name-offers-list-item-author-info__padding-bottom .dislike {
-    display: block;
-    padding: 0 10px 0 0;
-  }
+.offers-list-item-search-text {
+  margin-bottom: 10px;
 }
-.content-order-name-offers-list-item-author-info__padding-bottom .btn-delete {
-  vertical-align: middle;
+.offers-list-item-author-info {
+  padding: 20px 0;
 }
-@media (max-width: 500px) {
-  .content-order-name-offers-list-item-author-info-item-right__position-middle-btn {
-    margin-top: -22px;
-  }
+.offers-list-item-author-info-item-left {
+  vertical-align: top;
 }
-@media (max-width: 1015px) {
+.offers-list-item-author-info-item-left-name {
+  color: #444444;
+}
+div.offers-list-item-author-info-item-right {
+  top: 35px;
+}
+.right-panel {
+  margin-top: 54px;
+}
+@media (max-width: 992px) {
   .right-panel {
-    position: static;
+    margin-top: 0;
   }
 }

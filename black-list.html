@@ -11,7 +11,7 @@
 <body>
     <div class="page">
         <!--nav-->
-        <div class="container-nav container-fluid">
+        <div class="container-nav container-nav__blue container-fluid">
             <div class="container">
                 <!-- Brand and toggle get grouped for better mobile display -->
                 <div class="navbar-header">
@@ -24,32 +24,7 @@
                     <a class="navbar-brand" href="#"></a>
                 </div>
                 <!-- Collect the nav links, forms, and other content for toggling -->
-                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                    <i class="collapse-tr"></i>
-                    <ul class="nav navbar-nav">
-                        <li>
-                            <i class="fa fa-angle-right" aria-hidden="true"></i>
-                            <a href="#">Главная<span class="sr-only">(current)</span></a>
-                        </li>
-                        <li>
-                            <i class="fa fa-angle-right" aria-hidden="true"></i>
-                            <a href="#">Мои заказы</a>
-                        </li>
-                        <li>
-                            <i class="fa fa-angle-right" aria-hidden="true"></i>
-                            <a href="#">Магазин готовых работ</a>
-                        </li>
-                        <li>
-                            <i class="fa fa-angle-right" aria-hidden="true"></i>
-                            <a href="#">Топ авторов</a>
-                        </li>
-                        <li class="active">
-                            <i class="fa fa-angle-right" aria-hidden="true"></i>
-                            <a href="#">Сделать заказ</a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="navbar-info">
+                <div class="navbar-info  navbar-info__static">
                     <span class="navbar-info-item navbar-info-item__notifications">
                         <i class="fa fa-info-circle" aria-hidden="true"></i>
                         <span class="navbar-info-item-value">4</span>
@@ -60,6 +35,18 @@
                         <span class="navbar-info-item-value">11</span>
                         <i class="pop-up_tr"></i>
                     </span>
+                    <a href="#" class="btn-nav-bar">
+                        <i class="fa fa-search" aria-hidden="true"></i>НАЙТИ ЗАКАЗ
+                    </a>
+                    <a href="#" class="btn-nav-bar">
+                        <i class="fa fa-tag" aria-hidden="true"></i>ГОТОВЫЕ РАБОТЫ
+                    </a>
+                </div>
+                <div class="navbar-info">
+                    <a href="#" class="btn-money-value"><i class="i i_cash"></i>0 руб.</a>
+                    <a href="#" class="btn-nav-bar">
+                        <i class="fa fa-sign-out" aria-hidden="true"></i>ВЫВЕСТИ ДЕНЬГИ
+                    </a>
                     <span class="navbar-info-item navbar-info-item__user">
                         <i class="fa fa-user" aria-hidden="true"></i>
                         <i class="fa fa-angle-down" aria-hidden="true"></i>
@@ -67,6 +54,36 @@
                     </span>
                 </div>
                 <!-- /.navbar-collapse -->
+            </div>
+        </div>
+        <div class="container-nav container-nav__white">
+            <div class="container">    
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <i class="collapse-tr"></i>
+                    <ul class="nav navbar-nav">
+                        <li class="active"> 
+                            <a href="#">Главная<span class="sr-only">(current)</span></a>
+                        </li>
+                        <li>
+                            <a href="#">Аукцион заказов</a>
+                        </li>
+                        <li>
+                            <a href="#">Мои заказы</a>
+                        </li>
+                        <li>
+                            <a href="#">Баланс</a>
+                        </li>
+                        <li>
+                            <a href="#">Профиль</a>
+                        </li>
+                        <li>
+                            <a href="#">Настройки</a>
+                        </li>
+                        <li>
+                            <a href="#">Сообщества</a>
+                        </li>
+                    </ul>
+                </div>
             </div>
         </div>
         <!--widgets-->
@@ -134,131 +151,49 @@
         <div class="content container">
             <div class="content-center"> 
                 <h1 class="content-center-description">Черный список авторов</h1> 
-                <div class="content-order-name-offers-list">
-                    <div class="content-order-name-offers-list-item">
-                        <div class="content-order-name-offers-list-item-search content-order-name-offers-list-item-search__text-left">
-                            <form>
-                                <p class="content-order-name-offers-list-item-search-description">Добавить автора в черный список</p>
-                                <span class="content-order-name-offers-list-item-search-text">Вы можете ввести никнейм автора в этом поле, или нажать в его профиле кнопку "в черный список"</span>
+                <div class="content-center-item">
+                    <div class="offers-list-item-search offers-list-item-search__text-left">
+                        <form>
+                            <p class="offers-list-item-search-description">Добавить автора в черный список</p>
+                            <span class="offers-list-item-search-text">Вы можете ввести никнейм автора в этом поле, или нажать в его профиле кнопку "в черный список"</span>
+                            <div>
                                 <input type="text" class="form-control" placeholder="Ник">
-                                <button class="btn-green">ДОБАВИТЬ АВТОРА</button>
-                            </form>
+                                <button class="btn-green">ДОБАВИТЬ ЗАКАЗЧИКА</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="offers-list-item">
+                    <div class="offers-list-item-author-info">
+                        <img src="img/interface/avatar-square.jpg" alt="автор">
+                        <div class="offers-list-item-author-info-item-left">
+                            <p>
+                                <i class="i i-offline"></i>
+                                <a href="#" class="offers-list-item-author-info-item-left-name">Неверова</a>
+                                <span class="time time__static">был(а) сегодня 00:53</span>
+                            </p>
+                        </div>
+                        <div class="offers-list-item-author-info-item-right">
+                            <span class="btn-delete">
+                                <i class="fa fa-times" aria-hidden="true"></i>
+                            </span>
                         </div>
                     </div>
-                    <div class="content-order-name-offers-list-item">
-                        <div class="content-order-name-offers-list-item-author-info content-order-name-offers-list-item-author-info__padding-bottom">
-                            <img src="img/interface/user-line.png" class="img-margin-top" alt="user">
-                            <div class="content-order-name-offers-list-item-author-info-item-left">
-                                <div>
-                                    <span class="time time__static"><i class="i i author-offline"></i></span>
-                                    <a href="#" class="content-order-name-offers-list-item-author-info-item-left-name">Неверова
-                                        <span class="time time__static">,</span>
-                                    </a>
-                                    <span class="time time__static">был(а) сегодня  00:53</span>
-                                </div>
-                                <div class="content-order-name-offers-list-item-author-info-item-left-text">
-                                    <p class="content-order-name-offers-list-item-author-info-item-center-text-top">Эконометрика, Высшая математика</p>
-                                    <p class="content-order-name-offers-list-item-author-info-item-center-text-bottom">Контрольная работа, Решение задач</p>
-                                </div>   
-                            </div>
-                            <div class="content-order-name-offers-list-item-author-info-item-right content-order-name-offers-list-item-author-info-item-right__position-btn">
-                                    <span class="opinion-inner">
-                                        <span class="like">
-                                            <i class="fa fa-thumbs-up" aria-hidden="true"></i>
-                                            262
-                                        </span>
-                                        <span class="dislike">
-                                            <i class="fa fa-thumbs-down" aria-hidden="true"></i>
-                                            2
-                                        </span>
-                                    </span>    
-                                       
-                                <span class="btn-delete">
-                                    <i class="fa fa-times" aria-hidden="true"></i>
-                                </span>
-                            </div>
-                            <div class="content-order-name-offers-list-item-author-info-bottom-panel content-order-name-offers-list-item-author-info-bottom-panel__without-border">
-                                <p class="content-order-name-offers-list-item-author-info-bottom-panel-title">Статистика по выполненным работам</p>
-                                <div class="content-order-name-offers-list-item-author-info-bottom-panel-info content-order-name-offers-list-item-author-info-bottom-panel-info__full-width active ">
-                                    <div class="content-order-name-offers-list-item-author-info-bottom-panel-info-show">
-                                        <span class="content-order-name-offers-list-item-author-info-bottom-panel-info-show-description">Технические предметы</span>
-                                        <span class="content-order-name-offers-list-item-author-info-bottom-panel-info-show-date">2624</span>
-                                        <span class="content-order-name-offers-list-item-author-info-bottom-panel-info-show-opinion">
-                                            <span class="like">
-                                                <i class="fa fa-thumbs-up" aria-hidden="true"></i>
-                                                262
-                                            </span>
-                                            <span class="dislike">
-                                                <i class="fa fa-thumbs-down" aria-hidden="true"></i>
-                                                2
-                                            </span>
-                                        </span>
-                                        <span class="more">Свернуть</span>
-                                    </div>
-                                </div>
-                                <a href="#" class="content-order-name-offers-list-item-author-info-bottom-panel-more-author">
-                                    <i class="fa fa-list-alt" aria-hidden="true"></i>Подолбнее об авторе
-                                </a>
-                                <span class="more">Свернуть</span>
-                            </div>                  
+                </div>
+                <div class="offers-list-item">
+                    <div class="offers-list-item-author-info">
+                        <img src="img/interface/avatar-square.jpg" alt="автор">
+                        <div class="offers-list-item-author-info-item-left">
+                            <p>
+                                <i class="i i-offline"></i>
+                                <a href="#" class="offers-list-item-author-info-item-left-name">Неверова</a>
+                                <span class="time time__static">был(а) сегодня 00:53</span>
+                            </p>
                         </div>
-                    </div>
-                    <div class="content-order-name-offers-list-item">
-                        <div class="content-order-name-offers-list-item-author-info content-order-name-offers-list-item-author-info__padding-bottom">
-                            <img src="img/interface/user-line.png" class="img-margin-top" alt="user">
-                            <div class="content-order-name-offers-list-item-author-info-item-left">
-                                <div>
-                                    <span class="time time__static"><i class="i i author-offline"></i></span>
-                                    <a href="#" class="content-order-name-offers-list-item-author-info-item-left-name">Неверова
-                                        <span class="time time__static">,</span>
-                                    </a>
-                                    <span class="time time__static">был(а) сегодня  00:53</span>
-                                </div>
-                                <div class="content-order-name-offers-list-item-author-info-item-left-text">
-                                    <p class="content-order-name-offers-list-item-author-info-item-center-text-top">Эконометрика, Высшая математика</p>
-                                    <p class="content-order-name-offers-list-item-author-info-item-center-text-bottom">Контрольная работа, Решение задач</p>
-                                </div>   
-                            </div>
-                            <div class="content-order-name-offers-list-item-author-info-item-right content-order-name-offers-list-item-author-info-item-right__position-btn">
-                                    <span class="opinion-inner">
-                                        <span class="like">
-                                            <i class="fa fa-thumbs-up" aria-hidden="true"></i>
-                                            262
-                                        </span>
-                                        <span class="dislike">
-                                            <i class="fa fa-thumbs-down" aria-hidden="true"></i>
-                                            2
-                                        </span>
-                                    </span>    
-                                       
-                                <span class="btn-delete">
-                                    <i class="fa fa-times" aria-hidden="true"></i>
-                                </span>
-                            </div>
-                            <div class="content-order-name-offers-list-item-author-info-bottom-panel content-order-name-offers-list-item-author-info-bottom-panel__without-border">
-                                <p class="content-order-name-offers-list-item-author-info-bottom-panel-title">Статистика по выполненным работам</p>
-                                <div class="content-order-name-offers-list-item-author-info-bottom-panel-info content-order-name-offers-list-item-author-info-bottom-panel-info__full-width active ">
-                                    <div class="content-order-name-offers-list-item-author-info-bottom-panel-info-show">
-                                        <span class="content-order-name-offers-list-item-author-info-bottom-panel-info-show-description">Технические предметы</span>
-                                        <span class="content-order-name-offers-list-item-author-info-bottom-panel-info-show-date">2624</span>
-                                        <span class="content-order-name-offers-list-item-author-info-bottom-panel-info-show-opinion">
-                                            <span class="like">
-                                                <i class="fa fa-thumbs-up" aria-hidden="true"></i>
-                                                262
-                                            </span>
-                                            <span class="dislike">
-                                                <i class="fa fa-thumbs-down" aria-hidden="true"></i>
-                                                2
-                                            </span>
-                                        </span>
-                                        <span class="more">Свернуть</span>
-                                    </div>
-                                </div>
-                                <a href="#" class="content-order-name-offers-list-item-author-info-bottom-panel-more-author">
-                                    <i class="fa fa-list-alt" aria-hidden="true"></i>Подолбнее об авторе
-                                </a>
-                                <span class="more">Свернуть</span>
-                            </div>                  
+                        <div class="offers-list-item-author-info-item-right">
+                            <span class="btn-delete">
+                                <i class="fa fa-times" aria-hidden="true"></i>
+                            </span>
                         </div>
                     </div>
                 </div>

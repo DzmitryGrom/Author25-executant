@@ -21,32 +21,34 @@
 /*offers-list*/
 @import "less/components/offers-list.less";
 .content-center {
+    width: 80%;
     @media(max-width: 1015px) {
        margin-top: 0px;
     }
-}
-.content-order-name-offers-list-item-author-info__padding-bottom {
-    @media(max-width: 750px) {
-        padding: 15px 0;
+    @media(max-width: 992px) {
+        width: 100%;
     }
-    .like,
-    .dislike {
-        @media(max-width: 500px) {
-            display: block;
-            padding: 0 10px 0 0;
+}
+.offers-list-item {
+    &-search-text {
+        margin-bottom: 10px;
+    }
+    &-author-info {
+        padding: 20px 0;
+        &-item-left {
+            vertical-align: top;
+            &-name {
+                color: #444444;
+            }
         }
-    }
-    .btn-delete {
-        vertical-align: middle;
-    }
-}
-.content-order-name-offers-list-item-author-info-item-right__position-middle-btn {
-    @media(max-width: 500px) {
-        margin-top: -22px;
+        div&-item-right {
+            top: 35px;
+        }
     }
 }
 .right-panel {
-    @media (max-width: 1015px) {
-        position: static;
+    margin-top: 54px;
+    @media(max-width: 992px) {
+        margin-top: 0;
     }
 }
