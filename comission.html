@@ -11,7 +11,7 @@
 <body>
     <div class="page">
         <!--nav-->
-        <div class="container-nav container-fluid">
+        <div class="container-nav container-nav__blue container-fluid">
             <div class="container">
                 <!-- Brand and toggle get grouped for better mobile display -->
                 <div class="navbar-header">
@@ -24,32 +24,7 @@
                     <a class="navbar-brand" href="#"></a>
                 </div>
                 <!-- Collect the nav links, forms, and other content for toggling -->
-                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                    <i class="collapse-tr"></i>
-                    <ul class="nav navbar-nav">
-                        <li>
-                            <i class="fa fa-angle-right" aria-hidden="true"></i>
-                            <a href="#">Главная<span class="sr-only">(current)</span></a>
-                        </li>
-                        <li>
-                            <i class="fa fa-angle-right" aria-hidden="true"></i>
-                            <a href="#">Мои заказы</a>
-                        </li>
-                        <li>
-                            <i class="fa fa-angle-right" aria-hidden="true"></i>
-                            <a href="#">Магазин готовых работ</a>
-                        </li>
-                        <li>
-                            <i class="fa fa-angle-right" aria-hidden="true"></i>
-                            <a href="#">Топ авторов</a>
-                        </li>
-                        <li class="active">
-                            <i class="fa fa-angle-right" aria-hidden="true"></i>
-                            <a href="#">Сделать заказ</a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="navbar-info">
+                <div class="navbar-info  navbar-info__static">
                     <span class="navbar-info-item navbar-info-item__notifications">
                         <i class="fa fa-info-circle" aria-hidden="true"></i>
                         <span class="navbar-info-item-value">4</span>
@@ -60,6 +35,18 @@
                         <span class="navbar-info-item-value">11</span>
                         <i class="pop-up_tr"></i>
                     </span>
+                    <a href="#" class="btn-nav-bar">
+                        <i class="fa fa-search" aria-hidden="true"></i>НАЙТИ ЗАКАЗ
+                    </a>
+                    <a href="#" class="btn-nav-bar">
+                        <i class="fa fa-tag" aria-hidden="true"></i>ГОТОВЫЕ РАБОТЫ
+                    </a>
+                </div>
+                <div class="navbar-info">
+                    <a href="#" class="btn-money-value"><i class="i i_cash"></i>0 руб.</a>
+                    <a href="#" class="btn-nav-bar">
+                        <i class="fa fa-sign-out" aria-hidden="true"></i>ВЫВЕСТИ ДЕНЬГИ
+                    </a>
                     <span class="navbar-info-item navbar-info-item__user">
                         <i class="fa fa-user" aria-hidden="true"></i>
                         <i class="fa fa-angle-down" aria-hidden="true"></i>
@@ -69,16 +56,37 @@
                 <!-- /.navbar-collapse -->
             </div>
         </div>
-        <!--widgets-->
-        <div class="widget-help">
-            <a class="widget-help-item" href="#">О проекте</a>
-            <a class="widget-help-item" href="#">Соглашение</a>
-            <a class="widget-help-item" href="#">Правила работы</a>
-            <a class="widget-help-item" href="#">Новости</a>
-            <a class="widget-help-item" href="#">Помощь</a>
-            <a class="widget-help-item" href="#">Как оплатить</a>
-            <a class="widget-help-item" href="#">Узнать среднюю стоимость работы</a>
+        <div class="container-nav container-nav__white">
+            <div class="container">    
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <i class="collapse-tr"></i>
+                    <ul class="nav navbar-nav">
+                        <li class="active"> 
+                            <a href="#">Главная<span class="sr-only">(current)</span></a>
+                        </li>
+                        <li>
+                            <a href="#">Аукцион заказов</a>
+                        </li>
+                        <li>
+                            <a href="#">Мои заказы</a>
+                        </li>
+                        <li>
+                            <a href="#">Баланс</a>
+                        </li>
+                        <li>
+                            <a href="#">Профиль</a>
+                        </li>
+                        <li>
+                            <a href="#">Настройки</a>
+                        </li>
+                        <li>
+                            <a href="#">Сообщества</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </div>
+        <!--widgets-->
         <div class="pop-up-notification pop-up-notification__info">
             <p class="pop-up-notification-caption">Новые уведомления:</p>
             <div class="pop-up-notification-inner">
@@ -139,180 +147,6 @@
                 <a href="#" class="pop-up__user-item-text btn-pop-up__user-exit">Выход</a>   
             </div>
         </div>
-        <div class="pop-up-info pop-up-info__check-in">
-            <span class="btn-delete">
-                <i class="fa fa-times" aria-hidden="true"></i>
-            </span>
-            <p class="pop-up-info-description">
-                Осталось уже совсем немного
-            </p>
-            <form>
-                <div class="pop-up-info__check-in-list">
-                    <div class="pop-up-info__check-in-list-item">
-                        <p class="pop-up-info-text-clarification pop-up-info-text-clarification__margin">
-                            Заполните пустые поля, разместите заказ и авторы оценят стоимость работы.
-                        </p>
-                        <select class="form-control js-example-basic-single">
-                            <option value="AL">Выберите предмет</option>
-                            <option value="WY">12</option>
-                            <option value="WY">10</option>
-                        </select>
-                    </div>
-                    <div class="pop-up-info__check-in-list-item">
-                        <select class="form-control js-example-basic-single">
-                            <option value="AL">Реферат</option>
-                            <option value="WY">12</option>
-                            <option value="WY">10</option>
-                        </select>
-                        <div class="pop-up-info__check-in-list-item-left">
-                            <p class="pop-up-info-text-clarification">
-                                Количества страниц
-                            </p>
-                            <div class="select-inner select-inner-left">
-                                <select class="form-control js-example-basic-single">
-                                    <option value="AL">От 5</option>
-                                    <option value="WY">6</option>
-                                    <option value="WY">7</option>
-                                </select>
-                            </div>
-                            <div class="select-inner select-inner-right">
-                                <select class="form-control js-example-basic-single">
-                                    <option value="AL">До 10</option>
-                                    <option value="WY">9</option>
-                                    <option value="WY">8</option>
-                                </select>
-                            </div>  
-
-                        </div>
-                        <div class="pop-up-info__check-in-list-item-right">
-                            <p class="pop-up-info-text-clarification">
-                                Срок сдачи
-                            </p>
-                            <input type="text" class="form-control" placeholder="20.07.2016">
-                            <i class="fa fa-calendar" aria-hidden="true"></i>
-                        </div>
-                    </div>
-                    <div class="pop-up-info__check-in-list-item hidden">
-                        <select class="form-control js-example-basic-single full-width">
-                            <option value="AL">Анализ расчетов с задолжностью</option>
-                            <option value="WY">12</option>
-                            <option value="WY">10</option>
-                        </select>
-                        <label class="btn-add-file">
-                            <input class="btn-add-file-element" type="file" name="photo" accept="image/*,image/jpeg"> 
-                            Прикрепить файл
-                            <i class="fa fa-plus-circle" aria-hidden="true"></i>
-                        </label>
-                        <p>
-                            <span class="btn-add-file link-more-next">Добавить комментарий к заявке
-                                <i class="fa fa-plus-circle" aria-hidden="true"></i>
-                            </span>
-                        </p>
-                        <textarea cols="20" class="text hidden" maxlength="1200" name="Text" rows="2" placeholder="Ваш комментарий"></textarea>
-                    </div>
-                    <p class="link-more-inner">
-                        <span class="link-more">Дополнительные параметры</span>
-                    </p>
-                </div>
-                <button class="btn-green btn-send">РАЗМЕСТИТЬ ЗАКАЗ<i class="fa fa-angle-right" aria-hidden="true"></i></button>
-            </form>
-        </div>
-        <div class="pop-up-info pop-up-info__gift" >
-            <span class="btn-delete">
-                <i class="fa fa-times" aria-hidden="true"></i>
-            </span>
-            <i class="i i_gift"></i>
-            <div class="pop-up-info-text">
-                <p class="pop-up-info-description">
-                    Дарим 100 рублей на счет!
-                </p>
-                <p>
-                    Привет. Нам дорог каждый клиент, поэтому мы дарим тебе 100 рублей. Создай свой первый заказ и убедись, что наш сервис реально работает!
-                </p>
-            </div>
-            <div class="pop-up-info-btn-inner">
-                <a href="#" class="btn-green btn-confirmation">ПОЛУЧИТЬ 100 РУБЛЕЙ</a>
-            </div> 
-        </div>
-        <div class="pop-up-info pop-up-info__gift pop-up-info__gift-complete" >
-            <span class="btn-delete">
-                <i class="fa fa-times" aria-hidden="true"></i>
-            </span>
-            <p class="pop-up-info-description">
-                Вам подарок!
-            </p>
-            <div class="pop-up-info-text">
-                <p>
-                    Поздравляем, вам начислено на счет 100 рублей. Вы можете воспользоватся ими до 16 августа 2016.
-                </p>
-            </div>
-            <div class="pop-up-info-btn-inner">
-                <a href="#" class="btn-green btn-confirmation">OK</a>
-            </div> 
-        </div>
-        <div class="pop-up-info pop-up-info__slider" >
-            <span class="btn-delete">
-                <i class="fa fa-times" aria-hidden="true"></i>
-            </span>
-            <div class="slider slider1">
-                <div class="sliderContent">
-                    <div class="item item__center item__gray">
-                        <p class="pop-up-info-description">
-                            Добро пожаловать в Автор 24!
-                        </p>
-                        <div class="pop-up-info-text">
-                            <p>
-                                Автор24 - это интернет-биржа авторов и заказчиков по написанию курсовых, рефератов, дипломных и других работ. Вы общаетесь с авторами напрямую и сами выбираете с кем работать. Предлагаем познакомится с интерфейсом проекта и основными возможностями.На главной странице доступна общая информация по вашим заказам и самые важные уведомления.
-                            </p>
-                        </div>
-                        <img class="absolute" src="img/interface/example_hello.jpg" alt="">
-                    </div>
-                    <div class="item item__left">
-                        <img src="img/interface/example_orders.jpg" alt="">
-                        <div class="item-side">
-                            <p class="pop-up-info-description">Сделать заказ</p>
-                            <div class="pop-up-info-text">
-                                <p>Чтобы создать новый заказ, вам необходимо будет заполнить простю форму. Укажите предмет, тип работы, а так же тему, опишите все ваши требования в комментариях. Обязательно укажите срок, к которому автору необходимо предоставить работу, а так же бюджет, на который вы рассчитываете</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="item item__left">
-                        <div class="item-side">
-                            <p class="pop-up-info-description">Выбрать автора</p>
-                            <div class="pop-up-info-text">
-                                <p>
-                                    Через некоторое время после создания заказа вам начнут поступать тклики от наших авторов. Прежде чем сделать выбор, тщательно просмотрите профили всех, кто сделал ставки. Почитайте положительные и отрицательные отзывы и только после этого принимайте окончательное решение.
-                                </p>
-                            </div>
-                        </div>
-                        <img src="img/interface/example_select-author.jpg" alt="">
-                    </div>
-                    <div class="item item__center">
-                        <p class="pop-up-info-description">
-                            Оплатить работу
-                        </p>
-                        <div class="pop-up-info-text">
-                            <p>
-                                Для того, чтобы автор приступил к написанию работы, вам необходимо пополнить счет на сайте. Сделать это можно любым удобным вам способом в соответствующем разделе личного кабинета.
-                            </p>
-                        </div>
-                        <img class="absolute" src="img/interface/example_payment.jpg" alt="">
-                    </div>
-                    <div class="item item__left">
-                        <img src="img/interface/example_gearance.jpg" alt="">
-                        <div class="item-side">
-                            <p class="pop-up-info-description">Гарантии</p>
-                            <div class="pop-up-info-text">
-                                <p>
-                                    Наш сервис обеспечивает 100%-ную защиту заказчика и его средств от возможных форс-мажоров. Деньги, которые вы внесли в качестве предоплаты, замораживаются на счёте до того момента, пока вы не примете окончательный вариант работы. В случае, если автор по каким-то причинам откажется выполнять ваш заказ, средства вернутся на вам счет, и вы сможете выбрать другого исполнителя.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div> 
-        </div>
-        <div class="pop-up__shadow"></div>
         <!--content-->
         <div class="content container">
             <div class="content-sitebar">
@@ -341,91 +175,17 @@
                         </p>
                     </div>
                 </div>
-                <div class="content-sitebar-calendar">
-                    <p class="content-sitebar-calendar-text-top">Календарь<span class="btn-toggle-calendar"><i class="fa fa-angle-down" aria-hidden="true"></i></span></p>
-                    <table id="calendar">
-                        <thead>
-                            <tr>
-                                <td><i class="fa fa-angle-left"></i></td>
-                                <td colspan="5" data-month="7" data-year="2016">Август 2016</td>
-                                <td><i class="fa fa-angle-right"></i></td>
-                            </tr>
-                            <tr>
-                                <td>ПН</td>
-                                <td>ВТ</td>
-                                <td>СР</td>
-                                <td>ЧТ</td>
-                                <td>ПТ</td>
-                                <td>СБ</td>
-                                <td>ВС</td>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>1</td>
-                                <td>2</td>
-                                <td>3</td>
-                                <td class="today today_info">4</td>
-                                <td>5</td>
-                                <td>6</td>
-                                <td>7</td>
-                            </tr>
-                            <tr>
-                                <td>8</td>
-                                <td>9</td>
-                                <td>10</td>
-                                <td>11</td>
-                                <td>12</td>
-                                <td>13</td>
-                                <td>14</td>
-                            </tr>
-                            <tr>
-                                <td>15</td>
-                                <td>16</td>
-                                <td>17</td>
-                                <td>18</td>
-                                <td>19</td>
-                                <td>20</td>
-                                <td>21</td>
-                            </tr>
-                            <tr>
-                                <td>22</td>
-                                <td>23</td>
-                                <td>24</td>
-                                <td>25</td>
-                                <td>26</td>
-                                <td>27</td>
-                                <td>28</td>
-                            </tr>
-                            <tr>
-                                <td>29</td>
-                                <td>30</td>
-                                <td>31</td>
-                                <td>&nbsp;</td>
-                                <td>&nbsp;</td>
-                                <td>&nbsp;</td>
-                                <td>&nbsp;</td>
-                            </tr>
-                        </tbody>
-                    </table>   
-                </div>
             </div>
             <div class="content-center">    
                 <div class="content-notification">
                     <div class="content-notification-orders-list-item content-notification-orders-list-item__padding">
-                        <p class="content-notification-orders-list-item-description">Ваша текущая комиссия: 26%</p>
+                        <p class="content-notification-orders-list-item-description">Ваша текущая комиссия: 18%</p>
                         <p class="content-notification-orders-list-item-text">Комиссия сервиса агенств рассчитывается из суммы оборота выполненных вами заказов на площадке Автора24 за последние 6 месяцев, предшествующих месяцу расчета комиссии.Скидки от базовой комиссии является накопительной: чем больше оборот - тем ниже для вас комиссия сервиса. Комиссия влияет на стоимость ваших услуг, которую увидит заказчик.</p>
                         <p class="content-notification-orders-list-item-text">
                             Размер комиссии рассчитывается 1 числа каждого календарного месяца и действует в установленном размере до момента следующего расчета комиссии.
                         </p>
                         <p class="content-notification-orders-list-item-text">
                             Комиссия рассчитывается и предоставляется для каждого агенства индивидуально в зависимости от его оборота.
-                        </p>
-                        <p class="content-notification-orders-list-item-text">
-                            При достижении оборота в 10 000 руб (26%), Вам будет доступна услуга "Авансовый платеж"
-                        </p>
-                        <p class="content-notification-orders-list-item-text">
-                            Сумма оборота выполненных Вами заказов учитывается только при работе в ранге агенства.
                         </p>
                         <p class="content-notification-orders-list-item-text-top content-notification-orders-list-item-text-top__without-margin">Как мы считаем комиссию</p>
                         <div class="table-comission-inner">
@@ -435,8 +195,8 @@
                             </div>
                             <div class="table-comission">
                                 <div class="table-comission-item-range-inner">
-                                    <span class="table-comission-item-range" style="width:23%;">
-                                        <span class="table-comission-item-range-text">24 480 р.</span>
+                                    <span class="table-comission-item-range" style="width:15%;">
+                                        <span class="table-comission-item-range-text">4 000 р.</span>
                                     </span>
                                 </div>
                                 <div class="table-comission-item">
@@ -445,7 +205,7 @@
                                 </div>
                                 <div class="table-comission-item">
                                     <span class="table-comission-item-top-number table-comission-item-top-number__yellow">26%</span>
-                                    <span class="table-comission-item-bottom-number">10 000 р.</span>
+                                    <span class="table-comission-item-bottom-number">5 000 р.</span>
                                 </div>
                                 <div class="table-comission-item">
                                     <span class="table-comission-item-top-number table-comission-item-top-number__yellow-gradient">24%</span>
@@ -453,19 +213,15 @@
                                 </div>
                                 <div class="table-comission-item">
                                     <span class="table-comission-item-top-number table-comission-item-top-number__yellow-gradient">22%</span>
-                                    <span class="table-comission-item-bottom-number">150 000 р.</span>
+                                    <span class="table-comission-item-bottom-number">100 000 р.</span>
                                 </div>
                                 <div class="table-comission-item">
                                     <span class="table-comission-item-top-number table-comission-item-top-number__yellow-gradient">20%</span>
-                                    <span class="table-comission-item-bottom-number">300 000 р.</span>
+                                    <span class="table-comission-item-bottom-number">200 000 р.</span>
                                 </div>
                                 <div class="table-comission-item">
                                     <span class="table-comission-item-top-number table-comission-item-top-number__yellow-gradient">18%</span>
-                                    <span class="table-comission-item-bottom-number">450 000 р.</span>
-                                </div>
-                                <div class="table-comission-item">
-                                    <span class="table-comission-item-top-number table-comission-item-top-number__yellow-gradient">16%</span>
-                                    <span class="table-comission-item-bottom-number">600 000 р.</span>
+                                    <span class="table-comission-item-bottom-number">300 000 р.</span>
                                 </div>
                             </div>
                         </div>
@@ -476,54 +232,43 @@
                                     <td>Месяц</td>
                                     <td>Количество оплаченных заказов</td>
                                     <td>Оборот, рублей</td>
-                                    <td>Перерасчет<sup>*</sup>, рублей</td>
                                 </tr>
                                 <tr>
                                     <td>Январь</td>
                                     <td>0</td>
-                                    <td>1 156</td>
                                     <td>1 156</td>
                                 </tr>
                                 <tr>
                                     <td>Февраль</td>
                                     <td>1</td>
                                     <td>0</td>
-                                    <td>0</td>
                                 </tr>
                                 <tr>
                                     <td>Март</td>
                                     <td>5</td>
-                                    <td>5 123</td>
                                     <td>5 123</td>
                                 </tr>
                                 <tr>
                                     <td>Апрель</td>
                                     <td>0</td>
                                     <td>148</td>
-                                    <td>148</td>
                                 </tr>
                                 <tr>
                                     <td>Май</td>
                                     <td>1</td>
-                                    <td>3 257</td>
                                     <td>3 257</td>
                                 </tr>
                                 <tr>
                                     <td>Июнь</td>
                                     <td>2</td>
                                     <td>10 130</td>
-                                    <td>10 130</td>
                                 </tr>
                                 <tr>
                                     <td>Всего</td>
                                     <td>18</td>
-                                    <td colspan="2">25 146</td>
+                                    <td>25 146</td>
                                 </tr>
                             </table>
-                            <p class="content-notification-orders-list-item-text content-notification-orders-list-item-text__small">
-                                <sup>*</sup>
-                                Перерасчеты произведенные не в месяц создания заказа. Если перерасчет был выполнен в месяц создания заказа, то он уже учтен в обороте за месяц.
-                            </p>
                         </div>
                     </div>
                 </div>
@@ -590,9 +335,6 @@
     </div>
 <script src="js/libs/jquery-1.12.4.js"></script>
 <script src="js/libs/bootstrap.js"></script>
-<script src="js/libs/select2.min.js"></script>
-<script src="js/libs/mobilyslider.js"></script>
 <script src="js/main.js"></script>
-<script src="js/calendar.js"></script>
 </body>
 </html>

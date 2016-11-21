@@ -6144,7 +6144,7 @@ a.pop-up-info-text-btn-next {
 .table-comission-item {
   display: inline-block;
   vertical-align: top;
-  width: 70px;
+  width: 100px;
   border-left: 1px solid #dfdfdf;
   padding: 0 5px;
 }
@@ -6209,7 +6209,7 @@ a.pop-up-info-text-btn-next {
 /*table-turn*/
 .table-turn-inner {
   margin-top: 20px;
-  width: 80%;
+  width: 50%;
 }
 @media (max-width: 768px) {
   .table-turn-inner {
@@ -6251,6 +6251,14 @@ a.pop-up-info-text-btn-next {
 }
 .table-turn-inner table tr td:last-child {
   width: 30%;
+}
+.content-center {
+  width: 80%;
+}
+@media (max-width: 992px) {
+  .content-center {
+    width: 100%;
+  }
 }
 .table-comission-inner {
   margin: 20px 0 40px 0;
