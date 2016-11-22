@@ -4,16 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
     <meta name="format-detection" content="telephone=no">
-    <title>Author25-balance</title>
+    <title>Author25-balance-frozen-funds</title>
     <link rel="stylesheet" href="css/libs/bootstrap.min.css">
-    <link rel="stylesheet" href="css/libs/select2.css">
-    <link rel="stylesheet" href="css/payment-services.css">
     <link rel="stylesheet" href="css/balance.css">
 </head>
 <body>
     <div class="page">
         <!--nav-->
-        <div class="container-nav container-fluid">
+        <div class="container-nav container-nav__blue container-fluid">
             <div class="container">
                 <!-- Brand and toggle get grouped for better mobile display -->
                 <div class="navbar-header">
@@ -26,40 +24,29 @@
                     <a class="navbar-brand" href="#"></a>
                 </div>
                 <!-- Collect the nav links, forms, and other content for toggling -->
-                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                    <i class="collapse-tr"></i>
-                    <ul class="nav navbar-nav">
-                        <li>
-                            <i class="fa fa-angle-right" aria-hidden="true"></i>
-                            <a href="#">Главная<span class="sr-only">(current)</span></a>
-                        </li>
-                        <li>
-                            <i class="fa fa-angle-right" aria-hidden="true"></i>
-                            <a href="#">Мои заказы</a>
-                        </li>
-                        <li>
-                            <i class="fa fa-angle-right" aria-hidden="true"></i>
-                            <a href="#">Магазин готовых работ</a>
-                        </li>
-                        <li>
-                            <i class="fa fa-angle-right" aria-hidden="true"></i>
-                            <a href="#">Топ авторов</a>
-                        </li>
-                        <li class="active">
-                            <i class="fa fa-angle-right" aria-hidden="true"></i>
-                            <a href="#">Сделать заказ</a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="navbar-info">
+                <div class="navbar-info  navbar-info__static">
                     <span class="navbar-info-item navbar-info-item__notifications">
                         <i class="fa fa-info-circle" aria-hidden="true"></i>
+                        <span class="navbar-info-item-value">4</span>
                         <i class="pop-up_tr"></i>
                     </span>
                     <span class="navbar-info-item navbar-info-item__message">
                         <i class="fa fa-envelope" aria-hidden="true"></i>
+                        <span class="navbar-info-item-value">11</span>
                         <i class="pop-up_tr"></i>
                     </span>
+                    <a href="#" class="btn-nav-bar">
+                        <i class="fa fa-search" aria-hidden="true"></i>НАЙТИ ЗАКАЗ
+                    </a>
+                    <a href="#" class="btn-nav-bar">
+                        <i class="fa fa-tag" aria-hidden="true"></i>ГОТОВЫЕ РАБОТЫ
+                    </a>
+                </div>
+                <div class="navbar-info">
+                    <a href="#" class="btn-money-value"><i class="i i_cash"></i>0 руб.</a>
+                    <a href="#" class="btn-nav-bar">
+                        <i class="fa fa-sign-out" aria-hidden="true"></i>ВЫВЕСТИ ДЕНЬГИ
+                    </a>
                     <span class="navbar-info-item navbar-info-item__user">
                         <i class="fa fa-user" aria-hidden="true"></i>
                         <i class="fa fa-angle-down" aria-hidden="true"></i>
@@ -69,16 +56,37 @@
                 <!-- /.navbar-collapse -->
             </div>
         </div>
-        <!--widgets-->
-        <div class="widget-help">
-            <a class="widget-help-item" href="#">О проекте</a>
-            <a class="widget-help-item" href="#">Соглашение</a>
-            <a class="widget-help-item" href="#">Правила работы</a>
-            <a class="widget-help-item" href="#">Новости</a>
-            <a class="widget-help-item" href="#">Помощь</a>
-            <a class="widget-help-item" href="#">Как оплатить</a>
-            <a class="widget-help-item" href="#">Узнать среднюю стоимость работы</a>
+        <div class="container-nav container-nav__white">
+            <div class="container">    
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <i class="collapse-tr"></i>
+                    <ul class="nav navbar-nav">
+                        <li class="active"> 
+                            <a href="#">Главная<span class="sr-only">(current)</span></a>
+                        </li>
+                        <li>
+                            <a href="#">Аукцион заказов</a>
+                        </li>
+                        <li>
+                            <a href="#">Мои заказы</a>
+                        </li>
+                        <li>
+                            <a href="#">Баланс</a>
+                        </li>
+                        <li>
+                            <a href="#">Профиль</a>
+                        </li>
+                        <li>
+                            <a href="#">Настройки</a>
+                        </li>
+                        <li>
+                            <a href="#">Сообщества</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </div>
+        <!--widgets-->
         <div class="pop-up-notification pop-up-notification__info">
             <p class="pop-up-notification-caption">Новые уведомления:</p>
             <div class="pop-up-notification-inner">
@@ -141,99 +149,104 @@
         </div>
         <!--content-->
         <div class="content container">
+            <div class="content-sitebar">
+                <div class="content-sitebar-user content-sitebar-user__without-paddings">
+                    <div class="content-sitebar-user__without-paddings-img-inner ">
+                        <img class="img-desctop" src="img/interface/user.png" alt="user">
+                    </div>
+                    <div class="content-sitebar-user-info">
+                        <ul class="content-sitebar-user-info-list">
+                            <li class="content-sitebar-user-info-list-item content-sitebar-user-info-list-item__black content-sitebar-user-info-list-item__height">
+                                <p class="content-sitebar-user-info-list-item-text">Выполненно заказов
+                                    <span class="content-sitebar-user-info-list-item-text-value">0</span>
+                                </p>
+                                <p class="content-sitebar-user-info-list-item-text">Всего заказов
+                                    <span class="content-sitebar-user-info-list-item-text-value">0</span>
+                                </p>
+                            </li>
+                            <li class="content-sitebar-user-info-list-item content-sitebar-user-info-list-item__black content-sitebar-user-info-list-item__height">
+                                <p class="content-sitebar-user-info-list-item-text">Тип работ</p>
+                            </li>
+                            <li class="content-sitebar-user-info-list-item content-sitebar-user-info-list-item__black content-sitebar-user-info-list-item__height">
+                                <p class="content-sitebar-user-info-list-item-text">Предмет</p>
+                            </li>
+                            <li class="content-sitebar-user-info-list-item content-sitebar-user-info-list-item__black content-sitebar-user-info-list-item__height">
+                                <p class="content-sitebar-user-info-list-item-text">Клиенты
+                                    <span class="content-sitebar-user-info-list-item-text-value">0</span>
+                                </p>
+                                 <p class="content-sitebar-user-info-list-item-text">Постоянных
+                                    <span class="content-sitebar-user-info-list-item-text-value">0</span>
+                                </p>
+                            </li>
+                            <li class="content-sitebar-user-info-list-item content-sitebar-user-info-list-item__black content-sitebar-user-info-list-item__height">
+                                <p class="content-sitebar-user-info-list-item-text">
+                                    <i class="fa fa-eye" aria-hidden="true"></i>Просмотры
+                                    <span class="content-sitebar-user-info-list-item-text-value">7</span>
+                                </p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
             <div class="content-center">
-                <div class="content-full-width">
-                   <h1 class="content-full-width-title content-full-width-title__gray">Доступный баланс</h1>
+                <div class="content-center-inner">
                     <div class="content-balance">
-                        <div class="content-balance-info">
-                            <span class="content-balance-info-value">100 руб</span>
-                            <span class="content-balance-info-text">Из них бонусные деньги: <strong>100 руб.</strong></span>
-                            <a href="#" class="btn-green">
-                                <i class="fa fa-money" aria-hidden="true"></i>ВНЕСТИ СРЕДСТВА
-                            </a>
-                            <a href="#" class="content-balance-info-href">Вывести средства</a>
+                        <div class="content-balance-top-panel">
+                            <div class="content-balance-info-item content-balance-info-item__left">
+                                <h2 class="content-balance-info-item-description">Доступный баланс</h2>
+                                <div class="content-balance-info-item-inner">
+                                    <span class="content-balance-info-value content-balance-info-value__text">0 руб</span>
+                                    <a href="#" class="btn-green">
+                                        <i class="fa fa-money" aria-hidden="true"></i>ВНЕСТИ СРЕДСТВА
+                                    </a>
+                                </div>    
+                            </div>
+                            <div class="content-balance-info-item content-balance-info-item__right">
+                                <h2 class="content-balance-info-item-description">Заморожено средств</h2>
+                                <div class="content-balance-info-item-inner">
+                                    <a href="#" class="content-balance-info-value content-balance-info-value__link">1 руб</a>
+                                    <span class="content-balance-info-item-inner-text">
+                                        Замороженные средства поступят к вам на счет после завершения <a href="#">гарантийного срока</a> заказа.
+                                    </span>
+                                </div>
+                            </div>
                         </div>
                         <div class="top-menu">
-                            <a class="active" href="#">История изменений</a>
-                            <select class="form-control js-example-basic-single select2-hidden-accessible" tabindex="-1" aria-hidden="true">
-                                <option value="AL">Все изменения</option>
-                                <option value="WY">Экзамен</option>
-                                <option value="WY">Контрольная</option>
-                            </select>
+                            <a href="balance-bid.html">Заявки на вывод средств</a>
+                            <a href="balance-history.html">История изменений</a>
+                            <a class="active" href="balance-frozen-funds.html">Замороженные средства</a>
                         </div>
                         <div class="content-balance-table">
                             <table>
                                 <tr>
-                                   <td>Референс</td>
-                                   <td>Описание</td>
-                                   <td>Дата</td>
-                                   <td>Приход</td>
-                                   <td>Расход</td>
-                                   <td>Статус</td>
+                                   <td>Заголовок</td>
+                                   <td>Сумма</td>
+                                   <td>Дата зачисления</td>
                                 </tr>
                                 <tr>
                                     <td>
-                                       <i class="fa fa-arrow-right" aria-hidden="true"></i>
-                                       W1467166632
+                                       Заказ: <a href="#">История древнего египта</a>
                                     </td>
-                                    <td>Вы пополнили свой счет на 1336 руб.</td>
-                                    <td>29 июня 2016 05:17</td>
-                                    <td>1336</td>
-                                    <td></td>
-                                    <td class="color-green">Зачислено</td>
+                                    <td>1 600 руб.</td>
+                                    <td>сегодня 16:15</td>
                                 </tr>
                                 <tr>
                                     <td>
-                                       <i class="fa fa-arrow-left" aria-hidden="true"></i>
-                                       W1467166632
+                                        Заказ: <a href="#">История древнего египта</a>
                                     </td>
                                     <td>
-                                       Со счета снято 1000 рублей за заказ 
-                                        <a href="#">"Задание по геодезии"</a>.
+                                       1 руб.
                                     </td>
-                                    <td>29 июня 2016 05:17</td>
-                                    <td></td>
-                                    <td>1000</td>
-                                    <td class="color-green">Выполнено</td>
+                                    <td>16.05.2016 16:15</td>
                                 </tr>
                                 <tr>
                                     <td>
-                                       <i class="fa fa-exclamation-triangle" aria-hidden="true"></i>
-                                       W1467166632
+                                        Заказ: <a href="#">История древнего египта</a>
                                     </td>
-                                    <td>Ожидание оплаты за заказ 
-                                        <a href="#">"РАСЧТЕТ ЭЛЕКТРОМАГНИТНЫХ ПЕРЕХОДНЫХ ПРОЦЕССОВ"</a>
-                                        суммы в 1386 руб.
+                                    <td> 
+                                        10 600 руб.
                                     </td>
-                                    <td>29 июня 2016 05:17</td>
-                                    <td></td>
-                                    <td></td>
-                                    <td>Ожидается</td>
-                                </tr>
-                                <tr>
-                                    <td>
-                                       <i class="fa fa-arrow-right" aria-hidden="true"></i>
-                                       W1467166632
-                                    </td>
-                                    <td>Вы пополнили свой счет на 1336 руб.</td>
-                                    <td>29 июня 2016 05:17</td>
-                                    <td>1336</td>
-                                    <td></td>
-                                    <td class="color-green">Зачислено</td>
-                                </tr>
-                                <tr>
-                                    <td>
-                                       <i class="fa fa-arrow-left" aria-hidden="true"></i>
-                                       W1467166632
-                                    </td>
-                                    <td>
-                                       Со счета снято 1000 рублей за заказ 
-                                        <a href="#">"Задание по геодезии"</a>.
-                                    </td>
-                                    <td>29 июня 2016 05:17</td>
-                                    <td></td>
-                                    <td>1000</td>
-                                    <td class="color-green">Выполнено</td>
+                                    <td>16.05.2016 16:15</td>
                                 </tr>
                             </table>
                         </div>
@@ -315,8 +328,6 @@
     </div>
 <script src="js/libs/jquery-1.12.4.js"></script>
 <script src="js/libs/bootstrap.js"></script>
-<script src="js/libs/select2.min.js"></script>
 <script src="js/main.js"></script>
-<script src="js/select.js"></script>
 </body>
 </html>

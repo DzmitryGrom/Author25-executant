@@ -4,15 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
     <meta name="format-detection" content="telephone=no">
-    <title>Author25-info</title>
+    <title>Author25-balance-bid</title>
     <link rel="stylesheet" href="css/libs/bootstrap.min.css">
-    <link rel="stylesheet" href="css/libs/select2.css">
-    <link rel="stylesheet" href="css/info.css">
+    <link rel="stylesheet" href="css/balance.css">
 </head>
 <body>
     <div class="page">
         <!--nav-->
-        <div class="container-nav container-fluid">
+        <div class="container-nav container-nav__blue container-fluid">
             <div class="container">
                 <!-- Brand and toggle get grouped for better mobile display -->
                 <div class="navbar-header">
@@ -25,40 +24,29 @@
                     <a class="navbar-brand" href="#"></a>
                 </div>
                 <!-- Collect the nav links, forms, and other content for toggling -->
-                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                    <i class="collapse-tr"></i>
-                    <ul class="nav navbar-nav">
-                        <li>
-                            <i class="fa fa-angle-right" aria-hidden="true"></i>
-                            <a href="#">Главная<span class="sr-only">(current)</span></a>
-                        </li>
-                        <li>
-                            <i class="fa fa-angle-right" aria-hidden="true"></i>
-                            <a href="#">Мои заказы</a>
-                        </li>
-                        <li>
-                            <i class="fa fa-angle-right" aria-hidden="true"></i>
-                            <a href="#">Магазин готовых работ</a>
-                        </li>
-                        <li>
-                            <i class="fa fa-angle-right" aria-hidden="true"></i>
-                            <a href="#">Топ авторов</a>
-                        </li>
-                        <li class="active">
-                            <i class="fa fa-angle-right" aria-hidden="true"></i>
-                            <a href="#">Сделать заказ</a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="navbar-info">
+                <div class="navbar-info  navbar-info__static">
                     <span class="navbar-info-item navbar-info-item__notifications">
                         <i class="fa fa-info-circle" aria-hidden="true"></i>
+                        <span class="navbar-info-item-value">4</span>
                         <i class="pop-up_tr"></i>
                     </span>
                     <span class="navbar-info-item navbar-info-item__message">
                         <i class="fa fa-envelope" aria-hidden="true"></i>
+                        <span class="navbar-info-item-value">11</span>
                         <i class="pop-up_tr"></i>
                     </span>
+                    <a href="#" class="btn-nav-bar">
+                        <i class="fa fa-search" aria-hidden="true"></i>НАЙТИ ЗАКАЗ
+                    </a>
+                    <a href="#" class="btn-nav-bar">
+                        <i class="fa fa-tag" aria-hidden="true"></i>ГОТОВЫЕ РАБОТЫ
+                    </a>
+                </div>
+                <div class="navbar-info">
+                    <a href="#" class="btn-money-value"><i class="i i_cash"></i>0 руб.</a>
+                    <a href="#" class="btn-nav-bar">
+                        <i class="fa fa-sign-out" aria-hidden="true"></i>ВЫВЕСТИ ДЕНЬГИ
+                    </a>
                     <span class="navbar-info-item navbar-info-item__user">
                         <i class="fa fa-user" aria-hidden="true"></i>
                         <i class="fa fa-angle-down" aria-hidden="true"></i>
@@ -68,16 +56,37 @@
                 <!-- /.navbar-collapse -->
             </div>
         </div>
-        <!--widgets-->
-        <div class="widget-help">
-            <a class="widget-help-item" href="#">О проекте</a>
-            <a class="widget-help-item" href="#">Соглашение</a>
-            <a class="widget-help-item" href="#">Правила работы</a>
-            <a class="widget-help-item" href="#">Новости</a>
-            <a class="widget-help-item" href="#">Помощь</a>
-            <a class="widget-help-item" href="#">Как оплатить</a>
-            <a class="widget-help-item" href="#">Узнать среднюю стоимость работы</a>
+        <div class="container-nav container-nav__white">
+            <div class="container">    
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <i class="collapse-tr"></i>
+                    <ul class="nav navbar-nav">
+                        <li class="active"> 
+                            <a href="#">Главная<span class="sr-only">(current)</span></a>
+                        </li>
+                        <li>
+                            <a href="#">Аукцион заказов</a>
+                        </li>
+                        <li>
+                            <a href="#">Мои заказы</a>
+                        </li>
+                        <li>
+                            <a href="#">Баланс</a>
+                        </li>
+                        <li>
+                            <a href="#">Профиль</a>
+                        </li>
+                        <li>
+                            <a href="#">Настройки</a>
+                        </li>
+                        <li>
+                            <a href="#">Сообщества</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </div>
+        <!--widgets-->
         <div class="pop-up-notification pop-up-notification__info">
             <p class="pop-up-notification-caption">Новые уведомления:</p>
             <div class="pop-up-notification-inner">
@@ -140,79 +149,122 @@
         </div>
         <!--content-->
         <div class="content container">
+            <div class="content-sitebar">
+                <div class="content-sitebar-user content-sitebar-user__without-paddings">
+                    <div class="content-sitebar-user__without-paddings-img-inner ">
+                        <img class="img-desctop" src="img/interface/user.png" alt="user">
+                    </div>
+                    <div class="content-sitebar-user-info">
+                        <ul class="content-sitebar-user-info-list">
+                            <li class="content-sitebar-user-info-list-item content-sitebar-user-info-list-item__black content-sitebar-user-info-list-item__height">
+                                <p class="content-sitebar-user-info-list-item-text">Выполненно заказов
+                                    <span class="content-sitebar-user-info-list-item-text-value">0</span>
+                                </p>
+                                <p class="content-sitebar-user-info-list-item-text">Всего заказов
+                                    <span class="content-sitebar-user-info-list-item-text-value">0</span>
+                                </p>
+                            </li>
+                            <li class="content-sitebar-user-info-list-item content-sitebar-user-info-list-item__black content-sitebar-user-info-list-item__height">
+                                <p class="content-sitebar-user-info-list-item-text">Тип работ</p>
+                            </li>
+                            <li class="content-sitebar-user-info-list-item content-sitebar-user-info-list-item__black content-sitebar-user-info-list-item__height">
+                                <p class="content-sitebar-user-info-list-item-text">Предмет</p>
+                            </li>
+                            <li class="content-sitebar-user-info-list-item content-sitebar-user-info-list-item__black content-sitebar-user-info-list-item__height">
+                                <p class="content-sitebar-user-info-list-item-text">Клиенты
+                                    <span class="content-sitebar-user-info-list-item-text-value">0</span>
+                                </p>
+                                 <p class="content-sitebar-user-info-list-item-text">Постоянных
+                                    <span class="content-sitebar-user-info-list-item-text-value">0</span>
+                                </p>
+                            </li>
+                            <li class="content-sitebar-user-info-list-item content-sitebar-user-info-list-item__black content-sitebar-user-info-list-item__height">
+                                <p class="content-sitebar-user-info-list-item-text">
+                                    <i class="fa fa-eye" aria-hidden="true"></i>Просмотры
+                                    <span class="content-sitebar-user-info-list-item-text-value">7</span>
+                                </p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
             <div class="content-center">
-                <div class="content-center-item content-center-item__alert-yellow">
-                    <div class="content-center-item__alert-yellow-text">
-                        <p class="content-center-item__alert-yellow-text-description">Ваш заказ успешно создан и размещен в аукционе</p>
-                        <p>
-                            Через несколько минут вы начнете получать от испольнителей предложения с ценой. Посмотреть поступившие предложение можно на <a href="#">странице вашего заказа</a>, или в своей почте
-                        </p>
-                        <p>
-                           Автор24 - это онлайн биржа учебных работ, где каждый стедент может найти автора для выполнения своего задания. В отличие от агенств вы будете работать с автором напрямую, без посредников, что существенно снизит стоимость и срок выполнения работ. 
-                        </p>
-                        <a href="#" class="btn-blue">ПЕРЕЙТИ В ЗАКАЗ</a>
-                    </div>
-                    <i class="i i_list-done"></i>
-                </div>
-                <div class="content-center-item text-center">
-                    <h2 class="content-center-item-description">Как работает сервис?</h2>
-                    <p class="content-center-item-sub-text">Автор24 это онлайн биржа учебных работ, где каждый студент может найти автора для выполнения своего задания.</p>
-                    <div class="content-center-item-work-list">
-                        <div class="content-center-item-work-list-item content-center-item-work-list-item__info">
-                            <div class="content-center-item-work-list-item-pic">
-                                <i class="i i_hammer"></i>
+                <div class="content-center-inner">
+                    <div class="content-balance">
+                        <div class="content-balance-top-panel">
+                            <div class="content-balance-info-item content-balance-info-item__left">
+                                <h2 class="content-balance-info-item-description">Доступный баланс</h2>
+                                <div class="content-balance-info-item-inner">
+                                    <span class="content-balance-info-value content-balance-info-value__text">0 руб</span>
+                                    <a href="#" class="btn-green">
+                                        <i class="fa fa-money" aria-hidden="true"></i>ВНЕСТИ СРЕДСТВА
+                                    </a>
+                                </div>    
                             </div>
-                            <p class="content-center-item-work-list-item-description">Дождитесь ставок от авторов</p>
-                            <p class="content-center-item-sub-text">предложения начнут поступать через несколько минут</p>
-                        </div>
-                        <div class="content-center-item-work-list-item content-center-item-work-list-item__arrow">
-                            <i class="fa fa-angle-right" aria-hidden="true"></i>
-                        </div>
-                        <div class="content-center-item-work-list-item content-center-item-work-list-item__info">
-                            <div class="content-center-item-work-list-item-pic">
-                                <i class="i i_mans"></i>
-                            </div>
-                            <p class="content-center-item-work-list-item-description">Выберите подходящего исполнителя</p>
-                            <p class="content-center-item-sub-text">и он сразу же приступит к работе</p>
-                        </div>
-                        <div class="content-center-item-work-list-item content-center-item-work-list-item__arrow">
-                            <i class="fa fa-angle-right" aria-hidden="true"></i>
-                        </div>
-                        <div class="content-center-item-work-list-item content-center-item-work-list-item__info">
-                            <div class="content-center-item-work-list-item-pic">
-                                <i class="i i_like"></i>
-                            </div>
-                            <p class="content-center-item-work-list-item-description">Выберите подходящего исполнителя</p>
-                            <p class="content-center-item-sub-text">и он сразу же приступит к работе</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="content-center-item text-center content-center-item__placement">
-                    <p class="content-center-item__placement-description">
-                        А если вам всё понятно, то можете сразу разместить заказы по другим типам работ и закрыть сессию разом:
-                    </p>
-                    <div class="content-center-item__placement-list">
-                        <div class="content-center-item__placement-list-item">
-                            <i class="i i_test"></i>
-                            <div class="content-center-item__placement-list-item-text">
-                                <a href="#" class="content-center-item__placement-list-item-text-link">Контрольная работа</a>
-                                <span class="content-center-item__placement-list-item-text-price">от 200 руб.</span>
+                            <div class="content-balance-info-item content-balance-info-item__right">
+                                <h2 class="content-balance-info-item-description">Заморожено средств</h2>
+                                <div class="content-balance-info-item-inner">
+                                    <a href="#" class="content-balance-info-value content-balance-info-value__link">1 руб</a>
+                                    <span class="content-balance-info-item-inner-text">
+                                        Замороженные средства поступят к вам на счет после завершения <a href="#">гарантийного срока</a> заказа.
+                                    </span>
+                                </div>
                             </div>
                         </div>
-                        <div class="content-center-item__placement-list-item">
-                            <i class="i i_exchange-rate"></i>
-                            <div class="content-center-item__placement-list-item-text">
-                                <a href="#" class="content-center-item__placement-list-item-text-link">Курсовая работа</a>
-                                <span class="content-center-item__placement-list-item-text-price">от 200 руб.</span>
-                            </div>
+                        <div class="top-menu">
+                            <a class="active" href="balance-bid.html">Заявки на вывод средств</a>
+                            <a href="balance-history.html">История изменений</a>
+                            <a href="balance-frozen-funds.html">Замороженные средства</a>
                         </div>
-                        <div class="content-center-item__placement-list-item">
-                            <i class="i i_problem-solving"></i>
-                            <div class="content-center-item__placement-list-item-text">
-                                <a href="#" class="content-center-item__placement-list-item-text-link">Решение задач</a>
-                                <span class="content-center-item__placement-list-item-text-price">от 200 руб.</span>
-                            </div>
+                        <div class="content-balance-table">
+                            <table>
+                                <tr>
+                                   <td class="col-hidden">ID заявки</td>
+                                   <td class="col-hidden">ID транзакции</td>
+                                   <td>Платежная система</td>
+                                   <td>Сумма</td>
+                                   <td>Время</td>
+                                   <td>Статус</td>
+                                </tr>
+                                <tr>
+                                    <td class="col-hidden">123456</td>
+                                    <td class="col-hidden">123456</td>
+                                    <td>WebMoney</td>
+                                    <td>1 336 руб.</td>
+                                    <td>16.07.2016 16:45</td>
+                                    <td class="color-green">Зачислено</td>
+                                </tr>
+                                <tr>
+                                    <td class="col-hidden">123456</td>
+                                    <td class="col-hidden">123456</td>
+                                    <td>WebMoney</td>
+                                    <td>1 336 руб.</td>
+                                    <td>16.07.2016 16:45</td>
+                                    <td >Выполняется</td>
+                                </tr>
+                                <tr>
+                                    <td class="col-hidden">123456</td>
+                                    <td class="col-hidden">123456</td>
+                                    <td>WebMoney</td>
+                                    <td>1 336 руб.</td>
+                                    <td>16.07.2016 16:45</td>
+                                    <td class="color-green">Зачислено</td>
+                                </tr>
+                            </table>
                         </div>
+                        <div class="pagination">
+                            <span class="pagination-prev">
+                                <i class="fa fa-arrow-circle-left" aria-hidden="true"></i>
+                            </span>
+                            <ul class="pagination-list">
+                                <li class="pagination-list-item"><a class="active" href="#"><span>1</span></a></li>
+                                <li class="pagination-list-item"><a href="#"><span>2</span></a></li>
+                                <li class="pagination-list-item"><a href="#"><span>3</span></a></li>
+                            </ul>
+                            <span class="pagination-next">
+                                <i class="fa fa-arrow-circle-right" aria-hidden="true"></i>
+                            </span>
+                        </div>  
                     </div>
                 </div>
             </div>
@@ -278,7 +330,6 @@
     </div>
 <script src="js/libs/jquery-1.12.4.js"></script>
 <script src="js/libs/bootstrap.js"></script>
-<script src="js/libs/select2.min.js"></script>
 <script src="js/main.js"></script>
 </body>
 </html>
