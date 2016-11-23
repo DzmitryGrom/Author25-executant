@@ -2244,6 +2244,11 @@ textarea:focus {
   box-shadow: none;
   outline: none;
 }
+a:focus {
+  outline: none;
+  color: inherit;
+  text-decoration: none;
+}
 .nav > li > a,
 .content-notification-history-list-item-btn-inner-add,
 .btn-red,
@@ -4597,6 +4602,9 @@ textarea:focus {
   color: #fff;
   text-decoration: none;
 }
+.btn-green:focus {
+  color: #fff;
+}
 .btn-green .fa-money {
   margin-right: 5px;
 }
@@ -4891,6 +4899,9 @@ div p.more-info-inner-item-text-bottom .fa {
   text-decoration: none;
   color: #fff;
 }
+.btn-blue :focus {
+  color: #fff;
+}
 /*btn-blue*/
 .btn-gray {
   font-size: 14px;
@@ -4914,8 +4925,7 @@ div p.more-info-inner-item-text-bottom .fa {
   text-decoration: none;
 }
 .btn-gray:focus {
-  outline: none;
-  border: none;
+  color: #fff;
 }
 /*pop-up__shadow*/
 .pop-up__shadow {

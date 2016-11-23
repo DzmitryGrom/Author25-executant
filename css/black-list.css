@@ -2244,6 +2244,11 @@ textarea:focus {
   box-shadow: none;
   outline: none;
 }
+a:focus {
+  outline: none;
+  color: inherit;
+  text-decoration: none;
+}
 .nav > li > a,
 .content-notification-history-list-item-btn-inner-add,
 .btn-red,
@@ -4574,6 +4579,9 @@ textarea:focus {
   background-color: #b2d38d;
   color: #fff;
   text-decoration: none;
+}
+.btn-green:focus {
+  color: #fff;
 }
 .btn-green .fa-money {
   margin-right: 5px;

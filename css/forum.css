@@ -2244,6 +2244,11 @@ textarea:focus {
   box-shadow: none;
   outline: none;
 }
+a:focus {
+  outline: none;
+  color: inherit;
+  text-decoration: none;
+}
 .nav > li > a,
 .content-notification-history-list-item-btn-inner-add,
 .btn-red,
@@ -5307,6 +5312,9 @@ div p.more-info-inner-item-text-bottom .fa {
   text-decoration: none;
   color: #fff;
 }
+.btn-blue :focus {
+  color: #fff;
+}
 /*btn-gray*/
 .btn-gray {
   font-size: 14px;
@@ -5330,8 +5338,7 @@ div p.more-info-inner-item-text-bottom .fa {
   text-decoration: none;
 }
 .btn-gray:focus {
-  outline: none;
-  border: none;
+  color: #fff;
 }
 /*btn-green*/
 .btn-green {
@@ -5350,6 +5357,9 @@ div p.more-info-inner-item-text-bottom .fa {
   background-color: #b2d38d;
   color: #fff;
   text-decoration: none;
+}
+.btn-green:focus {
+  color: #fff;
 }
 .btn-green .fa-money {
   margin-right: 5px;
