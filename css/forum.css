@@ -2715,56 +2715,6 @@ a:focus {
   position: relative;
 }
 /*widgets*/
-.widget-help {
-  border: 2px solid #4786c8;
-  position: fixed;
-  min-height: 220px;
-  top: 247px;
-  right: -193px;
-  width: 239px;
-  background: #fff;
-  border-top-left-radius: 7px;
-  border-bottom-left-radius: 7px;
-  padding: 15px 0 7px 80px;
-  cursor: pointer;
-  border-right: none;
-  transition: all 0.5s ease-in-out;
-  -webkit-transition: all 0.5s ease-in-out;
-  -moz-transition: all 0.5s ease-in-out;
-  -o-transition: all 0.5s ease-in-out;
-  box-shadow: 6px 7px 0 0 rgba(212, 212, 212, 0.75);
-  z-index: 10;
-  box-sizing: border-box;
-}
-@media (max-width: 768px) {
-  .widget-help {
-    display: none;
-  }
-}
-.widget-help:hover {
-  right: 0;
-}
-.widget-help:before {
-  content: '';
-  position: absolute;
-  left: -1px;
-  top: 0;
-  bottom: 0;
-  width: 50px;
-  background: url(../img/interface/widjet.png) 50% no-repeat;
-}
-.widget-help-item {
-  color: #4786c8;
-  display: block;
-  padding-bottom: 10px;
-  font-weight: 600;
-  font-size: 14px;
-  font-family: "OpenSansSemibold";
-}
-.widget-help-item:hover {
-  text-decoration: none;
-  color: black;
-}
 .pop-up-notification.pop-up-notification_message {
   left: 2px;
 }
